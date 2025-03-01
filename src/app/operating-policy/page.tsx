@@ -1,9 +1,9 @@
-import Head from 'next/head';
-import * as React from 'react';
+import Head from 'next/head'
+import * as React from 'react'
 
 interface Section {
-  title: string;
-  content: string[];
+  title: string
+  content: string[]
 }
 
 const sections: Section[] = [
@@ -65,11 +65,20 @@ const OperatingPolicy: React.FC = () => {
     <>
       <Head>
         <title>Chính Sách Hoạt Động | Yummy</title>
-        <meta name="description" content="Chính sách hoạt động của Yummy - nền tảng đặt đồ ăn trực tuyến tại TP. Hồ Chí Minh." />
-        <meta name="keywords" content="Yummy, chính sách, đặt đồ ăn, giao hàng, TP. Hồ Chí Minh" />
+        <meta
+          name="description"
+          content="Chính sách hoạt động của Yummy - nền tảng đặt đồ ăn trực tuyến tại TP. Hồ Chí Minh."
+        />
+        <meta
+          name="keywords"
+          content="Yummy, chính sách, đặt đồ ăn, giao hàng, TP. Hồ Chí Minh"
+        />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Chính Sách Hoạt Động | Yummy" />
-        <meta property="og:description" content="Yummy cung cấp dịch vụ đặt món an toàn và tiện lợi." />
+        <meta
+          property="og:description"
+          content="Yummy cung cấp dịch vụ đặt món an toàn và tiện lợi."
+        />
         <meta property="og:type" content="website" />
       </Head>
       <div className="py-20 px-10 flex justify-center items-center">
@@ -79,8 +88,9 @@ const OperatingPolicy: React.FC = () => {
           </h1>
           <div className="max-w-[1150px] mt-10">
             <p className="text-[20px] pl-5 font-light">
-              Chào mừng quý khách đến với Yummy - nền tảng đặt đồ ăn trực tuyến phục vụ tại TP. Hồ Chí Minh.
-              Chúng tôi cam kết cung cấp dịch vụ an toàn, đảm bảo chất lượng món ăn.
+              Chào mừng quý khách đến với Yummy - nền tảng đặt đồ ăn trực tuyến phục vụ
+              tại TP. Hồ Chí Minh. Chúng tôi cam kết cung cấp dịch vụ an toàn, đảm bảo
+              chất lượng món ăn.
             </p>
             <ol className="list-decimal pl-5">
               {sections.map((section, index) => (
@@ -95,13 +105,15 @@ const OperatingPolicy: React.FC = () => {
               ))}
             </ol>
             <div className="mt-10 text-[25px] font-bold text-center">
-              Cảm ơn quý khách đã tin tưởng <strong className="text-secondary">Yummy</strong>. Chúng tôi luôn nỗ lực để mang đến trải nghiệm dịch vụ tốt nhất.
+              Cảm ơn quý khách đã tin tưởng{' '}
+              <strong className="text-secondary">Yummy</strong>. Chúng tôi luôn nỗ lực để
+              mang đến trải nghiệm dịch vụ tốt nhất.
             </div>
           </div>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default OperatingPolicy;
+export default OperatingPolicy
