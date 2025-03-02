@@ -4,7 +4,7 @@ const OurCommit = () => {
   return (
     <>
       <Head>
-        <title>Cam Kết Của Yummy - Dịch Vụ Đặt Món Uy Tín</title>
+        <title>YummyVNU - Cam kết của Yummy</title>
         <meta
           name="description"
           content="Yummy cam kết mang đến món ăn chất lượng, giá cả hợp lý và giao hàng nhanh chóng."
@@ -13,7 +13,15 @@ const OurCommit = () => {
           name="keywords"
           content="Yummy, đặt món ăn, giao hàng nhanh, thực phẩm chất lượng"
         />
-        <meta name="robots" content="index, follow" />
+        <meta name="author" content="YummyVNU Team" />
+        <meta property="og:title" content="YummyVNU - Cam kết của Yummy" />
+        <meta
+          property="og:description"
+          content="Yummy cam kết mang đến món ăn chất lượng, giá cả hợp lý và giao hàng nhanh chóng."
+        />
+        {/* <meta property="og:image" content="/images/yummy-contact.jpg" /> */}
+        <meta property="og:type" content="website" />
+        {/* <meta property="og:url" content="https://yummy.vn/lien-he" /> */}
       </Head>
       <section className="py-20 flex justify-center items-center">
         <div>

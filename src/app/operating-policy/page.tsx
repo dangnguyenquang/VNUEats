@@ -64,20 +64,20 @@ const OperatingPolicy: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Chính Sách Hoạt Động | Yummy</title>
+        <title>YummyVNU - Chính sách hoạt động</title>
         <meta
           name="description"
-          content="Chính sách hoạt động của Yummy - nền tảng đặt đồ ăn trực tuyến tại TP. Hồ Chí Minh."
+          content="Chính sách hoạt động của YummyVNU - nền tảng đặt đồ ăn trực tuyến tại làng đại học thành phố Hồ Chí Mình."
         />
         <meta
           name="keywords"
-          content="Yummy, chính sách, đặt đồ ăn, giao hàng, TP. Hồ Chí Minh"
+          content="YummyVNU, chính sách, đặt đồ ăn, giao hàng, làng đại học"
         />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Chính Sách Hoạt Động | Yummy" />
+        <meta name="author" content="YummyVNU Team" />
+        <meta property="og:title" content="YummyVNU - Chính sách hoạt động" />
         <meta
           property="og:description"
-          content="Yummy cung cấp dịch vụ đặt món an toàn và tiện lợi."
+          content="YummyVNU cung cấp dịch vụ đặt món an toàn và tiện lợi."
         />
         <meta property="og:type" content="website" />
       </Head>

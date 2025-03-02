@@ -4,31 +4,24 @@ export default function ContactInstructions() {
   return (
     <>
       <Head>
-        <title>Hướng Dẫn Liên Hệ | Yummy</title>
+        <title>YummyVNU - Hướng dẫn liên hệ</title>
         <meta
           name="description"
-          content="Hướng dẫn liên hệ với Yummy qua số điện thoại, email, và quy trình xử lý khiếu nại. Đội ngũ hỗ trợ sẵn sàng phục vụ quý khách."
+          content="Hướng dẫn liên hệ với YummyVNU qua số điện thoại, email, và quy trình xử lý khiếu nại. Đội ngũ hỗ trợ sẵn sàng phục vụ quý khách."
         />
         <meta
           name="keywords"
-          content="Yummy, liên hệ, hỗ trợ khách hàng, số điện thoại Yummy, email Yummy"
+          content="YummyVNU, liên hệ, hỗ trợ khách hàng, số điện thoại YummyVNU, email YummyVNU"
         />
-        <meta name="author" content="Yummy Team" />
-        <meta property="og:title" content="Hướng Dẫn Liên Hệ | Yummy" />
+        <meta name="author" content="YummyVNU Team" />
+        <meta property="og:title" content="YummyVNU - Hướng dẫn liên hệ" />
         <meta
           property="og:description"
           content="Hướng dẫn liên hệ với Yummy qua số điện thoại, email, và quy trình xử lý khiếu nại."
         />
-        <meta property="og:image" content="/images/yummy-contact.jpg" />
+        {/* <meta property="og:image" content="/images/yummy-contact.jpg" /> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yummy.vn/lien-he" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Hướng Dẫn Liên Hệ | Yummy" />
-        <meta
-          name="twitter:description"
-          content="Hướng dẫn liên hệ với Yummy qua số điện thoại, email, và quy trình xử lý khiếu nại."
-        />
-        <meta name="twitter:image" content="/images/yummy-contact.jpg" />
+        {/* <meta property="og:url" content="https://yummy.vn/lien-he" /> */}
       </Head>
 
       <main className="py-20 flex justify-center items-center">

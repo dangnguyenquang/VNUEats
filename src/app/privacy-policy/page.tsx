@@ -4,7 +4,7 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Head>
-        <title>Chính Sách Bảo Mật | Yummy</title>
+        <title>YummyVNU - Chính sách bảo mật</title>
         <meta
           name="description"
           content="Chính sách bảo mật thông tin của Yummy, cam kết bảo vệ dữ liệu cá nhân khách hàng khi sử dụng dịch vụ."
@@ -13,14 +13,13 @@ export default function PrivacyPolicy() {
           name="keywords"
           content="Yummy, bảo mật thông tin, chính sách quyền riêng tư"
         />
-        <meta name="author" content="Yummy Team" />
-        <meta property="og:title" content="Chính Sách Bảo Mật | Yummy" />
+        <meta name="author" content="YummyVNU Team" />
+        <meta property="og:title" content="YummyVNU - Chính sách bảo mật" />
         <meta
           property="og:description"
           content="Chính sách bảo mật thông tin của Yummy, cam kết bảo vệ dữ liệu cá nhân khách hàng."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yummy.vn/privacy-policy" />
       </Head>
 
       <main className="py-20 flex justify-center items-center">

@@ -4,15 +4,24 @@ export default function OrderInstructions() {
   return (
     <>
       <Head>
-        <title>Hướng Dẫn Đặt Món | Yummy</title>
+        <title>YummyVNU - Hướng dẫn đặt món</title>
         <meta
           name="description"
-          content="Hướng dẫn chi tiết cách đặt món trên Yummy - Nhanh chóng, tiện lợi và dễ dàng."
+          content="Hướng dẫn chi tiết cách đặt món trên YummyVNU - Nhanh chóng, tiện lợi và dễ dàng."
         />
         <meta
           name="keywords"
           content="đặt món, Yummy, hướng dẫn đặt hàng, đặt món online, giao đồ ăn"
         />
+        <meta name="author" content="YummyVNU Team" />
+        <meta property="og:title" content="YummyVNU - Hướng dẫn đặt món" />
+        <meta
+          property="og:description"
+          content="Hướng dẫn chi tiết cách đặt món trên YummyVNU - Nhanh chóng, tiện lợi và dễ dàng."
+        />
+        {/* <meta property="og:image" content="/images/yummy-contact.jpg" /> */}
+        <meta property="og:type" content="website" />
+        {/* <meta property="og:url" content="https://yummy.vn/lien-he" /> */}
       </Head>
       <div className="py-20 flex justify-center items-center">
         <div className="max-w-[1150px] px-5">
