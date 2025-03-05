@@ -1,11 +1,6 @@
-import type {
-    AxiosError,
-    AxiosInstance,
-    AxiosResponse,
-    InternalAxiosRequestConfig,
-} from 'axios'
-import axios from 'axios'
 import { ENV } from '@/configs/env.constant'
+import type { AxiosInstance, AxiosResponse } from 'axios'
+import axios from 'axios'
 
 export default class ClientRequest {
     static instance: ClientRequest | null = null
@@ -34,9 +29,7 @@ export default class ClientRequest {
             return config
         }
 
-        this.axiosInstance.interceptors.response.use(
-            fulfilledResponseHandler,
-        )
+        this.axiosInstance.interceptors.response.use(fulfilledResponseHandler)
     }
 
     public getAxiosInstance(): AxiosInstance {

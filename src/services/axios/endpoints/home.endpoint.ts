@@ -1,5 +1,5 @@
 const homeEndpoint = {
-  gethome: '/user/home',
+    gethome: '/user/home',
 }
 
 export default homeEndpoint

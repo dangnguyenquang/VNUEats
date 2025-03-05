@@ -1,5 +1,5 @@
 const bookingEndpoint = {
-  bookingFood: '/customer/order',
+    bookingFood: '/customer/order',
 }
 
 export default bookingEndpoint
