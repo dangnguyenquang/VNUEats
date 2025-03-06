@@ -5,12 +5,12 @@ import Aos from 'aos'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect } from 'react'
-import Image_intro from '../../assets/images/aboutUs/about_us_intro.png'
-import Image_mission_1 from '../../assets/images/aboutUs/about_us_mission.png'
-import Image_mission_2 from '../../assets/images/aboutUs/about_us_mission1.png'
-import Image_Group from '../../assets/images/aboutUs/group_img.png'
+import Image_intro from '../../../assets/images/aboutUs/about_us_intro.png'
+import Image_mission_1 from '../../../assets/images/aboutUs/about_us_mission.png'
+import Image_mission_2 from '../../../assets/images/aboutUs/about_us_mission1.png'
+import Image_Group from '../../../assets/images/aboutUs/group_img.png'
 
-import Image_value from '../../assets/images/aboutUs/about_us_ourvalue.png'
+import Image_value from '../../../assets/images/aboutUs/about_us_ourvalue.png'
 
 export default function AboutUs() {
   useEffect(() => {
