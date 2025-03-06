@@ -1,17 +1,17 @@
 ## What type of PR is this? (check all applicable)
 
--   [ ] Refactor
--   [ ] Feature
--   [ ] Bug Fix
--   [ ] Optimization
--   [ ] Documentation Update
+- [ ] Refactor
+- [ ] Feature
+- [ ] Bug Fix
+- [ ] Optimization
+- [ ] Documentation Update
 
 ## Description
 
 ## Related Tickets & Documents
 
--   Related Issue #
--   Closes #
+- Related Issue #
+- Closes #
 
 ## QA Instructions, Screenshots, Recordings
 
@@ -23,9 +23,9 @@ images for UI changes._
 
 _We encourage you to keep the code coverage percentage at 80% and above._
 
--   [ ] Yes
--   [ ] No, and this is why: _please replace this line with details on why tests have not been included_
--   [ ] I need help with writing tests
+- [ ] Yes
+- [ ] No, and this is why: _please replace this line with details on why tests have not been included_
+- [ ] I need help with writing tests
 
 ## [optional] Are there any post deployment tasks we need to perform?
 

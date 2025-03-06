@@ -6,7 +6,7 @@ export interface Account {
     name_account: string
     password_account: string
     address: string
-    role: 'seller' | 'admin'
+    role: string
     createdAt: string
     updatedAt: string
     __v: number
