@@ -61,11 +61,11 @@ export default function LoginModal({
       login()
 
       setUserInfo(res.user)
-      // res.user === null
-      // ? toast.success('Đăng nhập thành công!')
-      // : toast.error('Tên đăng nhập hoặc mật khẩu không đúng!')
-
-      toast.success('Đăng nhập thành công!')
+      if (res.user) {
+        toast.success('Đăng nhập thành công!')
+      } else {
+        toast.error('Tên đăng nhập hoặc mật khẩu không đúng!')
+      }
     } catch (error) {
       toast.error('Đã có lỗi xảy ra, thử lại sau!')
     }
