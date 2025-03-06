@@ -1,13 +1,14 @@
 import { client } from '@/services/axios'
+import { ApiResponse, User } from '@/types/api/auth'
 import userEndpoint from '../endpoints/user.endpoint'
 
 class UserApi {
-    async getMe() {
+    async getMe(): Promise<ApiResponse<User>> {
         try {
             const res = await client.get(userEndpoint.getme)
-            return res
+            return res.data
         } catch (error) {
-            console.log(error)
+            throw error
         }
     }
 
