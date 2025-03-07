@@ -1,9 +1,9 @@
 import { client } from '@/services/axios'
-import { LoginResponse } from '@/types/api/auth'
+import { ApiResponse, User } from '@/types/api/auth'
 import authEndpoint from '../endpoints/auth.endpoint'
 
 class AuthApi {
-    async signIn(email: string, password: string): Promise<LoginResponse> {
+    async signIn(email: string, password: string): Promise<ApiResponse<User>> {
         try {
             const res = await client.post(authEndpoint.login, {
                 email,
