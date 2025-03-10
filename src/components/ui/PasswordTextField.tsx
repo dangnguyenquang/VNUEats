@@ -13,6 +13,7 @@ interface PasswordTextFieldProps {
   whiteBg?: boolean
   value: string
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void
+  autoComplete?: string
 }
 
 function PasswordTextField({
@@ -23,6 +24,7 @@ function PasswordTextField({
   whiteBg,
   value,
   handleChange,
+  autoComplete = 'off',
 }: PasswordTextFieldProps) {
   const [password, setPassword] = useState(value || '')
   const [confirmPassword, setConfirmPassword] = useState('')
@@ -116,6 +118,7 @@ function PasswordTextField({
             </InputAdornment>
           ),
         }}
+        autoComplete={autoComplete}
       />
 
       {confirm && (
@@ -154,6 +157,7 @@ function PasswordTextField({
               </InputAdornment>
             ),
           }}
+          autoComplete={autoComplete}
         />
       )}
     </div>

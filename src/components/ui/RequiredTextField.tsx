@@ -9,16 +9,18 @@ interface RequiredTextFieldProps {
   value: string
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void
   required?: boolean
+  autoComplete?: string
 }
 
 function RequiredTextField({
   label,
-  className,
+  className = '',
   placeholder,
-  whiteBg,
+  whiteBg = false,
   value,
   handleChange,
   required = true,
+  autoComplete = 'off',
 }: RequiredTextFieldProps) {
   const [error, setError] = useState(false)
 
@@ -53,6 +55,7 @@ function RequiredTextField({
         error={error}
         placeholder={placeholder}
         helperText={error && required ? 'Đây là trường bắt buộc' : ''}
+        autoComplete={autoComplete}
       />
     </div>
   )

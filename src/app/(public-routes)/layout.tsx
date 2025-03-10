@@ -5,10 +5,9 @@ import Header from '@/components/layout/Header'
 import Sidebar from '@/components/layout/Sidebar'
 import AutoLogin from '@/stores/autoLogin'
 import { useState } from 'react'
-import { Outlet } from 'react-router-dom'
 // import Chatbot from '../Components/_components/Chatbot'
 
-export default function DefaultLayout() {
+export default function DefaultLayout({ children }: { children: React.ReactNode }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
   const toggleSidebar = () => {
@@ -20,10 +19,7 @@ export default function DefaultLayout() {
       <div className="flex-col items-center w-full">
         <Header toggleSidebar={toggleSidebar} />
         <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-        {/* <div className='mt-16'>{children}</div> */}
-        <main className="mt-16 min-h-screen">
-          <Outlet />
-        </main>
+        <div className="mt-16">{children}</div>
         <Footer />
         {/* <Chatbot /> */}
       </div>

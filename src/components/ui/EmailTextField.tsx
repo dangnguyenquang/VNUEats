@@ -1,16 +1,16 @@
 import TextField from '@mui/material/TextField'
-import React, { useState } from 'react'
+import { useState } from 'react'
 
-interface NumericTextFieldProps {
+interface EmailTextFieldProps {
   label: string
   className?: string
   whiteBg?: boolean
   value: string
-  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void
+  handleChange: (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void
   autoComplete?: string
 }
 
-const NumericTextField: React.FC<NumericTextFieldProps> = ({
+const EmailTextField: React.FC<EmailTextFieldProps> = ({
   label,
   className = '',
   whiteBg = false,
@@ -21,13 +21,14 @@ const NumericTextField: React.FC<NumericTextFieldProps> = ({
   const [error, setError] = useState<boolean>(false)
 
   const handleBlur = () => {
-    if (!value) {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!emailPattern.test(value)) {
       setError(true)
     }
   }
 
   return (
-    <div className={`mx-auto w-full sm:max-w-[300px] md:max-w-[500px] my-5 ${className}`}>
+    <div className={`mx-auto max-w-[500px] my-5 ${className}`}>
       <TextField
         sx={{
           margin: 'auto',
@@ -42,22 +43,18 @@ const NumericTextField: React.FC<NumericTextFieldProps> = ({
         }}
         label={label}
         value={value}
-        onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-          const newValue = e.target.value
-          if (/^\d*$/.test(newValue)) {
-            handleChange(e)
-            if (error) setError(false)
-          }
+        onChange={(e) => {
+          handleChange(e)
+          if (error) setError(false)
         }}
         onBlur={handleBlur}
         required
         error={error}
-        helperText={error ? 'Trường này là bắt buộc' : ''}
-        inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
+        helperText={error ? 'Vui lòng nhập địa chỉ email hợp lệ' : ''}
         autoComplete={autoComplete}
       />
     </div>
   )
 }
 
-export default NumericTextField
+export default EmailTextField
