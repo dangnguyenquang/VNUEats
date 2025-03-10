@@ -13,18 +13,18 @@ import SearchBar from '../../../components/ui/SearchBar'
 // import authApi from '~/apis/auth'
 import authApi from '@/services/axios/actions/auth.action'
 import { SelectChangeEvent } from '@mui/material'
+import { Suspense } from 'react'
 import CategroryFilter from './_components/CategroryFilter'
 import DistrictFilter from './_components/DistrictFilter'
 import RestaurantList from './_components/RestaurantList'
-import { Suspense } from "react";
 
 const MenuPage = () => {
   return (
     <Suspense fallback={<p>Loading...</p>}>
       <MenuContent />
     </Suspense>
-  );
-};
+  )
+}
 
 const MenuContent = () => {
   const debounceRef = useRef(null)
