@@ -33,8 +33,8 @@ const OurCommit = () => {
           </p>
           <div className="max-w-[1150px]">
             <p className="text-[20px] font-light">
-              Tại YummyVNU, chúng tôi cam kết mang đến trải nghiệm đặt món tốt nhất với chất
-              lượng đảm bảo, giá cả hợp lý và giao hàng nhanh chóng.
+              Tại YummyVNU, chúng tôi cam kết mang đến trải nghiệm đặt món tốt nhất với
+              chất lượng đảm bảo, giá cả hợp lý và giao hàng nhanh chóng.
             </p>
             <ol className="list-decimal pl-5">
               <li className="mt-5 text-[20px] font-bold">

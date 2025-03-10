@@ -89,8 +89,8 @@ const OperatingPolicy: React.FC = () => {
           <div className="max-w-[1150px] mt-10">
             <p className="text-[20px] pl-5 font-light">
               Chào mừng quý khách đến với YummyVNU - nền tảng đặt đồ ăn trực tuyến phục vụ
-              tại Làng đại học Thủ Đức. Chúng tôi cam kết cung cấp dịch vụ an toàn, đảm bảo
-              chất lượng món ăn.
+              tại Làng đại học Thủ Đức. Chúng tôi cam kết cung cấp dịch vụ an toàn, đảm
+              bảo chất lượng món ăn.
             </p>
             <ol className="list-decimal pl-5">
               {sections.map((section, index) => (
@@ -106,8 +106,8 @@ const OperatingPolicy: React.FC = () => {
             </ol>
             <div className="mt-10 text-[25px] font-bold text-center">
               Cảm ơn quý khách đã tin tưởng{' '}
-              <strong className="text-secondary">YummyVNU</strong>. Chúng tôi luôn nỗ lực để
-              mang đến trải nghiệm dịch vụ tốt nhất.
+              <strong className="text-secondary">YummyVNU</strong>. Chúng tôi luôn nỗ lực
+              để mang đến trải nghiệm dịch vụ tốt nhất.
             </div>
           </div>
         </div>

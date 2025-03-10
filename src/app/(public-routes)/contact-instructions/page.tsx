@@ -75,8 +75,8 @@ export default function ContactInstructions() {
                 <h2>Quy trình xử lý khiếu nại</h2>
                 <ul className="list-disc pl-5 font-light">
                   <li>
-                    <strong>Bước 1:</strong> Quý khách liên hệ với YummyVNU qua tổng đài hoặc
-                    email.
+                    <strong>Bước 1:</strong> Quý khách liên hệ với YummyVNU qua tổng đài
+                    hoặc email.
                   </li>
                   <li>
                     <strong>Bước 2:</strong> Đội ngũ hỗ trợ tiếp nhận và xác minh thông

@@ -30,9 +30,10 @@ export default function OrderInstructions() {
           </h1>
           <section className="mt-10 text-[20px] font-light">
             <p>
-              Chào mừng bạn đến với <strong>YummyVNU</strong>! Chúng tôi luôn mong muốn mang
-              lại trải nghiệm đặt món ăn trực tuyến nhanh chóng và tiện lợi. Dưới đây là
-              các bước hướng dẫn chi tiết giúp bạn đặt món trên YummyVNU một cách dễ dàng:
+              Chào mừng bạn đến với <strong>YummyVNU</strong>! Chúng tôi luôn mong muốn
+              mang lại trải nghiệm đặt món ăn trực tuyến nhanh chóng và tiện lợi. Dưới đây
+              là các bước hướng dẫn chi tiết giúp bạn đặt món trên YummyVNU một cách dễ
+              dàng:
             </p>
           </section>
           <section>
@@ -42,16 +43,16 @@ export default function OrderInstructions() {
                   1. Đăng nhập hoặc Đăng ký tài khoản
                 </h2>
                 <p className="font-light text-[20px]">
-                  <strong className='text-primary font-bold'>Lưu ý:</strong> Để sử dụng YummyVNU đặt món ăn, bạn cần có tài
-                  khoản.
+                  <strong className="text-primary font-bold">Lưu ý:</strong> Để sử dụng
+                  YummyVNU đặt món ăn, bạn cần có tài khoản.
                 </p>
                 <ul className="list-disc pl-5 font-light">
-                  <li className='font-light text-[20px]'>Truy cập website YummyVNU.</li>
-                  <li className='font-light text-[20px]'>
+                  <li className="font-light text-[20px]">Truy cập website YummyVNU.</li>
+                  <li className="font-light text-[20px]">
                     Chọn Đăng nhập nếu đã có tài khoản, hoặc Đăng ký nếu bạn là người dùng
                     mới.
                   </li>
-                  <li className='font-light text-[20px]'>
+                  <li className="font-light text-[20px]">
                     Điền thông tin gồm họ tên, số điện thoại và email để hoàn tất đăng ký.
                   </li>
                 </ul>
@@ -65,8 +66,12 @@ export default function OrderInstructions() {
                   trên trang chủ.
                 </p>
                 <ul className="list-disc pl-5 font-light">
-                  <li className='font-light text-[20px]'>Chọn tìm kiếm theo quán hoặc theo món ăn.</li>
-                  <li className='font-light text-[20px]'>Dùng bộ lọc trên trang “Món ăn” để tìm quán phù hợp.</li>
+                  <li className="font-light text-[20px]">
+                    Chọn tìm kiếm theo quán hoặc theo món ăn.
+                  </li>
+                  <li className="font-light text-[20px]">
+                    Dùng bộ lọc trên trang “Món ăn” để tìm quán phù hợp.
+                  </li>
                 </ul>
               </article>
               <article>
@@ -76,16 +81,22 @@ export default function OrderInstructions() {
                   ăn.
                 </p>
                 <p className="font-light text-[20px]">
-                  <strong className='text-primary font-bold'>Lưu ý:</strong> Dữ liệu giỏ hàng không được lưu nếu bạn rời khỏi
-                  trang chi tiết của quán.
+                  <strong className="text-primary font-bold">Lưu ý:</strong> Dữ liệu giỏ
+                  hàng không được lưu nếu bạn rời khỏi trang chi tiết của quán.
                 </p>
               </article>
               <article>
                 <h2 className="mt-5 text-[25px] font-bold">4. Hoàn tất đặt hàng</h2>
                 <ul className="list-disc pl-5 font-light">
-                  <li className='font-light text-[20px]'>Kiểm tra giỏ hàng trong trang chi tiết quán ăn.</li>
-                  <li className='font-light text-[20px]'>Nhấn nút “Đặt món” để gửi đơn hàng đến quán ăn.</li>
-                  <li className='font-light text-[20px]'>Chờ xác nhận từ quán ăn trước khi đơn hàng được giao.</li>
+                  <li className="font-light text-[20px]">
+                    Kiểm tra giỏ hàng trong trang chi tiết quán ăn.
+                  </li>
+                  <li className="font-light text-[20px]">
+                    Nhấn nút “Đặt món” để gửi đơn hàng đến quán ăn.
+                  </li>
+                  <li className="font-light text-[20px]">
+                    Chờ xác nhận từ quán ăn trước khi đơn hàng được giao.
+                  </li>
                 </ul>
               </article>
               <article>
@@ -103,16 +114,17 @@ export default function OrderInstructions() {
               <article>
                 <h2 className="mt-5 text-[25px] font-bold">7. Đánh giá và phản hồi</h2>
                 <p className="font-light text-[20px]">
-                  Hãy để lại đánh giá sau khi nhận hàng để giúp YummyVNU cải thiện chất lượng
-                  dịch vụ.
+                  Hãy để lại đánh giá sau khi nhận hàng để giúp YummyVNU cải thiện chất
+                  lượng dịch vụ.
                 </p>
               </article>
             </ol>
           </section>
           <section className="mt-10 text-[25px] font-bold text-center">
             <p>
-              <strong className="text-secondary text-[30px]">YummyVNU</strong> hy vọng hướng
-              dẫn này giúp bạn dễ dàng đặt món và có trải nghiệm hài lòng. Chúc bạn có những bữa ăn ngon miệng và tiện lợi với{' '}
+              <strong className="text-secondary text-[30px]">YummyVNU</strong> hy vọng
+              hướng dẫn này giúp bạn dễ dàng đặt món và có trải nghiệm hài lòng. Chúc bạn
+              có những bữa ăn ngon miệng và tiện lợi với{' '}
               <strong className="text-secondary text-[30px]">YummyVNU</strong>.
             </p>
           </section>

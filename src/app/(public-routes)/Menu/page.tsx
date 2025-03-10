@@ -90,7 +90,7 @@ const Menu = () => {
     const newCurrencyValue = event.target.value as string
     setcurrencyValue(newCurrencyValue)
     setFilterList((prevFilterList) => {
-      let newFilterList = { ...prevFilterList }
+      const newFilterList = { ...prevFilterList }
       if (newCurrencyValue === 'restaurant') {
         newFilterList.nameRestaurant = searchValue
         newFilterList.nameFood = ''

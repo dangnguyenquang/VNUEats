@@ -4,16 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Aos from 'aos'
 import Head from 'next/head'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 import Image_intro from '../../../assets/images/aboutUs/about_us_intro.png'
 import Image_mission_1 from '../../../assets/images/aboutUs/about_us_mission.png'
 import Image_mission_2 from '../../../assets/images/aboutUs/about_us_mission1.png'
-import Image_Group from '../../../assets/images/aboutUs/group_img.png'
-import { useRouter} from 'next/navigation'
 import Image_value from '../../../assets/images/aboutUs/about_us_ourvalue.png'
+import Image_Group from '../../../assets/images/aboutUs/group_img.png'
 
 export default function AboutUs() {
-  const router = useRouter();
+  const router = useRouter()
   useEffect(() => {
     Aos.init({
       duration: 1000,
@@ -214,7 +214,7 @@ export default function AboutUs() {
             </p>
             <button
               className="px-[30px] py-[15px] bg-primary rounded-[100px] text-accent text-[11px] md:text-[15px] xl:text-[20px] transition-all duration-300 hover:bg-accent hover:text-primary hover:shadow-lg mt-[20px]"
-              onClick={() => router.push("/our-commit")}
+              onClick={() => router.push('/our-commit')}
             >
               Cam kết của YummyVNU
             </button>
