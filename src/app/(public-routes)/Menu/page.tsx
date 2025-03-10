@@ -16,8 +16,17 @@ import { SelectChangeEvent } from '@mui/material'
 import CategroryFilter from './_components/CategroryFilter'
 import DistrictFilter from './_components/DistrictFilter'
 import RestaurantList from './_components/RestaurantList'
+import { Suspense } from "react";
 
-const Menu = () => {
+const MenuPage = () => {
+  return (
+    <Suspense fallback={<p>Loading...</p>}>
+      <MenuContent />
+    </Suspense>
+  );
+};
+
+const MenuContent = () => {
   const debounceRef = useRef(null)
   const router = useRouter()
   const [page, setPage] = useState(1)
@@ -369,4 +378,4 @@ const Menu = () => {
   )
 }
 
-export default Menu
+export default MenuPage
