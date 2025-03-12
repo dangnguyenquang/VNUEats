@@ -1,17 +1,16 @@
-import homeBackground from '@/assets/images/home/home-bg.png'
-import searchBackground from '@/assets/images/home/search-bg.png'
+'use client'
+
 import { useEffect, useState } from 'react'
 
-import recommend from '@/assets/images/home/recommend.png'
 import FoodCard from '@/components/FoodCard'
 import SearchBar from '@/components/SearchBar'
-import FoodCategory from './_components/FoodCategory'
-import SpecialityCarousel from './_components/SpecialityCarousel'
-// import RecommendCarousel from './_components/RecommendCarousel'
 import { PATH_NAME } from '@/configs/pathName'
 import homeApiInstance from '@/services/axios/actions/home.action'
 import { FoodData } from '@/types/api/home'
 import { useRouter } from 'next/navigation'
+import FoodCategory from './_components/FoodCategory'
+import RecommendCarousel from './_components/RecommendCarousel'
+import SpecialityCarousel from './_components/SpecialityCarousel'
 
 const Home = () => {
   const [data, setData] = useState<FoodData>()
@@ -40,7 +39,7 @@ const Home = () => {
       <section
         className="relative w-full lg:h-[100vh] items-center pt-14 pb-5 md:py-16 lg:py-32"
         style={{
-          backgroundImage: `url(${searchBackground})`,
+          backgroundImage: `url('/images/home/search-bg.png')`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}
@@ -54,7 +53,9 @@ const Home = () => {
             <SearchBar
               searchValue={searchValue}
               handleChangeSearch={(e) => setSearchValue(e.target.value)}
-              handleChangeCurrencies={(e) => setTypeSearch(e.target.value)}
+              handleChangeCurrencies={(
+                e: React.ChangeEvent<{ name?: string; value: unknown }>,
+              ) => setTypeSearch(e.target.value as string)}
               currencyValue={typeSearch}
               handleSubmit={handleSubmit}
             />
@@ -70,7 +71,9 @@ const Home = () => {
         <SearchBar
           searchValue={searchValue}
           handleChangeSearch={(e) => setSearchValue(e.target.value)}
-          handleChangeCurrencies={(e) => setTypeSearch(e.target.value)}
+          handleChangeCurrencies={(
+            e: React.ChangeEvent<{ name?: string; value: unknown }>,
+          ) => setTypeSearch(e.target.value as string)}
           currencyValue={typeSearch}
           handleSubmit={handleSubmit}
         />
@@ -79,7 +82,7 @@ const Home = () => {
       <section
         className="relative w-full h-auto items-center justify-center px-4 md:px-8 lg:px-16"
         style={{
-          backgroundImage: `url(${homeBackground})`,
+          backgroundImage: `url('/images/home/home-bg.png')`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}
@@ -91,7 +94,7 @@ const Home = () => {
           <h3 className="text-[16px] md:text-[25px] font-oswald text-primaryText mb-5 lg:mb-10">
             Mang đậm chất ẩm thực Việt Nam
           </h3>
-          <SpecialityCarousel SpecialityFoods={data?.specialtyFoods} />
+          <SpecialityCarousel SpecialityFoods={data?.specialtyFoods || []} />
         </div>
 
         <div className="flex flex-col justify-center text-center mt-10">
@@ -134,7 +137,7 @@ const Home = () => {
       <section
         className="relative w-full h-auto items-center p-6 md:py-20 md:px-16 mt-20"
         style={{
-          backgroundImage: `url(${recommend})`,
+          backgroundImage: `url('/images/home/recommend.png')`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}
@@ -146,9 +149,9 @@ const Home = () => {
           <div className="flex-1 h-1 rounded-e-md bg-primary mb-14 mt-14"></div>
         </div>
 
-        {/* <div className='mx-auto max-w-[1100px] max-md:px-12'>
+        <div className="mx-auto max-w-[1100px] max-md:px-12">
           <RecommendCarousel restaurants={data?.restaurants || []} />
-        </div> */}
+        </div>
       </section>
     </main>
   )

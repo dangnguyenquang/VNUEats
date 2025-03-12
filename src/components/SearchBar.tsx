@@ -1,5 +1,16 @@
-import { TextField } from '@mui/material'
-import MenuItem from '@mui/material/MenuItem'
+'use client'
+
+import { MenuItem, TextField } from '@mui/material'
+import { useRouter } from 'next/navigation'
+import { ChangeEvent, FC } from 'react'
+
+interface SearchBarProps {
+  searchValue: string
+  handleChangeSearch: (e: ChangeEvent<HTMLInputElement>) => void
+  handleChangeCurrencies: (e: ChangeEvent<{ name?: string; value: unknown }>) => void
+  currencyValue?: string
+  handleSubmit: () => void
+}
 
 const currencies = [
   {
@@ -12,21 +23,15 @@ const currencies = [
   },
 ]
 
-interface Props {
-  searchValue: string
-  handleChangeSearch: (e: React.ChangeEvent<HTMLInputElement>) => void
-  handleChangeCurrencies: (e: React.ChangeEvent<HTMLInputElement>) => void
-  currencyValue: string
-  handleSubmit: () => void
-}
-
-const SearchBar = ({
+const SearchBar: FC<SearchBarProps> = ({
   searchValue,
   handleChangeSearch,
   handleChangeCurrencies,
   currencyValue = 'restaurant',
   handleSubmit,
-}: Props) => {
+}) => {
+  const router = useRouter()
+
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
       handleSubmit()

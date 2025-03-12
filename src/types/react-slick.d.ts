@@ -1,6 +1,6 @@
 // src/types/react-slick.d.ts
 declare module 'react-slick' {
-    import { Component } from 'react'
+    import { Component, ReactNode } from 'react'
 
     interface Settings {
         dots?: boolean
@@ -11,8 +11,14 @@ declare module 'react-slick' {
         autoplay?: boolean
         autoplaySpeed?: number
         arrows?: boolean
+        pauseOnHover?: boolean
+        nextArrow?: ReactNode // Custom Next Arrow
+        prevArrow?: ReactNode // Custom Previous Arrow
+        centerMode?: boolean
+        centerPadding?: string
+        initialSlide?: number
         responsive?: Array<{ breakpoint: number; settings: Partial<Settings> }>
     }
 
-    export default class Slider extends Component<{ settings?: Settings }> {}
+    export default class Slider extends Component<Settings> {}
 }
