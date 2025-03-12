@@ -33,7 +33,7 @@ export default function ContactInstructions() {
           <section className="max-w-[1150px] mt-10">
             <p className="text-[20px] font-light">
               Chúng tôi luôn sẵn sàng hỗ trợ quý khách hàng mọi lúc, mọi nơi. Nếu quý
-              khách cần liên hệ với Yummy về các vấn đề liên quan đến đơn hàng, dịch vụ
+              khách cần liên hệ với YummyVNU về các vấn đề liên quan đến đơn hàng, dịch vụ
               hoặc bất kỳ thắc mắc nào khác, vui lòng tham khảo các phương thức dưới đây:
             </p>
 
@@ -58,8 +58,8 @@ export default function ContactInstructions() {
                 <ul className="list-disc pl-5 font-light">
                   <li>
                     <strong>Email hỗ trợ khách hàng:</strong>{' '}
-                    <a href="mailto:yummy2024@gmail.com" className="text-blue-600">
-                      yummy2024@gmail.com
+                    <a href="mailto:yummyvnu2025@gmail.com" className="text-blue-600">
+                      yummyvnu2025@gmail.com
                     </a>
                   </li>
                   <li>
@@ -75,8 +75,8 @@ export default function ContactInstructions() {
                 <h2>Quy trình xử lý khiếu nại</h2>
                 <ul className="list-disc pl-5 font-light">
                   <li>
-                    <strong>Bước 1:</strong> Quý khách liên hệ với Yummy qua tổng đài hoặc
-                    email.
+                    <strong>Bước 1:</strong> Quý khách liên hệ với YummyVNU qua tổng đài
+                    hoặc email.
                   </li>
                   <li>
                     <strong>Bước 2:</strong> Đội ngũ hỗ trợ tiếp nhận và xác minh thông
@@ -94,7 +94,7 @@ export default function ContactInstructions() {
             </ol>
             <div className="mt-10 text-[25px] font-bold text-center">
               Cảm ơn quý khách đã tin tưởng và sử dụng dịch vụ của{' '}
-              <strong className="text-secondary text-[30px]">Yummy</strong>. Đội ngũ hỗ
+              <strong className="text-secondary text-[30px]">YummyVNU</strong>. Đội ngũ hỗ
               trợ của chúng tôi luôn sẵn sàng lắng nghe và đồng hành cùng quý khách!
             </div>
           </section>

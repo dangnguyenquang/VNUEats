@@ -1,4 +1,4 @@
-import RestaurantCard from '~/components/ui/RestaurantCard'
+import RestaurantCard from '../../../../components/ui/RestaurantCard.tsx'
 
 const RestaurantList = ({ Restaurants }) => {
     return (
