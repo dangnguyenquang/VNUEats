@@ -7,7 +7,6 @@ interface EmailTextFieldProps {
   whiteBg?: boolean
   value: string
   handleChange: (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void
-  autoComplete?: string
 }
 
 const EmailTextField: React.FC<EmailTextFieldProps> = ({
@@ -16,7 +15,6 @@ const EmailTextField: React.FC<EmailTextFieldProps> = ({
   whiteBg = false,
   value,
   handleChange,
-  autoComplete = 'off',
 }) => {
   const [error, setError] = useState<boolean>(false)
 
@@ -51,7 +49,6 @@ const EmailTextField: React.FC<EmailTextFieldProps> = ({
         required
         error={error}
         helperText={error ? 'Vui lòng nhập địa chỉ email hợp lệ' : ''}
-        autoComplete={autoComplete}
       />
     </div>
   )

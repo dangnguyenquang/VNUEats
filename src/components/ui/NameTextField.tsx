@@ -7,7 +7,6 @@ interface NameTextFieldProps {
   whiteBg?: boolean
   value: string
   handleChange: (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void
-  autoComplete?: string
 }
 
 const NameTextField: React.FC<NameTextFieldProps> = ({
@@ -16,7 +15,6 @@ const NameTextField: React.FC<NameTextFieldProps> = ({
   whiteBg = false,
   value,
   handleChange,
-  autoComplete = 'off',
 }) => {
   const [error, setError] = useState<boolean>(false)
 
@@ -62,7 +60,6 @@ const NameTextField: React.FC<NameTextFieldProps> = ({
             : ''
         }
         inputProps={{ inputMode: 'text' }}
-        autoComplete={autoComplete}
       />
     </div>
   )

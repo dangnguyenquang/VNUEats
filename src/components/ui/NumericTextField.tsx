@@ -7,7 +7,6 @@ interface NumericTextFieldProps {
   whiteBg?: boolean
   value: string
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void
-  autoComplete?: string
 }
 
 const NumericTextField: React.FC<NumericTextFieldProps> = ({
@@ -16,7 +15,6 @@ const NumericTextField: React.FC<NumericTextFieldProps> = ({
   whiteBg = false,
   value,
   handleChange,
-  autoComplete = 'off',
 }) => {
   const [error, setError] = useState<boolean>(false)
 
@@ -54,7 +52,6 @@ const NumericTextField: React.FC<NumericTextFieldProps> = ({
         error={error}
         helperText={error ? 'Trường này là bắt buộc' : ''}
         inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
-        autoComplete={autoComplete}
       />
     </div>
   )

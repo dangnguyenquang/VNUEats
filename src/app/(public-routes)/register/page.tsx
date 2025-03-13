@@ -1,5 +1,6 @@
 'use client'
 
+import LoginModal from '@/components/LoginModal'
 import { Button } from '@/components/ui/Button'
 import EmailTextField from '@/components/ui/EmailTextField'
 import NameTextField from '@/components/ui/NameTextField'
@@ -8,6 +9,8 @@ import PasswordTextField from '@/components/ui/PasswordTextField'
 import RequiredTextField from '@/components/ui/RequiredTextField'
 import { PATH_NAME } from '@/configs/pathName'
 import authApi from '@/services/axios/actions/auth.action'
+import useAuth from '@/stores/useAuth'
+import { User } from '@/types/api/auth'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
@@ -20,10 +23,13 @@ const CustomerRegisterForm = () => {
   const [address, setAddress] = useState('')
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+  const { user, isAuth } = useAuth()
+
   const router = useRouter()
 
   const isValidEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
   const isValidPhone = (phone: string) => /^[0-9]{10,11}$/.test(phone)
+  const [userInfo, setUserInfo] = useState<User | null>(user)
 
   const handleCustomerRegister = async () => {
     if (!isValidEmail(email)) {
@@ -35,8 +41,7 @@ const CustomerRegisterForm = () => {
       return
     }
 
-    const formData = new FormData()
-    const infoCustomer = JSON.stringify({
+    const infoCustomer = {
       name,
       role: 'customer',
       address,
@@ -44,15 +49,17 @@ const CustomerRegisterForm = () => {
       name_account: username,
       email,
       phone,
-    })
-    formData.append('infoAccount', infoCustomer)
+    }
+
+    const formData = new FormData()
+    formData.append('infoAccount', JSON.stringify(infoCustomer))
+    formData.append('otp', '1111')
 
     try {
       await authApi.customerRegister(formData)
       toast.success('Đăng ký thành công, hãy đăng nhập lại!')
       router.push(PATH_NAME.HOME)
     } catch (error) {
-      console.error(error)
       toast.error('Đã xảy ra lỗi trong quá trình đăng ký!')
     }
   }
@@ -113,7 +120,9 @@ const CustomerRegisterForm = () => {
 
         <div className="text-primaryText text-center sm:text-left">
           Bạn đã có tài khoản?
-          <Button variant="ghost">Đăng nhập ngay</Button>
+          <Button variant="ghost">
+            <LoginModal setUserInfo={(user) => setUserInfo(user)}>Đăng nhập</LoginModal>
+          </Button>
         </div>
       </div>
     </div>
