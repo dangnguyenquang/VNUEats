@@ -48,7 +48,7 @@ const Sidebar = ({ isOpen, toggleSidebar }: SidebarProps) => {
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
         style={{
-          backgroundImage: 'url("src/assets/images/bg-login.png")',
+          backgroundImage: 'url("/images/bg-login.png")',
         }}
       >
         <div>
