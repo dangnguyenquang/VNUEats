@@ -46,7 +46,7 @@ const Home = () => {
       >
         <div className="mx-auto max-w-[350px] md:max-w-[650px] lg:max-w-[950px] flex flex-col gap-6">
           <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-transparent opacity-30 rounded"></div>
-          <h1 className="mx-auto font-oswald text-[35px] md:text-[60px] lg:text-[90px] text-primaryText text-center lg:leading-[116px]">
+          <h1 className="mx-auto font-oswald text-[35px] md:text-[60px] lg:text-[90px] text-primaryText text-center lg:leading-[116px] font-normal">
             Ăn ngon sống khỏe tươi trẻ mỗi ngày!
           </h1>
           <div className="hidden md:block">
@@ -60,7 +60,7 @@ const Home = () => {
               handleSubmit={handleSubmit}
             />
           </div>
-          <h2 className="text-[16px] lg:text-[20px] font-oswald text-center mx-auto py-4 hidden md:block">
+          <h2 className="font-normal text-[16px] lg:text-[20px] font-oswald text-center mx-auto py-4 hidden md:block">
             Hãy trải nghiệm dịch vụ đặt món ăn với <strong>Yummy</strong> - Việc đặt món
             ăn chưa bao giờ là dễ dàng đến như vậy!
           </h2>
