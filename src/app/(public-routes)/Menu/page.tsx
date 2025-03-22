@@ -17,7 +17,8 @@ import { Suspense } from 'react'
 import CategroryFilter from './_components/CategroryFilter'
 import DistrictFilter from './_components/DistrictFilter'
 import RestaurantList from './_components/RestaurantList'
-
+import filterIcon from "../../../assets/images/menu/filter_icon.svg"
+import Image from 'next/image'
 const MenuPage = () => {
   return (
     <Suspense fallback={<p>Loading...</p>}>
@@ -78,7 +79,6 @@ const MenuContent = () => {
 
   // render lại web khi thay đổi giá trị của filter hoặc page
   useEffect(() => {
-    setPage(1)
     handleSubmitSearch()
     handleSearch()
   }, [filterList, page])
@@ -118,7 +118,6 @@ const MenuContent = () => {
 
   // xử lý submitSearch và cập nhật Param
   const handleSubmitSearch = () => {
-    setPage(1)
     if (debounceRef.current !== null) {
       clearTimeout(debounceRef.current)
     }
@@ -161,6 +160,7 @@ const MenuContent = () => {
   // District
   const [selectedDistricts, setSelectedDistricts] = useState<string[]>([])
   const handleSelectDistricts = (event: SelectChangeEvent<string>) => {
+    setPage(1)
     const district = event.target.value
     setSelectedDistricts((prevSelected) =>
       prevSelected.includes(district)
@@ -183,6 +183,7 @@ const MenuContent = () => {
   // categrory
   const [selectedCategories, setSelectedCategories] = useState<string[]>([])
   const handleSelectCategories = (event: SelectChangeEvent<string>) => {
+    setPage(1)
     const category = event.target.value
     setSelectedCategories((prevSelected) =>
       prevSelected.includes(category)
@@ -203,6 +204,7 @@ const MenuContent = () => {
   // hook xử lý select filter quán bán chạy nhất/ quán mới nhất
   const [selectedRestaurantFilter, setSelectedRestaurantFilter] = useState('Best seller')
   const handleChangeSelect = (event: SelectChangeEvent<string>) => {
+    setPage(1)
     setSelectedRestaurantFilter(event.target.value)
     setFilterList((prevFilterList) => ({
       ...prevFilterList,
@@ -213,6 +215,7 @@ const MenuContent = () => {
   // hook xử lý filter lọc theo số sao
   const [countStar, setCountStar] = useState(3)
   const handleRating = (event: React.SyntheticEvent, newValue: number | null) => {
+    setPage(1)
     if (newValue !== null) {
       setCountStar(newValue)
       setFilterList((prevFilterList) => ({
@@ -223,6 +226,7 @@ const MenuContent = () => {
   }
 
   const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setPage(1)
     setIsFilterRating(event.target.checked)
   }
 
@@ -274,7 +278,7 @@ const MenuContent = () => {
         <div className="flex gap-[30px] min-w-[355px]">
           <div className="2xl:min-w-[300px] min-w-[210px] lg:min-w-[230px]">
             <div className="bg-primary rounded-t-[20px] h-[95px] justify-center items-center flex gap-1">
-              <img src="../src/assets/icons/menu/filter_icon.svg" alt="" />
+              <Image src={filterIcon} alt='Icon của bộ lọc'></Image>
               <div className="text-accent font-bold text-[18px] 2xl:text-[25px] uppercase text-center">
                 Bộ lọc tìm kiếm
               </div>
