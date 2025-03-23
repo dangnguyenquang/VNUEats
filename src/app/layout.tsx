@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'VNUEats – Khám phá ẩm thực làng đại học',
+  title: 'vnuEats – Khám phá ẩm thực làng đại học',
   description:
-    'Khám phá những quán ăn ngon, không thể bỏ lỡ tại làng Đại Học Thủ Đức. Danh sách các quán ăn nổi bật tại làng Đại Học Thủ Đức dành cho sinh viên. Ngon, rẻ, sạch – cùng VNUEats khám phá ngay!',
+    'Khám phá những quán ăn ngon, không thể bỏ lỡ tại làng Đại Học Thủ Đức. Danh sách các quán ăn nổi bật tại làng Đại Học Thủ Đức dành cho sinh viên. Ngon, rẻ, sạch – cùng vnuEats khám phá ngay!',
   keywords: [
     'ăn vặt làng đại học',
     'ẩm thực sinh viên',
@@ -31,25 +31,25 @@ export const metadata: Metadata = {
     'quán ăn ngon làng đại học Thủ Đức',
   ],
   openGraph: {
-    title: 'VNUEats – Khám phá ẩm thực làng đại học',
+    title: 'vnuEats – Khám phá ẩm thực làng đại học',
     description:
-      'Khám phá những quán ăn ngon, không thể bỏ lỡ tại làng Đại Học Thủ Đức. Danh sách các quán ăn nổi bật tại làng Đại Học Thủ Đức dành cho sinh viên. Ngon, rẻ, sạch – cùng VNUEats khám phá ngay!',
+      'Khám phá những quán ăn ngon, không thể bỏ lỡ tại làng Đại Học Thủ Đức. Danh sách các quán ăn nổi bật tại làng Đại Học Thủ Đức dành cho sinh viên. Ngon, rẻ, sạch – cùng vnuEats khám phá ngay!',
     url: 'https://vnueats.com',
     images: [
       {
         url: 'https://i.pinimg.com/736x/f4/00/e6/f400e61ef9f778657b1f843a589fbe2d.jpg',
         width: 1200,
         height: 630,
-        alt: 'VNUEats – Địa điểm ăn uống ngon rẻ cho sinh viên',
+        alt: 'vnuEats – Địa điểm ăn uống ngon rẻ cho sinh viên',
       },
     ],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'VNUEats – Khám phá ẩm thực làng đại học',
+    title: 'vnuEats – Khám phá ẩm thực làng đại học',
     description:
-      'Khám phá những quán ăn ngon, không thể bỏ lỡ tại làng Đại Học Thủ Đức. Danh sách các quán ăn nổi bật tại làng Đại Học Thủ Đức dành cho sinh viên. Ngon, rẻ, sạch – cùng VNUEats khám phá ngay!',
+      'Khám phá những quán ăn ngon, không thể bỏ lỡ tại làng Đại Học Thủ Đức. Danh sách các quán ăn nổi bật tại làng Đại Học Thủ Đức dành cho sinh viên. Ngon, rẻ, sạch – cùng vnuEats khám phá ngay!',
     images: ['https://i.pinimg.com/736x/f4/00/e6/f400e61ef9f778657b1f843a589fbe2d.jpg'],
   },
   alternates: {
