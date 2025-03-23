@@ -342,7 +342,7 @@ const MenuContent = () => {
           )}
 
           {/* Kết quả tìm kiếm */}
-          <div className='w-full'>
+          <div className="w-full">
             {Restaurants ? (
               <RestaurantList Restaurants={Restaurants} isFilterOpen={isFilterOpen} />
             ) : (
