@@ -278,7 +278,7 @@ const MenuContent = () => {
         </div>
 
         {/* ================================================= */}
-        <div className="flex gap-[30px] min-w-[355px] justify-center">
+        <div className="flex gap-[30px] min-w-[355px]x">
           {isFilterOpen && (
             <div className="2xl:min-w-[300px] min-w-[210px] lg:min-w-[230px]">
               <div className="bg-primary rounded-t-[20px] h-[95px] justify-center items-center flex gap-1">
@@ -342,7 +342,7 @@ const MenuContent = () => {
           )}
 
           {/* Kết quả tìm kiếm */}
-          <div>
+          <div className='w-full'>
             {Restaurants ? (
               <RestaurantList Restaurants={Restaurants} isFilterOpen={isFilterOpen} />
             ) : (

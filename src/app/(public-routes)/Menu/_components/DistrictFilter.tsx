@@ -1,10 +1,15 @@
-import { Button } from '@mui/material'
-import Checkbox from '@mui/material/Checkbox'
-import FormControlLabel from '@mui/material/FormControlLabel'
-import FormGroup from '@mui/material/FormGroup'
-import { useState } from 'react'
+import { Button } from '@mui/material';
+import Checkbox from '@mui/material/Checkbox';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormGroup from '@mui/material/FormGroup';
+import { useState } from 'react';
 
-const DistrictList = [
+type DistrictFilterProps = {
+    selectedDistricts: string[];
+    handleSelectDistricts: (event: React.ChangeEvent<HTMLInputElement>) => void;
+};
+
+const DistrictList: string[] = [
     'Quận 1',
     'Quận 3',
     'Quận 4',
@@ -22,32 +27,28 @@ const DistrictList = [
     'Quận Gò Vấp',
     'Quận Phú Nhuận',
     'Thành phố Thủ Đức',
-]
+];
 
-const DistrictFilter = ({ selectedDistricts, handleSelectDistricts }) => {
-    const [showIndex, setShowIndex] = useState(5)
+const DistrictFilter: React.FC<DistrictFilterProps> = ({ selectedDistricts, handleSelectDistricts }) => {
+    const [showIndex, setShowIndex] = useState<number>(5);
     const handleCollapse = () => {
-        setShowIndex(showIndex === 5 ? DistrictList.length : 5)
-    }
+        setShowIndex(showIndex === 5 ? DistrictList.length : 5);
+    };
     return (
         <div>
             <div className="text-[20px] text-primaryText font-bold">Lọc theo khu vực</div>
             <FormGroup>
                 {DistrictList.slice(0, showIndex).map((district) => (
                     <FormControlLabel
+                        key={district}
                         control={
                             <Checkbox
-                                sx={{
-                                    '&.Mui-checked': {
-                                        color: '#7D0600',
-                                    },
-                                }}
+                                sx={{ '&.Mui-checked': { color: '#7D0600' } }}
                                 onChange={handleSelectDistricts}
                                 value={district}
                                 checked={selectedDistricts.includes(district)}
                             />
                         }
-                        key={district}
                         label={district}
                         className="text-primaryText"
                     />
@@ -59,7 +60,7 @@ const DistrictFilter = ({ selectedDistricts, handleSelectDistricts }) => {
                 </div>
             </Button>
         </div>
-    )
-}
+    );
+};
 
-export default DistrictFilter
+export default DistrictFilter;
