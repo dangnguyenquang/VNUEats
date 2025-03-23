@@ -1,4 +1,4 @@
-import RestaurantCard from '../../../../components/ui/RestaurantCard.tsx';
+import RestaurantCard from '../../../../components/ui/RestaurantCard.tsx'
 
 const RestaurantList = ({ Restaurants, isFilterOpen }) => {
     return isFilterOpen ? (
@@ -29,7 +29,7 @@ const RestaurantList = ({ Restaurants, isFilterOpen }) => {
                 </div>
             ))}
         </div>
-    );
-};
+    )
+}
 
-export default RestaurantList;
+export default RestaurantList

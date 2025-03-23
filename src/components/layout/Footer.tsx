@@ -1,11 +1,11 @@
+import { PATH_NAME } from '@/configs/pathName'
 import ApartmentIcon from '@mui/icons-material/Apartment'
 import EmailIcon from '@mui/icons-material/Email'
 import FmdGoodIcon from '@mui/icons-material/FmdGood'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
-import Link from 'next/link'
-import logo_vnuEats from "../../assets/icons/logo.svg"
-import { PATH_NAME } from '@/configs/pathName'
 import Image from 'next/image'
+import Link from 'next/link'
+import logo_vnuEats from '../../assets/icons/logo.svg'
 
 const Footer = () => {
   const scrollToTop = () => {

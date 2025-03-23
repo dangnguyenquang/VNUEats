@@ -207,9 +207,10 @@ export default function AboutUs() {
               dân khu vực làng đại học. Chúng tôi mang đến danh sách những đặc sản làng
               đại học hấp dẫn, từ các món ăn vặt nổi tiếng đến những bữa ăn đầy đủ dinh
               dưỡng với giá cả hợp lý. <br />
-              <strong>vnuEats</strong> cam kết mang đến trải nghiệm đặt món nhanh chóng, an toàn và tiện
-              lợi. Chỉ với vài cú click, bạn đã có thể đặt ngay những món ngon ở Làng Đại học Thủ đức và món ăn sẽ được giao
-              tận nơi, đảm bảo chất lượng và giá cả hợp lý cho bạn.
+              <strong>vnuEats</strong> cam kết mang đến trải nghiệm đặt món nhanh chóng,
+              an toàn và tiện lợi. Chỉ với vài cú click, bạn đã có thể đặt ngay những món
+              ngon ở Làng Đại học Thủ đức và món ăn sẽ được giao tận nơi, đảm bảo chất
+              lượng và giá cả hợp lý cho bạn.
             </p>
             <button
               className="px-[30px] py-[15px] bg-primary rounded-[100px] text-accent text-[11px] md:text-[15px] xl:text-[20px] transition-all duration-300 hover:bg-accent hover:text-primary hover:shadow-lg mt-[20px]"

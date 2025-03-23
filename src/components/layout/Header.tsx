@@ -1,16 +1,16 @@
 'use client'
 
+import { PATH_NAME } from '@/configs/pathName'
+import useAuth from '@/stores/useAuth'
 import { User } from '@/types/api/auth'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import logo_vnuEats from '../../assets/icons/logo.svg'
+import AccountMenu from '../AccountDropdown'
 import LoginModal from '../LoginModal'
 import { Button } from '../ui/Button'
-import Image from 'next/image'
-import { PATH_NAME } from '@/configs/pathName'
-import useAuth from '@/stores/useAuth'
-import AccountMenu from '../AccountDropdown'
-import logo_vnuEats from "../../assets/icons/logo.svg"
 
 interface HeaderProps {
   toggleSidebar: () => void

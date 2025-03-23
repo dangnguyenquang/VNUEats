@@ -1,5 +1,6 @@
 'use client'
-import { Pagination } from '@mui/material'
+import authApi from '@/services/axios/actions/auth.action'
+import { Pagination, SelectChangeEvent } from '@mui/material'
 import Box from '@mui/material/Box'
 import Checkbox from '@mui/material/Checkbox'
 import FormControl from '@mui/material/FormControl'
@@ -7,13 +8,10 @@ import MenuItem from '@mui/material/MenuItem'
 import Rating from '@mui/material/Rating'
 import Select from '@mui/material/Select'
 import Typography from '@mui/material/Typography'
-import { useRouter, useSearchParams } from 'next/navigation'
-import { useEffect, useRef, useState } from 'react'
-import SearchBar from '../../../components/ui/SearchBar'
-import authApi from '@/services/axios/actions/auth.action'
-import { SelectChangeEvent } from '@mui/material'
 import { ChevronDown, ChevronUp, Filter } from 'lucide-react'
-import { Suspense } from 'react'
+import { useRouter, useSearchParams } from 'next/navigation'
+import { Suspense, useEffect, useRef, useState } from 'react'
+import SearchBar from '../../../components/ui/SearchBar'
 import CategroryFilter from './_components/CategroryFilter'
 import DistrictFilter from './_components/DistrictFilter'
 import RestaurantList from './_components/RestaurantList'
@@ -248,8 +246,12 @@ const MenuContent = () => {
             className="flex items-center cursor-pointer px-[12px] py-[8px] bg-primary hover:bg-secondary rounded-full"
             onClick={() => setIsFilterOpen(!isFilterOpen)}
           >
-            <Filter size={30} color='white'/>
-            {isFilterOpen ? <ChevronUp size={25} color='white'/> : <ChevronDown size={24} color='white'/>}
+            <Filter size={30} color="white" />
+            {isFilterOpen ? (
+              <ChevronUp size={25} color="white" />
+            ) : (
+              <ChevronDown size={24} color="white" />
+            )}
           </div>
           {/* Search Bar */}
           <div className="w-full md:w-[50%] ">

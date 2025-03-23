@@ -45,9 +45,7 @@ export default function PrivacyPolicy() {
               <li className="mt-5 text-[20px] font-bold">
                 Phạm vi sử dụng thông tin
                 <ul className="list-disc pl-5 font-light">
-                  <li>
-                    Thông tin chỉ sử dụng trong nội bộ vnuEats để nâng cao dịch vụ.
-                  </li>
+                  <li>Thông tin chỉ sử dụng trong nội bộ vnuEats để nâng cao dịch vụ.</li>
                   <li>
                     Có thể chia sẻ với đối tác giao hàng nhưng không tiết lộ cho bên thứ
                     ba nếu không có sự đồng ý.
