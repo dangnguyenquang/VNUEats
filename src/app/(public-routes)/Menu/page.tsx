@@ -10,9 +10,8 @@ import Select from '@mui/material/Select'
 import Typography from '@mui/material/Typography'
 import { ChevronDown, ChevronUp, Filter } from 'lucide-react'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { useEffect, useRef, useState } from 'react'
+import { Suspense, useEffect, useRef, useState } from 'react'
 import SearchBar from '../../../components/SearchBar'
-import { Suspense } from 'react'
 import CategroryFilter from './_components/CategroryFilter'
 import DistrictFilter from './_components/DistrictFilter'
 import RestaurantList from './_components/RestaurantList'
@@ -238,7 +237,7 @@ const MenuContent = () => {
   }
 
   return (
-    <div className="w-full justify-items-center px-5 lg:px-10 xl:px-16 pb-10 pt-20">
+    <div className="w-full justify-items-center px-5 lg:px-10 xl:px-16 pb-10 pt-10 sm:pt-20">
       {/* Thanh Search */}
       <div className="w-full">
         {/* ================================================= */}
@@ -279,7 +278,7 @@ const MenuContent = () => {
         </div>
 
         {/* ================================================= */}
-        <div className="flex gap-[30px] min-w-[355px]">
+        <div className="flex gap-[30px] min-w-[355px] justify-center">
           {isFilterOpen && (
             <div className="2xl:min-w-[300px] min-w-[210px] lg:min-w-[230px]">
               <div className="bg-primary rounded-t-[20px] h-[95px] justify-center items-center flex gap-1">
@@ -343,7 +342,7 @@ const MenuContent = () => {
           )}
 
           {/* Kết quả tìm kiếm */}
-          <div className="justify-center">
+          <div>
             {Restaurants ? (
               <RestaurantList Restaurants={Restaurants} isFilterOpen={isFilterOpen} />
             ) : (
