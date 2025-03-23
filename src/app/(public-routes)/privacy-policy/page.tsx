@@ -4,20 +4,20 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Head>
-        <title>YummyVNU - Chính sách bảo mật</title>
+        <title>vnuEats - Chính sách bảo mật</title>
         <meta
           name="description"
-          content="Chính sách bảo mật thông tin của YummyVNU, cam kết bảo vệ dữ liệu cá nhân khách hàng khi sử dụng dịch vụ."
+          content="Chính sách bảo mật thông tin của vnuEats, cam kết bảo vệ dữ liệu cá nhân khách hàng khi sử dụng dịch vụ."
         />
         <meta
           name="keywords"
-          content="YummyVNU, bảo mật thông tin, chính sách quyền riêng tư"
+          content="vnuEats, bảo mật thông tin, chính sách quyền riêng tư"
         />
-        <meta name="author" content="YummyVNUVNU Team" />
-        <meta property="og:title" content="YummyVNUVNU - Chính sách bảo mật" />
+        <meta name="author" content="vnuEats Team" />
+        <meta property="og:title" content="vnuEats - Chính sách bảo mật" />
         <meta
           property="og:description"
-          content="Chính sách bảo mật thông tin của YummyVNU, cam kết bảo vệ dữ liệu cá nhân khách hàng."
+          content="Chính sách bảo mật thông tin của vnuEats, cam kết bảo vệ dữ liệu cá nhân khách hàng."
         />
         <meta property="og:type" content="website" />
       </Head>
@@ -46,7 +46,7 @@ export default function PrivacyPolicy() {
                 Phạm vi sử dụng thông tin
                 <ul className="list-disc pl-5 font-light">
                   <li>
-                    Thông tin chỉ sử dụng trong nội bộ YummyVNU để nâng cao dịch vụ.
+                    Thông tin chỉ sử dụng trong nội bộ vnuEats để nâng cao dịch vụ.
                   </li>
                   <li>
                     Có thể chia sẻ với đối tác giao hàng nhưng không tiết lộ cho bên thứ
@@ -80,13 +80,13 @@ export default function PrivacyPolicy() {
               <li className="mt-5 text-[20px] font-bold">
                 Thay đổi chính sách
                 <ul className="list-disc pl-5 font-light">
-                  <li>YummyVNU có quyền thay đổi chính sách và cập nhật trên website.</li>
+                  <li>vnuEats có quyền thay đổi chính sách và cập nhật trên website.</li>
                 </ul>
               </li>
             </ol>
             <p className="mt-10 text-[25px] font-bold text-center">
               Cảm ơn quý khách đã tin tưởng{' '}
-              <strong className="text-secondary text-[30px]">YummyVNU</strong>.
+              <strong className="text-secondary text-[30px]">vnuEats</strong>.
             </p>
           </section>
         </div>

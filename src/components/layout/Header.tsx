@@ -6,10 +6,11 @@ import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import LoginModal from '../LoginModal'
 import { Button } from '../ui/Button'
-
+import Image from 'next/image'
 import { PATH_NAME } from '@/configs/pathName'
 import useAuth from '@/stores/useAuth'
 import AccountMenu from '../AccountDropdown'
+import logo_vnuEats from "../../assets/icons/logo.svg"
 
 interface HeaderProps {
   toggleSidebar: () => void
@@ -41,19 +42,19 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
     >
       <div className="gap-[70px] flex items-center">
         <Link href={PATH_NAME.HOME}>
-          <img
-            src={'/icons/logo.svg'}
+          <Image
+            src={logo_vnuEats}
             alt="Yummy logo"
-            className="max-md:w-[90px] max-lg:w-[100px]"
+            className="max-md:w-[90px] max-lg:w-[100px] lg:w-[160px]"
           />
         </Link>
-        <div className="flex gap-10 max-md:hidden">
+        <div className="flex gap-10 max-md:hidden items-center ml-[20px]">
           <Link
             href={PATH_NAME.HOME}
             className={
               pathname === PATH_NAME.HOME
-                ? 'font-medium half-underline text-yellow-200'
-                : 'text-white font-medium hover:text-yellow-200'
+                ? 'font-medium half-underline text-yellow-200 text-[20px]'
+                : 'text-white font-medium hover:text-yellow-200 text-[20px]'
             }
           >
             Trang chủ
@@ -62,8 +63,8 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
             href={PATH_NAME.MENU}
             className={
               pathname === PATH_NAME.MENU
-                ? 'font-medium half-underline text-yellow-200'
-                : 'text-white font-medium hover:text-yellow-200'
+                ? 'font-medium half-underline text-yellow-200 text-[20px]'
+                : 'text-white font-medium hover:text-yellow-200 text-[20px]'
             }
           >
             Món ăn
@@ -72,8 +73,8 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
             href={PATH_NAME.ABOUTUS}
             className={
               pathname === PATH_NAME.ABOUTUS
-                ? 'font-medium half-underline text-yellow-200'
-                : 'text-white font-medium hover:text-yellow-200'
+                ? 'font-medium half-underline text-yellow-200 text-[20px]'
+                : 'text-white font-medium hover:text-yellow-200 text-[20px]'
             }
           >
             Giới thiệu

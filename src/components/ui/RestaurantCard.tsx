@@ -26,10 +26,12 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({
         <Image
           src={image}
           alt={restaurant}
-          layout="fill"
-          objectFit="cover"
-          className="rounded-t-[20px]"
+          fill
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
+          className="rounded-t-[20px] object-cover"
         />
+
         <div className="absolute top-2 right-2 justify-center items-center text-[12px] sm:text-[15px] font-medium flex gap-1 px-[5px] py-[3px] rounded-3xl min-w-[70px] bg-white bg-opacity-80">
           <p>{rating.toFixed(1)}/5</p>
           <StarRateIcon className="text-yellow-500" sx={{ fontSize: '18px' }} />
