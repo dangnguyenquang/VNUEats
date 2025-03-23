@@ -1,4 +1,4 @@
-import RestaurantCard from '../../../../components/ui/RestaurantCard.tsx'
+import RestaurantCard from '@/components/RestaurantCard'
 
 const RestaurantList = ({ Restaurants, isFilterOpen }) => {
     return isFilterOpen ? (

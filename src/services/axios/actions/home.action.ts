@@ -1,17 +1,18 @@
 import { client } from '@/services/axios'
+import { FoodData } from '@/types/api/home'
 import homeEndpoint from '../endpoints/home.endpoint'
 
 class HomeApi {
-    async getHome() {
+    async getHome(): Promise<FoodData> {
         try {
             const res = await client.get(homeEndpoint.gethome)
-            return res
+            return res.data
         } catch (error) {
-            console.log(error)
+            throw new Error('Đã có lỗi xảy ra')
         }
     }
 }
 
-const homeApiInstance = new HomeApi() // Đổi tên biến instance để tránh trùng tên
+const homeApiInstance = new HomeApi()
 
 export default homeApiInstance

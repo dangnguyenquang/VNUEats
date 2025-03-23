@@ -1,3 +1,5 @@
+'use client'
+
 import CloseIcon from '@mui/icons-material/Close'
 import Dialog from '@mui/material/Dialog'
 import DialogActions from '@mui/material/DialogActions'
@@ -11,7 +13,6 @@ import * as React from 'react'
 import { useState } from 'react'
 import { toast } from 'react-toastify'
 
-import Logo from '@/assets/icons/logo.svg'
 import { PATH_NAME } from '@/configs/pathName'
 import authApi from '@/services/axios/actions/auth.action'
 import useAuth from '@/stores/useAuth'
@@ -98,7 +99,7 @@ export default function LoginModal({
           '& .MuiPaper-root': {
             borderRadius: '12px',
             width: fullScreen ? '100%' : '520px',
-            backgroundImage: 'url("/assets/images/bg-login.png")',
+            backgroundImage: 'url("/images/bg-login.png")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
@@ -115,7 +116,7 @@ export default function LoginModal({
         <DialogContent className="px-10 flex flex-col">
           <DialogContentText>
             <img
-              src={Logo}
+              src={'/icons/logo.svg'}
               alt="Yummy logo"
               style={{ width: '200px', height: 'auto', marginBottom: '10px' }}
               className="mx-auto"
