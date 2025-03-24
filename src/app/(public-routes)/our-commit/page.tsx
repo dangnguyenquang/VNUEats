@@ -23,7 +23,7 @@ const OurCommit = () => {
         <meta property="og:url" content="https://vnueats.com/our-commit" />
       </Head>
       <section className="py-20 flex justify-center items-center">
-        <div className='px-10'>
+        <div className="px-10">
           <h1 className="text-[40px] sm:text-[60px] font-bold text-primary  text-center">
             CAM KẾT CỦA vnuEats
           </h1>

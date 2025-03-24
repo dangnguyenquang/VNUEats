@@ -150,10 +150,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon
-            icon={faTiktok}
-            style={{ color: 'white', fontSize: '30px' }}
-          />
+          <FontAwesomeIcon icon={faTiktok} style={{ color: 'white', fontSize: '30px' }} />
         </a>
       </div>
     </div>

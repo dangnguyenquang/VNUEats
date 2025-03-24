@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
       </Head>
 
       <main className="py-20 flex justify-center items-center">
-        <div className='px-10'>
+        <div className="px-10">
           <h1 className="text-[40px] sm:text-[60px] font-bold text-primary uppercase text-center">
             CHÍNH SÁCH BẢO MẬT THÔNG TIN
           </h1>
