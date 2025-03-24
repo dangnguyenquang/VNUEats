@@ -28,7 +28,7 @@ const FoodCard = ({
 }: Props) => {
   return (
     <Link href={`${PATH_NAME.DETAILS}/${restaurantId}?id=${id}`}>
-      <div className="group rounded-[20px] w-[200px] md:w-[235px] xl:w-[275px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] transition-transform duration-300 ease-in-out transform hover:translate-y-[-5px] cursor-pointer relative hover:shadow-[0_30px_30px_-15px_rgba(0,0,0,0.3)]">
+      <div className="group rounded-[20px] w-[160px] md:w-[235px] xl:w-[275px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] transition-transform duration-300 ease-in-out transform hover:translate-y-[-5px] cursor-pointer relative hover:shadow-[0_30px_30px_-15px_rgba(0,0,0,0.3)]">
         <div className="rounded-t-[20px] w-full h-[200px] md:h-[220px] xl:h-[246px] overflow-hidden group relative">
           <div
             className="w-full h-full bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-110"
@@ -41,7 +41,7 @@ const FoodCard = ({
             <StarRateIcon className="text-yellow-500" sx={{ fontSize: '18px' }} />
           </div>
           <div className="absolute inset-0 bottom-2 flex justify-center items-end">
-            <div className="text-center mx-auto text-sm md:text-[15px] font-medium px-[15px] py-[3px] rounded-3xl w-fit max-w-[200px] bg-white bg-opacity-80 shadow-md">
+            <div className="text-center mx-auto text-sm md:text-[15px] font-medium px-2 md:px-[15px] py-[3px] rounded-xl md:rounded-3xl md:w-fit w-[140px] md:max-w-[200px] bg-white bg-opacity-80 shadow-md">
               {truncateStringToWords(restaurant)}
             </div>
           </div>

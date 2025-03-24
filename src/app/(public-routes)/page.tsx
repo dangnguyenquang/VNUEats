@@ -94,7 +94,9 @@ const Home = () => {
           <h3 className="text-[16px] md:text-[25px] font-oswald text-primaryText mb-5 lg:mb-10">
             Mang đậm chất ẩm thực Việt Nam
           </h3>
-          <SpecialityCarousel SpecialityFoods={data?.specialtyFoods || []} />
+          <div className="overflow-hidden">
+            <SpecialityCarousel SpecialityFoods={data?.specialtyFoods || []} />
+          </div>
         </div>
 
         <div className="flex flex-col justify-center text-center mt-10">
