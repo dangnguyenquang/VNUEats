@@ -4,35 +4,34 @@ export default function OrderInstructions() {
   return (
     <>
       <Head>
-        <title>YummyVNU - Hướng dẫn đặt món</title>
+        <title>vnuEats - Hướng dẫn đặt món</title>
         <meta
           name="description"
-          content="Hướng dẫn chi tiết cách đặt món trên YummyVNU - Nhanh chóng, tiện lợi và dễ dàng."
+          content="Hướng dẫn chi tiết cách đặt món trên vnuEats - Nhanh chóng, tiện lợi và dễ dàng."
         />
         <meta
           name="keywords"
-          content="đặt món, YummyVNU, hướng dẫn đặt hàng, đặt món online, giao đồ ăn"
+          content="đặt món, vnuEats, hướng dẫn đặt hàng, đặt món online, giao đồ ăn"
         />
-        <meta name="author" content="YummyVNU Team" />
-        <meta property="og:title" content="YummyVNU - Hướng dẫn đặt món" />
+        <meta name="author" content="vnuEats Team" />
+        <meta property="og:title" content="vnuEats - Hướng dẫn đặt món" />
         <meta
           property="og:description"
-          content="Hướng dẫn chi tiết cách đặt món trên YummyVNU - Nhanh chóng, tiện lợi và dễ dàng."
+          content="Hướng dẫn chi tiết cách đặt món trên vnuEats - Nhanh chóng, tiện lợi và dễ dàng."
         />
-        {/* <meta property="og:image" content="/images/yummy-contact.jpg" /> */}
         <meta property="og:type" content="website" />
-        {/* <meta property="og:url" content="https://yummy.vn/lien-he" /> */}
+        <meta property="og:url" content="https://vnueats.com/order-instructions" />
       </Head>
       <div className="py-20 flex justify-center items-center">
-        <div className="max-w-[1150px] px-5">
-          <h1 className="text-[60px] font-bold text-primary uppercase text-center">
+        <div className="max-w-[1150px] px-10">
+          <h1 className="text-[40px] sm:text-[60px] font-bold text-primary uppercase text-center">
             HƯỚNG DẪN ĐẶT MÓN
           </h1>
           <section className="mt-10 text-[20px] font-light">
             <p>
-              Chào mừng bạn đến với <strong>YummyVNU</strong>! Chúng tôi luôn mong muốn
+              Chào mừng bạn đến với <strong>vnuEats</strong>! Chúng tôi luôn mong muốn
               mang lại trải nghiệm đặt món ăn trực tuyến nhanh chóng và tiện lợi. Dưới đây
-              là các bước hướng dẫn chi tiết giúp bạn đặt món trên YummyVNU một cách dễ
+              là các bước hướng dẫn chi tiết giúp bạn đặt món trên vnuEats một cách dễ
               dàng:
             </p>
           </section>
@@ -44,10 +43,10 @@ export default function OrderInstructions() {
                 </h2>
                 <p className="font-light text-[20px]">
                   <strong className="text-primary font-bold">Lưu ý:</strong> Để sử dụng
-                  YummyVNU đặt món ăn, bạn cần có tài khoản.
+                  vnuEats đặt món ăn, bạn cần có tài khoản.
                 </p>
                 <ul className="list-disc pl-5 font-light">
-                  <li className="font-light text-[20px]">Truy cập website YummyVNU.</li>
+                  <li className="font-light text-[20px]">Truy cập website vnuEats.</li>
                   <li className="font-light text-[20px]">
                     Chọn Đăng nhập nếu đã có tài khoản, hoặc Đăng ký nếu bạn là người dùng
                     mới.
@@ -114,18 +113,18 @@ export default function OrderInstructions() {
               <article>
                 <h2 className="mt-5 text-[25px] font-bold">7. Đánh giá và phản hồi</h2>
                 <p className="font-light text-[20px]">
-                  Hãy để lại đánh giá sau khi nhận hàng để giúp YummyVNU cải thiện chất
+                  Hãy để lại đánh giá sau khi nhận hàng để giúp vnuEats cải thiện chất
                   lượng dịch vụ.
                 </p>
               </article>
             </ol>
           </section>
-          <section className="mt-10 text-[25px] font-bold text-center">
+          <section className="mt-10 text-[20px] sm:text-[25px] font-bold text-center">
             <p>
-              <strong className="text-secondary text-[30px]">YummyVNU</strong> hy vọng
+              <strong className="text-secondary text-[30px]">vnuEats</strong> hy vọng
               hướng dẫn này giúp bạn dễ dàng đặt món và có trải nghiệm hài lòng. Chúc bạn
               có những bữa ăn ngon miệng và tiện lợi với{' '}
-              <strong className="text-secondary text-[30px]">YummyVNU</strong>.
+              <strong className="text-secondary text-[30px]">vnuEats</strong>.
             </p>
           </section>
         </div>
