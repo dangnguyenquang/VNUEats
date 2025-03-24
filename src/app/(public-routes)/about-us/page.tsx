@@ -181,7 +181,7 @@ export default function AboutUs() {
             <Image
               src={Image_mission_1}
               alt="Thực đơn bữa cơm gia đình tại quán cơm quê ở làng đại học."
-              className=" w-full  xl:w-[550px] xl:h-[420px] lg:h-[340px]  rounded-[20px]"
+              className=" w-full  xl:w-[550px] xl:h-[420px] lg:h-[340px]  rounded-[20px] max-lg:hidden"
             />
             <Image
               src={Image_mission_2}
@@ -224,7 +224,7 @@ export default function AboutUs() {
 
         {/*====================================== Giá trị vnuEats mang lại ======================================*/}
         <section
-          className="flex flex-col items-center min-w-screen min-h-[700px] py-[4.1vw] px-[5vw]"
+          className="flex flex-col items-center min-w-screen min-h-[700px] py-[4.1vw] px-[5vw] mt-5"
           style={{
             backgroundImage: `url(${Image_value.src})`,
             backgroundSize: 'cover',

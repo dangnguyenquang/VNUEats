@@ -282,7 +282,7 @@ const MenuContent = () => {
           {isFilterOpen && (
             <div className="2xl:min-w-[300px] min-w-[210px] lg:min-w-[230px]">
               <div className="bg-primary rounded-t-[20px] h-[95px] justify-center items-center flex gap-1">
-                <div className="text-accent font-bold text-[18px] 2xl:text-[25px] uppercase text-center">
+                <div className="text-accent font-bold text-[20px] sm:text-[25px] uppercase text-center">
                   Bộ lọc tìm kiếm
                 </div>
               </div>
