@@ -83,7 +83,7 @@ const OperatingPolicy: React.FC = () => {
       </Head>
       <div className="py-20 px-10 flex justify-center items-center">
         <div>
-          <h1 className="text-[30px] sm:text-[60px] font-bold text-primary uppercase text-center">
+          <h1 className="text-[40px] sm:text-[60px] font-bold text-primary uppercase text-center">
             CHÍNH SÁCH HOẠT ĐỘNG
           </h1>
           <div className="max-w-[1150px] mt-10">
@@ -104,7 +104,7 @@ const OperatingPolicy: React.FC = () => {
                 </li>
               ))}
             </ol>
-            <div className="mt-10 text-[25px] font-bold text-center">
+            <div className="mt-10 text-[20px] sm:text-[25px] font-bold text-center">
               Cảm ơn quý khách đã tin tưởng{' '}
               <strong className="text-secondary">vnuEats</strong>. Chúng tôi luôn nỗ lực
               để mang đến trải nghiệm dịch vụ tốt nhất.

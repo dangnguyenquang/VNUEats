@@ -100,9 +100,8 @@ export default function AboutUs() {
                       vnuEats
                     </strong>{' '}
                     là cộng đồng tin cậy cho mọi người có thể tìm kiếm, đánh giá và đặt
-                    món ăn ngon từ các địa điểm ăn uống trong khu vực làng đại học thành
-                    phố Hồ Chí Minh. Từ đó kết nối những thực khách đến với các món đặc
-                    sản làng đại học.
+                    món ăn ngon từ các địa điểm ăn uống trong khu vực Làng Đại học Thủ Đức. Từ đó kết nối những thực khách đến với các món đặc
+                    sản ở làng đại học một cách nhanh chóng và tiện lợi.
                   </p>
                 </div>
               </div>
@@ -125,7 +124,7 @@ export default function AboutUs() {
               </strong>
             </h1>
             <p
-              className={`font-medium italic text-center lg:text-left w-full lg:w-[55vw] ${styleTextDesc}`}
+              className={`font-light italic text-center lg:text-left w-full lg:w-[55vw] ${styleTextDesc}`}
               data-aos="fade-left"
             >
               “Chúng tôi - những con người sáng lập ra vnuEats, cùng với những ngọn lửa
@@ -199,15 +198,15 @@ export default function AboutUs() {
               <strong className={`text-secondary ${styleTextHeading} font-bold`}>
                 vnuEats
               </strong>{' '}
-              - Thưởng thức các món ăn đặc sản làng đại học tại Thủ Đức!
+              - Thưởng thức các món ăn đặc sản Làng Đại học tại Thủ Đức!
             </h1>
             <p className={`font-light ${styleTextDesc} mt-[30px] max-lg:text-center`}>
-              Bạn đang tìm kiếm món ngon làng đại học để thưởng thức? Hãy khám phá ngay
-              vnuEats – nền tảng đặt món ăn trực tuyến hàng đầu dành cho sinh viên và cư
-              dân khu vực làng đại học. Chúng tôi mang đến danh sách những đặc sản làng
+              Bạn đang tìm kiếm món ngon làng đại học để thưởng thức? Hãy khám phá ngay {' '}
+              <strong className='text-secondary'>vnuEats</strong> – nền tảng đặt món ăn trực tuyến hàng đầu dành cho sinh viên và cư
+              dân khu vực làng đại học Thủ Đức. Chúng tôi mang đến danh sách những món ăn đặc sản làng
               đại học hấp dẫn, từ các món ăn vặt nổi tiếng đến những bữa ăn đầy đủ dinh
-              dưỡng với giá cả hợp lý. <br />
-              <strong>vnuEats</strong> cam kết mang đến trải nghiệm đặt món nhanh chóng,
+              dưỡng với những mức giá hợp lý cho mọi người. <br />
+              <strong className='text-secondary'>vnuEats</strong> cam kết mang đến trải nghiệm đặt món nhanh chóng,
               an toàn và tiện lợi. Chỉ với vài cú click, bạn đã có thể đặt ngay những món
               ngon ở Làng Đại học Thủ đức và món ăn sẽ được giao tận nơi, đảm bảo chất
               lượng và giá cả hợp lý cho bạn.
@@ -246,13 +245,12 @@ export default function AboutUs() {
               >
                 <FontAwesomeIcon
                   icon={item.icon}
-                  size="4x"
-                  className="absolute top-[-2.125vw] left-1/2 transform -translate-x-1/2 "
+                  className="absolute top-[-4.125vw] sm:top-[-2.125vw] left-1/2 transform -translate-x-1/2 text-[40px] sm:text-[40px] md:text-[48px] lg:text-[56px] xl:text-[70px]"
                 />
-                <div className={`mt-[12px] text-center font-bold ${styleTextDesc}`}>
+                <div className={`mt-[20px] sm:mt-[12px] text-center font-bold text-[20px] lg:text-[25px]`}>
                   {item.title}
                 </div>
-                <p className="mt-[40px] text-center font-light sm:text-[12px] md:text-[16px] lg:text-[18px] xl:text-[20px]">
+                <p className="mt-[10px] lg:mt-[40px] text-center font-light sm:text-[12px] md:text-[16px] lg:text-[18px] xl:text-[20px]">
                   {item.desc}
                 </p>
               </div>

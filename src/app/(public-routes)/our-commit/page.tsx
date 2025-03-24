@@ -23,11 +23,11 @@ const OurCommit = () => {
         <meta property="og:url" content="https://vnueats.com/our-commit" />
       </Head>
       <section className="py-20 flex justify-center items-center">
-        <div>
-          <h1 className="text-[60px] font-bold text-primary  text-center">
+        <div className='px-10'>
+          <h1 className="text-[40px] sm:text-[60px] font-bold text-primary  text-center">
             CAM KẾT CỦA vnuEats
           </h1>
-          <p className="mb-10 text-primary font-medium text-[25px] text-center">
+          <p className="mb-10 text-primary font-medium text-[20px] sm:text-[25px] text-center">
             Chọn vnuEats - Chọn Trải Nghiệm Tốt Nhất
           </p>
           <div className="max-w-[1150px]">
@@ -72,7 +72,7 @@ const OurCommit = () => {
                 </ul>
               </li>
             </ol>
-            <p className="text-center mt-10 text-[25px] font-bold">
+            <p className="text-center mt-10 text-[20px] sm:text-[25px] font-bold">
               Với tất cả những cam kết trên,{' '}
               <strong className="text-secondary text-[30px]">vnuEats</strong> luôn là lựa
               chọn đáng tin cậy cho bữa ăn của bạn!

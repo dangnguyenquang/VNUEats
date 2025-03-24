@@ -24,8 +24,8 @@ export default function ContactInstructions() {
       </Head>
 
       <main className="py-20 flex justify-center items-center">
-        <div>
-          <h1 className="text-[60px] font-bold text-primary uppercase text-center">
+        <div className='px-10'>
+          <h1 className="text-[40px] sm:text-[60px] font-bold text-primary uppercase text-center">
             HƯỚNG DẪN LIÊN HỆ
           </h1>
 
@@ -91,7 +91,7 @@ export default function ContactInstructions() {
                 </ul>
               </li>
             </ol>
-            <div className="mt-10 text-[25px] font-bold text-center">
+            <div className="mt-10 text-[20px] sm:text-[25px] font-bold text-center">
               Cảm ơn quý khách đã tin tưởng và sử dụng dịch vụ của{' '}
               <strong className="text-secondary text-[30px]">vnuEats</strong>. Đội ngũ hỗ
               trợ của chúng tôi luôn sẵn sàng lắng nghe và đồng hành cùng quý khách!

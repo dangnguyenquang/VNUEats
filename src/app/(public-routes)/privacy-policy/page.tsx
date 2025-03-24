@@ -23,11 +23,11 @@ export default function PrivacyPolicy() {
       </Head>
 
       <main className="py-20 flex justify-center items-center">
-        <div>
-          <h1 className="text-[60px] font-bold text-primary uppercase text-center">
+        <div className='px-10'>
+          <h1 className="text-[40px] sm:text-[60px] font-bold text-primary uppercase text-center">
             CHÍNH SÁCH BẢO MẬT THÔNG TIN
           </h1>
-          <p className="mb-10 text-primary font-light text-[25px] text-center">
+          <p className="mb-10 text-primary font-light text-[20px] sm:text-[25px] text-center">
             Ngày có hiệu lực: 01/01/2025
           </p>
           <section className="max-w-[1150px]">
@@ -82,7 +82,7 @@ export default function PrivacyPolicy() {
                 </ul>
               </li>
             </ol>
-            <p className="mt-10 text-[25px] font-bold text-center">
+            <p className="mt-10 text-[20px] sm:text-[25px] font-bold text-center">
               Cảm ơn quý khách đã tin tưởng{' '}
               <strong className="text-secondary text-[30px]">vnuEats</strong>.
             </p>

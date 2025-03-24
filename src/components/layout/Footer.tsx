@@ -1,4 +1,7 @@
 import { PATH_NAME } from '@/configs/pathName'
+import { faTiktok } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Facebook, Instagram, YouTube } from '@mui/icons-material'
 import ApartmentIcon from '@mui/icons-material/Apartment'
 import EmailIcon from '@mui/icons-material/Email'
 import FmdGoodIcon from '@mui/icons-material/FmdGood'
@@ -118,6 +121,40 @@ const Footer = () => {
           <LocalPhoneIcon />
           <p className="text-sm">SDT: 0338963327</p>
         </div>
+      </div>
+
+      <div className="flex justify-end items-center gap-5">
+        <a
+          href="https://www.facebook.com/profile.php?id=61574616120300"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Facebook sx={{ color: 'white', fontSize: '30px' }} />
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCNMnKJHdce_AEamIH2LCz-g"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <YouTube sx={{ color: 'white', fontSize: '30px' }} />
+        </a>
+        <a
+          href="https://www.instagram.com/vnu.eats/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Instagram sx={{ color: 'white', fontSize: '30px' }} />
+        </a>
+        <a
+          href="https://www.tiktok.com/@it.inmyheart"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            icon={faTiktok}
+            style={{ color: 'white', fontSize: '30px' }}
+          />
+        </a>
       </div>
     </div>
   )

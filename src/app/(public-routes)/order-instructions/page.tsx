@@ -23,8 +23,8 @@ export default function OrderInstructions() {
         <meta property="og:url" content="https://vnueats.com/order-instructions" />
       </Head>
       <div className="py-20 flex justify-center items-center">
-        <div className="max-w-[1150px] px-5">
-          <h1 className="text-[60px] font-bold text-primary uppercase text-center">
+        <div className="max-w-[1150px] px-10">
+          <h1 className="text-[40px] sm:text-[60px] font-bold text-primary uppercase text-center">
             HƯỚNG DẪN ĐẶT MÓN
           </h1>
           <section className="mt-10 text-[20px] font-light">
@@ -119,7 +119,7 @@ export default function OrderInstructions() {
               </article>
             </ol>
           </section>
-          <section className="mt-10 text-[25px] font-bold text-center">
+          <section className="mt-10 text-[20px] sm:text-[25px] font-bold text-center">
             <p>
               <strong className="text-secondary text-[30px]">vnuEats</strong> hy vọng
               hướng dẫn này giúp bạn dễ dàng đặt món và có trải nghiệm hài lòng. Chúc bạn
