@@ -1,15 +1,16 @@
 'use client'
 
+import { PATH_NAME } from '@/configs/pathName'
+import useAuth from '@/stores/useAuth'
 import { User } from '@/types/api/auth'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import logo_vnuEats from '../../assets/icons/logo.svg'
+import AccountMenu from '../AccountDropdown'
 import LoginModal from '../LoginModal'
 import { Button } from '../ui/Button'
-
-import { PATH_NAME } from '@/configs/pathName'
-import useAuth from '@/stores/useAuth'
-import AccountMenu from '../AccountDropdown'
 
 interface HeaderProps {
   toggleSidebar: () => void
@@ -33,7 +34,7 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
 
   return (
     <div
-      className={`z-40 w-full fixed top-0 left-0 py-[13px] px-[30px] md:px-[40px] lg:px-[60px] flex justify-between items-center bg-primary transition-all duration-300 ${
+      className={`z-40 w-full fixed top-0 left-0 pt-[4px] pb-[10px] px-[30px] md:px-[40px] lg:px-[60px] flex justify-between items-center bg-primary transition-all duration-300 ${
         scrolled
           ? 'shadow-[0_4px_10px_rgba(0,0,0,0.2)] rounded-b-[20px]'
           : 'shadow-none rounded-b-none'
@@ -41,19 +42,19 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
     >
       <div className="gap-[70px] flex items-center">
         <Link href={PATH_NAME.HOME}>
-          <img
-            src={'/icons/logo.svg'}
+          <Image
+            src={logo_vnuEats}
             alt="Yummy logo"
-            className="max-md:w-[90px] max-lg:w-[100px]"
+            className="max-md:w-[90px] max-lg:w-[100px] lg:w-[140px]"
           />
         </Link>
-        <div className="flex gap-10 max-md:hidden">
+        <div className="flex gap-10 max-md:hidden items-center ml-[20px]">
           <Link
             href={PATH_NAME.HOME}
             className={
               pathname === PATH_NAME.HOME
-                ? 'font-medium half-underline text-yellow-200'
-                : 'text-white font-medium hover:text-yellow-200'
+                ? 'font-medium half-underline text-yellow-200 text-[18px]'
+                : 'text-white font-medium hover:text-yellow-200 text-[18px]'
             }
           >
             Trang chủ
@@ -62,8 +63,8 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
             href={PATH_NAME.MENU}
             className={
               pathname === PATH_NAME.MENU
-                ? 'font-medium half-underline text-yellow-200'
-                : 'text-white font-medium hover:text-yellow-200'
+                ? 'font-medium half-underline text-yellow-200 text-[18px]'
+                : 'text-white font-medium hover:text-yellow-200 text-[18px]'
             }
           >
             Món ăn
@@ -72,8 +73,8 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
             href={PATH_NAME.ABOUTUS}
             className={
               pathname === PATH_NAME.ABOUTUS
-                ? 'font-medium half-underline text-yellow-200'
-                : 'text-white font-medium hover:text-yellow-200'
+                ? 'font-medium half-underline text-yellow-200 text-[18px]'
+                : 'text-white font-medium hover:text-yellow-200 text-[18px]'
             }
           >
             Giới thiệu

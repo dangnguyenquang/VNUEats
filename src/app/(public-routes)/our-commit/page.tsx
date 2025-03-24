@@ -4,7 +4,7 @@ const OurCommit = () => {
   return (
     <>
       <Head>
-        <title>YummyVNU - Cam kết của Yummy</title>
+        <title>vnuEats - Cam kết của Yummy</title>
         <meta
           name="description"
           content="Yummy cam kết mang đến món ăn chất lượng, giá cả hợp lý và giao hàng nhanh chóng."
@@ -13,27 +13,26 @@ const OurCommit = () => {
           name="keywords"
           content="Yummy, đặt món ăn, giao hàng nhanh, thực phẩm chất lượng"
         />
-        <meta name="author" content="YummyVNU Team" />
-        <meta property="og:title" content="YummyVNU - Cam kết của Yummy" />
+        <meta name="author" content="vnuEats Team" />
+        <meta property="og:title" content="vnuEats - Cam kết của Yummy" />
         <meta
           property="og:description"
           content="Yummy cam kết mang đến món ăn chất lượng, giá cả hợp lý và giao hàng nhanh chóng."
         />
-        {/* <meta property="og:image" content="/images/yummy-contact.jpg" /> */}
         <meta property="og:type" content="website" />
-        {/* <meta property="og:url" content="https://yummy.vn/lien-he" /> */}
+        <meta property="og:url" content="https://vnueats.com/our-commit" />
       </Head>
       <section className="py-20 flex justify-center items-center">
-        <div>
-          <h1 className="text-[60px] font-bold text-primary  text-center">
-            CAM KẾT CỦA YummyVNU
+        <div className="px-10">
+          <h1 className="text-[40px] sm:text-[60px] font-bold text-primary  text-center">
+            CAM KẾT CỦA vnuEats
           </h1>
-          <p className="mb-10 text-primary font-medium text-[25px] text-center">
-            Chọn YummyVNU - Chọn Trải Nghiệm Tốt Nhất
+          <p className="mb-10 text-primary font-medium text-[20px] sm:text-[25px] text-center">
+            Chọn vnuEats - Chọn Trải Nghiệm Tốt Nhất
           </p>
           <div className="max-w-[1150px]">
             <p className="text-[20px] font-light">
-              Tại YummyVNU, chúng tôi cam kết mang đến trải nghiệm đặt món tốt nhất với
+              Tại vnuEats, chúng tôi cam kết mang đến trải nghiệm đặt món tốt nhất với
               chất lượng đảm bảo, giá cả hợp lý và giao hàng nhanh chóng.
             </p>
             <ol className="list-decimal pl-5">
@@ -73,9 +72,9 @@ const OurCommit = () => {
                 </ul>
               </li>
             </ol>
-            <p className="text-center mt-10 text-[25px] font-bold">
+            <p className="text-center mt-10 text-[20px] sm:text-[25px] font-bold">
               Với tất cả những cam kết trên,{' '}
-              <strong className="text-secondary text-[30px]">YummyVNU</strong> luôn là lựa
+              <strong className="text-secondary text-[30px]">vnuEats</strong> luôn là lựa
               chọn đáng tin cậy cho bữa ăn của bạn!
             </p>
           </div>

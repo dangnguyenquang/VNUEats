@@ -19,7 +19,7 @@ export default function DefaultLayout({ children }: { children: React.ReactNode 
       <div className="flex-col items-center w-full">
         <Header toggleSidebar={toggleSidebar} />
         <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-        <div className="mt-16">{children}</div>
+        <div className="mt-14">{children}</div>
         <Footer />
         {/* <Chatbot /> */}
       </div>

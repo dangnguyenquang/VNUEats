@@ -9,7 +9,7 @@ export const truncateStringToWords = (input: string, wordLimit: number = 5) => {
 
     const words = input.split(/\s+/)
     if (words.length > wordLimit) {
-        return words.slice(0, wordLimit).join(' ') + ' ...'
+        return words.slice(0, wordLimit).join(' ') + '...'
     }
 
     return input
