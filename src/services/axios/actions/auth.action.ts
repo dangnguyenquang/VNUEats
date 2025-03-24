@@ -54,6 +54,29 @@ class AuthApi {
         }
     }
 
+    async Search(
+        filterList: {
+            boroughRestaurant: string[]
+            nameRestaurant: string
+            nameFood: string
+            categories: string[]
+            starMedium: string
+            typeSort: string
+        },
+        page: number,
+    ) {
+        try {
+            const res = await client.post(
+                `${authEndpoint.search}?page=${page}`,
+                filterList,
+            )
+            return res
+        } catch (error) {
+            console.log(error)
+            throw new Error('Có lỗi xảy ra')
+        }
+    }
+
     async customerRegister(formData: FormData) {
         try {
             const res = await client.post(authEndpoint.register, formData, {
