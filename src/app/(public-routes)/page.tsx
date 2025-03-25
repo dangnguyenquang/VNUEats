@@ -47,7 +47,7 @@ const Home = () => {
         <div className="mx-auto max-w-[350px] md:max-w-[650px] lg:max-w-[950px] flex flex-col gap-6">
           <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-transparent opacity-30 rounded"></div>
           <h1 className="mx-auto font-oswald text-[35px] md:text-[60px] lg:text-[90px] text-primaryText text-center lg:leading-[116px] font-normal">
-            Ăn ngon sống khỏe tươi trẻ mỗi ngày!
+            Khám phá ẩm thực làng đại học Thủ Đức!
           </h1>
           <div className="hidden md:block">
             <SearchBar
@@ -94,7 +94,9 @@ const Home = () => {
           <h3 className="text-[16px] md:text-[25px] font-oswald text-primaryText mb-5 lg:mb-10">
             Mang đậm chất ẩm thực Việt Nam
           </h3>
-          <SpecialityCarousel SpecialityFoods={data?.specialtyFoods || []} />
+          <div className="overflow-hidden">
+            <SpecialityCarousel SpecialityFoods={data?.specialtyFoods || []} />
+          </div>
         </div>
 
         <div className="flex flex-col justify-center text-center mt-10">

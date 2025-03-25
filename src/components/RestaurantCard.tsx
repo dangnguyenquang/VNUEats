@@ -19,7 +19,7 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({
 }) => {
   return (
     <Link
-      href={`/restaurant/${id}`}
+      href={`/details/${id}`}
       className="rounded-[20px] h-[350px] md:h-[400px] w-full min-w-[80px] max-w-[220px] md:max-w-[260px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] cursor-pointer flex flex-col transition-transform duration-300 hover:scale-105"
     >
       <div className="rounded-t-[20px] w-full h-[200px] sm:h-[246px] flex flex-col justify-between relative overflow-hidden">

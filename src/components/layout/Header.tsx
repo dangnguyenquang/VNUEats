@@ -34,7 +34,7 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
 
   return (
     <div
-      className={`z-40 w-full fixed top-0 left-0 py-[13px] px-[30px] md:px-[40px] lg:px-[60px] flex justify-between items-center bg-primary transition-all duration-300 ${
+      className={`z-40 w-full fixed top-0 left-0 pt-[4px] pb-[10px] px-[30px] md:px-[40px] lg:px-[60px] flex justify-between items-center bg-primary transition-all duration-300 ${
         scrolled
           ? 'shadow-[0_4px_10px_rgba(0,0,0,0.2)] rounded-b-[20px]'
           : 'shadow-none rounded-b-none'
@@ -45,7 +45,7 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
           <Image
             src={logo_vnuEats}
             alt="Yummy logo"
-            className="max-md:w-[90px] max-lg:w-[100px] lg:w-[160px]"
+            className="max-md:w-[90px] max-lg:w-[100px] lg:w-[140px]"
           />
         </Link>
         <div className="flex gap-10 max-md:hidden items-center ml-[20px]">
@@ -53,8 +53,8 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
             href={PATH_NAME.HOME}
             className={
               pathname === PATH_NAME.HOME
-                ? 'font-medium half-underline text-yellow-200 text-[20px]'
-                : 'text-white font-medium hover:text-yellow-200 text-[20px]'
+                ? 'font-medium half-underline text-yellow-200 text-[18px]'
+                : 'text-white font-medium hover:text-yellow-200 text-[18px]'
             }
           >
             Trang chủ
@@ -63,8 +63,8 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
             href={PATH_NAME.MENU}
             className={
               pathname === PATH_NAME.MENU
-                ? 'font-medium half-underline text-yellow-200 text-[20px]'
-                : 'text-white font-medium hover:text-yellow-200 text-[20px]'
+                ? 'font-medium half-underline text-yellow-200 text-[18px]'
+                : 'text-white font-medium hover:text-yellow-200 text-[18px]'
             }
           >
             Món ăn
@@ -73,8 +73,8 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
             href={PATH_NAME.ABOUTUS}
             className={
               pathname === PATH_NAME.ABOUTUS
-                ? 'font-medium half-underline text-yellow-200 text-[20px]'
-                : 'text-white font-medium hover:text-yellow-200 text-[20px]'
+                ? 'font-medium half-underline text-yellow-200 text-[18px]'
+                : 'text-white font-medium hover:text-yellow-200 text-[18px]'
             }
           >
             Giới thiệu
