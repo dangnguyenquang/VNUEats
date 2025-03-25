@@ -346,7 +346,9 @@ const MenuContent = () => {
               <RestaurantList Restaurants={Restaurants} isFilterOpen={isFilterOpen} />
             ) : (
               <div className="flex justify-center">
-                <p className='text-[15px] sm:text-[20px] italic font-thin'>Không tìm thấy nhà hàng nào phù hợp với tiêu chí của bạn.</p>
+                <p className="text-[15px] sm:text-[20px] italic font-thin">
+                  Không tìm thấy nhà hàng nào phù hợp với tiêu chí của bạn.
+                </p>
               </div>
             )}
             <div className="flex justify-center mt-10">
