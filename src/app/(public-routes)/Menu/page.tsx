@@ -1,4 +1,5 @@
 'use client'
+import authApi from '@/services/axios/actions/auth.action'
 import { Pagination, SelectChangeEvent } from '@mui/material'
 import Box from '@mui/material/Box'
 import Checkbox from '@mui/material/Checkbox'
@@ -55,29 +56,29 @@ const MenuContent = () => {
     typeSort: 'Best seller',
   })
 
-  // const handleSearch = async () => {
-  //   try {
-  //     const res = await authApi.Search(filterList, page)
-  //     setRestaurants(res.data.restaurants)
-  //     if (res.data.objectPagination === null || res.data.objectPagination === undefined) {
-  //       setNumberPages({
-  //         currentPage: 0,
-  //         limit: 20,
-  //         skip: 0,
-  //         numberPages: 0,
-  //       })
-  //     } else {
-  //       setNumberPages(res.data.objectPagination)
-  //     }
-  //   } catch (error) {
-  //     console.log(error)
-  //   }
-  // }
+  const handleSearch = async () => {
+    try {
+      const res = await authApi.Search(filterList, page)
+      setRestaurants(res.data.restaurants)
+      if (res.data.objectPagination === null || res.data.objectPagination === undefined) {
+        setNumberPages({
+          currentPage: 0,
+          limit: 20,
+          skip: 0,
+          numberPages: 0,
+        })
+      } else {
+        setNumberPages(res.data.objectPagination)
+      }
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   // render lại web khi thay đổi giá trị của filter hoặc page
   useEffect(() => {
     handleSubmitSearch()
-    // handleSearch()
+    handleSearch()
   }, [filterList, page])
 
   const handlePageChange = (event: React.ChangeEvent<unknown>, page: number) => {
