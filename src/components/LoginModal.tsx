@@ -117,7 +117,7 @@ export default function LoginModal({
           <DialogContentText>
             <img
               src={'/icons/logo.svg'}
-              alt="Yummy logo"
+              alt="vnuEats logo"
               style={{ width: '200px', height: 'auto', marginBottom: '10px' }}
               className="mx-auto"
             />
