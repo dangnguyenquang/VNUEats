@@ -118,10 +118,24 @@ export default function RootLayout({
     },
   }
 
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'vnuEats',
+    url: 'https://vnueats.com',
+    logo: 'https://vnueats.com/favicon/favicon.ico',
+    sameAs: [
+      'https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fvnu.eats%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR2FG2jE2fXxI3NplG5iInzf0Uuq0RQzjr7cOQUkiDCjSV_p_kHNziDDw7E_aem_nswSMjhug8OKObYV4l9dzw&h=AT2RrJf0IuNGUF-dWUNY4quw-_M4u5R7CZAX25L9-jp7jIVevl2DBhUJ_9jQB4u2aEjzpZV0IzHtiu9Auv8lRYublYGaCUCN2OyXUTeM7RBeMHXXsyYd1weDsVxgLIuE90NT',
+      'https://l.facebook.com/l.php?u=https%3A%2F%2Ftiktok.com%2F%40it.inmyheart%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR1w-wL_xu3Hu5muyiHY8YgGhqqbqqcTXnfx1XA2iIPkVcmbTISGDHCExyk_aem_pMx5XLtylZher_biVdG2jA&h=AT0PmJnXf8-G2cbUJEXZeG9Le-vs59EPL_rIx4Mydo2LpAt8Jv4HuRPtsP9o1vMUTbFMlk6Z6fcBG3McBs26zNf-rUwmwPwgkdJUMnt2ke3vPQA1vcToRnytFV95q9V2COqg',
+      'https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutube.com%2F%40vnuEats%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR2FG2jE2fXxI3NplG5iInzf0Uuq0RQzjr7cOQUkiDCjSV_p_kHNziDDw7E_aem_nswSMjhug8OKObYV4l9dzw&h=AT1PHhSpQfkl0nzf6Kh0kwumxNP4yAVBoQK20WK7BT5PlFpj_1K2pWlO8m5ioYGw_QjeD2RthN_MJGbgmt-SVL5Jjq1C1wohF8qK4UgZ9mjdvMOvV85cQ0UG5pRkDk10EGpb',
+    ],
+  }
+
   return (
     <html lang="en">
       <head>
         <Script
+          id="breadcrumb-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
@@ -129,6 +143,11 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
         <Analytics />
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
       </body>
     </html>
   )
