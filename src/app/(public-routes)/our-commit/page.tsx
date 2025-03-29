@@ -4,20 +4,20 @@ const OurCommit = () => {
   return (
     <>
       <Head>
-        <title>vnuEats - Cam kết của Yummy</title>
+        <title>vnuEats - Cam kết của vnuEats</title>
         <meta
           name="description"
-          content="Yummy cam kết mang đến món ăn chất lượng, giá cả hợp lý và giao hàng nhanh chóng."
+          content="vnuEats cam kết mang đến món ăn chất lượng, giá cả hợp lý và giao hàng nhanh chóng."
         />
         <meta
           name="keywords"
-          content="Yummy, đặt món ăn, giao hàng nhanh, thực phẩm chất lượng"
+          content="vnuEats, đặt món ăn, giao hàng nhanh, thực phẩm chất lượng"
         />
         <meta name="author" content="vnuEats Team" />
-        <meta property="og:title" content="vnuEats - Cam kết của Yummy" />
+        <meta property="og:title" content="vnuEats - Cam kết của vnuEats" />
         <meta
           property="og:description"
-          content="Yummy cam kết mang đến món ăn chất lượng, giá cả hợp lý và giao hàng nhanh chóng."
+          content="vnuEats cam kết mang đến món ăn chất lượng, giá cả hợp lý và giao hàng nhanh chóng."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://vnueats.com/our-commit" />

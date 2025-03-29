@@ -18,6 +18,7 @@ import authApi from '@/services/axios/actions/auth.action'
 import useAuth from '@/stores/useAuth'
 import { User } from '@/types/api/auth'
 import { useRouter } from 'next/navigation'
+import logo_vnuEats from '../../assets/icons/logo.svg'
 import { Button } from './ui/Button'
 import PasswordTextField from './ui/PasswordTextField'
 import RequiredTextField from './ui/RequiredTextField'
@@ -116,8 +117,8 @@ export default function LoginModal({
         <DialogContent className="px-10 flex flex-col">
           <DialogContentText>
             <img
-              src={'/icons/logo.svg'}
-              alt="Yummy logo"
+              src={logo_vnuEats}
+              alt="vnuEats logo"
               style={{ width: '200px', height: 'auto', marginBottom: '10px' }}
               className="mx-auto"
             />

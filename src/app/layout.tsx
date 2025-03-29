@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
+import Script from 'next/script'
 import '../styles/globals.css'
 
 const geistSans = Geist({
@@ -19,16 +20,22 @@ export const metadata: Metadata = {
     'Khám phá những quán ăn ngon, không thể bỏ lỡ tại làng Đại Học Thủ Đức. Danh sách các quán ăn nổi bật tại làng Đại Học Thủ Đức dành cho sinh viên. Ngon, rẻ, sạch – cùng vnuEats khám phá ngay!',
   keywords: [
     'ăn vặt làng đại học',
-    'ẩm thực sinh viên',
     'quán ăn giá rẻ Thủ Đức',
     'món ngon sinh viên',
-    'địa điểm ăn uống',
-    'ẩm thực đường phố',
-    'review quán ăn sinh viên',
+    'địa điểm ăn uống vnu',
+    'quán ăn ngon vnu',
+    'review quán ăn sinh viên vnu',
     'đặt đồ ăn làng đại học',
     'ăn trưa làng đại học',
     'đặt đồ ăn gần đây',
     'quán ăn ngon làng đại học Thủ Đức',
+    'vnu eats',
+    'VNU eats',
+    'vnuEats',
+    'VNU Eats',
+    'Khám phá ẩm thực làng đại học',
+    'Khám phá ẩm thực vnu',
+    'ăn vặt vnu',
   ],
   openGraph: {
     title: 'vnuEats – Khám phá ẩm thực làng đại học',
@@ -76,8 +83,49 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'vnuEats',
+    url: 'https://vnueats.com',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://vnueats.com/search?q={search_term_string}',
+      'query-input': 'required name=search_term_string',
+    },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Trang chủ',
+          item: 'https://vnueats.com/',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Món ăn',
+          item: 'https://vnueats.com/menu',
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: 'Giới thiệu',
+          item: 'https://vnueats.com/about-us',
+        },
+      ],
+    },
+  }
+
   return (
     <html lang="en">
+      <head>
+        <Script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
         <Analytics />

@@ -61,7 +61,7 @@ const Home = () => {
             />
           </div>
           <h2 className="font-normal text-[16px] lg:text-[20px] font-oswald text-center mx-auto py-4 hidden md:block">
-            Hãy trải nghiệm dịch vụ đặt món ăn với <strong>Yummy</strong> - Việc đặt món
+            Hãy trải nghiệm dịch vụ đặt món ăn với <strong>vnuEats</strong> - Việc đặt món
             ăn chưa bao giờ là dễ dàng đến như vậy!
           </h2>
         </div>
