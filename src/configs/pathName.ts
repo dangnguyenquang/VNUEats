@@ -11,8 +11,9 @@ export const PATH_NAME = {
     CUSTOMER_REGISTER: '/register',
     ORDER_TRACKING: '/order-tracking',
     DETAILS: '/details',
-
     DETAIL_ACCOUNT: '/detail-account',
+    BLOG: '/blog',
+    BLOG_DETAIL: (slug: string) => `/blog/${slug}`,
 
     RESTAURANT_DASHBOARD: '/v2/dashboard/restaurant',
     ADMIN_MANAGEACCOUNT: '/v2/dashboard/admin/account',
