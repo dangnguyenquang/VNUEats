@@ -18,6 +18,8 @@ const Categories: string[] = [
   'Ăn vặt',
 ]
 
+//
+
 const CategoryFilter: React.FC<CategoryFilterProps> = ({
   selectedCategories,
   handleSelectCategories,

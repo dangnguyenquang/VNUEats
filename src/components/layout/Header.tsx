@@ -40,11 +40,11 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
           : 'shadow-none rounded-b-none'
       }`}
     >
-      <div className="gap-[70px] flex items-center">
+      <nav className="gap-[70px] flex items-center">
         <Link href={PATH_NAME.HOME}>
           <Image
             src={logo_vnuEats}
-            alt="Yummy logo"
+            alt="vnuEats logo"
             className="max-md:w-[90px] max-lg:w-[100px] lg:w-[140px]"
           />
         </Link>
@@ -80,7 +80,7 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
             Giới thiệu
           </Link>
         </div>
-      </div>
+      </nav>
       {!userInfo ? (
         <div className="flex gap-6 max-md:hidden">
           <Link href={PATH_NAME.CUSTOMER_REGISTER}>

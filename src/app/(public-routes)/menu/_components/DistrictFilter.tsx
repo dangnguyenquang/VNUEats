@@ -9,6 +9,8 @@ type DistrictFilterProps = {
   handleSelectDistricts: (event: React.ChangeEvent<HTMLInputElement>) => void
 }
 
+//
+
 const DistrictList: string[] = [
   'Quận 1',
   'Quận 3',
