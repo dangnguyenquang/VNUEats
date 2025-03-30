@@ -14,11 +14,11 @@ const LauThaiChay = () => {
     dateModified: '2024-03-23T00:00:00+07:00',
     author: {
       '@type': 'Organization',
-      name: 'VNUEats',
+      name: 'vnuEats',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'VNUEats',
+      name: 'vnuEats',
       logo: {
         '@type': 'ImageObject',
         url: 'https://vnueats.com/logo.png',
