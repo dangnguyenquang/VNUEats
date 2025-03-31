@@ -1,66 +1,66 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import img from '../../../../assets/images/blog/banhhoi.jpg'
+import Head from "next/head"
+import Image from "next/image"
+import img from "../../../../assets/images/blog/banhhoi.jpg"
 
 export default function Blog2() {
   const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: 'Bánh hỏi Bình Định tại Làng Đại học Thủ Đức',
-    description: 'Bánh hỏi Bình Định tại Làng Đại học Thủ Đức',
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: "Bánh hỏi Bình Định tại Làng Đại học Thủ Đức",
+    description: "Bánh hỏi Bình Định tại Làng Đại học Thủ Đức",
     // image: 'https://i.pinimg.com/736x/f8/53/0a/f8530a489e5889cc213c09eeefb055aa.jpg',
-    url: 'https://vnueats.com/blog/banh-hoi-binh-dinh',
-    datePublished: '2024-03-25T00:00:00+07:00',
-    dateModified: '2024-03-25T00:00:00+07:00',
+    url: "https://vnueats.com/blog/banh-hoi-binh-dinh",
+    datePublished: "2024-03-25T00:00:00+07:00",
+    dateModified: "2024-03-25T00:00:00+07:00",
     author: {
-      '@type': 'Organization',
-      name: 'vnuEats',
+      "@type": "Organization",
+      name: "vnuEats",
     },
     publisher: {
-      '@type': 'Organization',
-      name: 'vnuEats',
+      "@type": "Organization",
+      name: "vnuEats",
       logo: {
-        '@type': 'ImageObject',
-        url: 'https://vnueats.com/logo.png',
+        "@type": "ImageObject",
+        url: "https://vnueats.com/logo.png",
       },
     },
     mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': 'https://vnueats.com/blog/banh-hoi-binh-dinh',
+      "@type": "WebPage",
+      "@id": "https://vnueats.com/blog/banh-hoi-binh-dinh",
     },
   }
   return (
     <>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <title>Bánh hỏi Bình Định tại Làng Đại học Thủ Đức</title>
         <meta
-          name="description"
-          content="Bánh hỏi Bình Định – món ngon chuẩn miền Trung, hấp dẫn sinh viên Làng Đại học Thủ Đức. Hương vị tinh tế, giá cả hợp lý, phù hợp bữa sáng và tối."
+          name='description'
+          content='Bánh hỏi Bình Định – món ngon chuẩn miền Trung, hấp dẫn sinh viên Làng Đại học Thủ Đức. Hương vị tinh tế, giá cả hợp lý, phù hợp bữa sáng và tối.'
         />
         <meta
-          name="keywords"
-          content="bánh hỏi Bình Định, đặc sản Bình Định, bánh hỏi Làng Đại học Thủ Đức, ẩm thực miền Trung, món ngon sinh viên"
+          name='keywords'
+          content='bánh hỏi Bình Định, đặc sản Bình Định, bánh hỏi Làng Đại học Thủ Đức, ẩm thực miền Trung, món ngon sinh viên'
         />
-        <meta name="author" content="vnuEats" />
+        <meta name='author' content='vnuEats' />
 
         <meta
-          property="og:title"
-          content="Bánh Hỏi Bình Định – Món Ngon Dân Dã, Hấp Dẫn Sinh Viên"
+          property='og:title'
+          content='Bánh Hỏi Bình Định – Món Ngon Dân Dã, Hấp Dẫn Sinh Viên'
         />
         <meta
-          property="og:description"
-          content="Thưởng thức bánh hỏi Bình Định tại Làng Đại học Thủ Đức với hương vị chuẩn miền Trung, giá hợp lý!"
+          property='og:description'
+          content='Thưởng thức bánh hỏi Bình Định tại Làng Đại học Thủ Đức với hương vị chuẩn miền Trung, giá hợp lý!'
         />
-        <meta property="og:url" content="https://vnueats.com/blog/banh-hoi-binh-dinh" />
+        <meta property='og:url' content='https://vnueats.com/blog/banh-hoi-binh-dinh' />
         {/* <meta property="og:image" content="https://example.com/banh-hoi-binh-dinh.jpg" /> */}
-        <meta property="og:type" content="article" />
+        <meta property='og:type' content='article' />
         <meta
-          name="twitter:image"
+          name='twitter:image'
           //   content="https://i.pinimg.com/736x/f8/53/0a/f8530a489e5889cc213c09eeefb055aa.jpg"
         />
         <script
-          type="application/ld+json"
+          type='application/ld+json'
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </Head>
@@ -69,11 +69,11 @@ export default function Blog2() {
         <h1>Bánh hỏi Bình Định tại Làng Đại Học Thủ Đức</h1>
       </header>
 
-      <section className="space-y-4">
+      <section className='space-y-4'>
         <p>
           <strong>Ẩm thực Việt Nam</strong> luôn đa dạng và phong phú, mỗi vùng miền đều
           có những đặc sản riêng mang đậm bản sắc văn hóa. Nhắc đến Bình Định, ngoài bánh
-          xèo tôm nhảy, bún chả cá, tré Bình Định, không thể không kể đến{' '}
+          xèo tôm nhảy, bún chả cá, tré Bình Định, không thể không kể đến{" "}
           <strong>bánh hỏi Bình Định</strong> – một món ăn dân dã nhưng đầy tinh tế. Và
           thật may mắn khi ngay tại <strong>Làng Đại học Thủ Đức</strong>, bạn cũng có thể
           thưởng thức món ăn này với hương vị chuẩn Bình Định.
@@ -87,8 +87,8 @@ export default function Blog2() {
 
         <Image
           src={img}
-          alt="Bánh hỏi Bình Định"
-          className="mt-10 w-[50vw] mx-auto rounded-3xl"
+          alt='Bánh hỏi Bình Định'
+          className='mt-10 w-[50vw] mx-auto rounded-3xl'
         />
 
         <h2>1. Bánh hỏi Bình Định – Đặc sản tinh tế miền Trung</h2>
@@ -123,7 +123,7 @@ export default function Blog2() {
         </p>
 
         <h2>3. Vì sao sinh viên Làng Đại học Thủ Đức nên thử bánh hỏi Bình Định?</h2>
-        <ul className="list-disc ml-5 space-y-2">
+        <ul className='list-disc ml-5 space-y-2'>
           <li>
             Món ăn đầy đủ dinh dưỡng
             <p>
@@ -155,13 +155,13 @@ export default function Blog2() {
         </ul>
 
         <h2>4. Địa điểm bán bánh hỏi Bình Định ngon ở Làng Đại học Thủ Đức</h2>
-        <ol className="list-decimal ml-10">
+        <ol className='list-decimal ml-10'>
           <li>
             Quán A
-            <ul className="list-disc ml-5">
+            <ul className='list-disc ml-5'>
               <li>
-                Địa chỉ:{' '}
-                <address className="inline">
+                Địa chỉ:{" "}
+                <address className='inline'>
                   Số 123, Đường ABC, Làng Đại Học Thủ Đức
                 </address>
               </li>
@@ -172,10 +172,10 @@ export default function Blog2() {
           </li>
           <li>
             Quán B
-            <ul className="list-disc ml-5">
+            <ul className='list-disc ml-5'>
               <li>
-                Địa chỉ:{' '}
-                <address className="inline">
+                Địa chỉ:{" "}
+                <address className='inline'>
                   Số 123, Đường ABC, Làng Đại Học Thủ Đức
                 </address>
               </li>
