@@ -1,7 +1,7 @@
-import { LoadingSpinner } from '@/components/ui/LoadingSpinner'
-import userAction from '@/services/axios/actions/user.action'
-import React, { useEffect, useState } from 'react'
-import useAuth from './useAuth'
+import { LoadingSpinner } from "@/components/ui/LoadingSpinner"
+import userAction from "@/services/axios/actions/user.action"
+import React, { useEffect, useState } from "react"
+import useAuth from "./useAuth"
 
 const AutoLogin = ({ children }: { children: React.ReactNode }) => {
   const { isAuth, login, logout, setUser } = useAuth()
@@ -34,9 +34,9 @@ const AutoLogin = ({ children }: { children: React.ReactNode }) => {
   }
 
   return (
-    <main className="relative min-h-screen">
+    <main className='relative min-h-screen'>
       {isAuth === null && (
-        <div className="fixed inset-0 z-10 flex items-center justify-center bg-white">
+        <div className='fixed inset-0 z-10 flex items-center justify-center bg-white'>
           <LoadingSpinner />
         </div>
       )}

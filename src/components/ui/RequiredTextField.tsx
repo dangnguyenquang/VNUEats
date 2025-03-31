@@ -1,5 +1,5 @@
-import TextField from '@mui/material/TextField'
-import React, { useState } from 'react'
+import TextField from "@mui/material/TextField"
+import React, { useState } from "react"
 
 interface RequiredTextFieldProps {
   label?: string
@@ -13,7 +13,7 @@ interface RequiredTextFieldProps {
 
 function RequiredTextField({
   label,
-  className = '',
+  className = "",
   placeholder,
   whiteBg = false,
   value,
@@ -32,14 +32,14 @@ function RequiredTextField({
     <div className={`mx-auto w-full sm:max-w-[300px] md:max-w-[500px] my-5 ${className}`}>
       <TextField
         sx={{
-          margin: 'auto',
-          width: '100%',
-          '& .MuiOutlinedInput-root': {
-            borderRadius: '20px',
-            backgroundColor: whiteBg ? 'white' : 'transparent',
+          margin: "auto",
+          width: "100%",
+          "& .MuiOutlinedInput-root": {
+            borderRadius: "20px",
+            backgroundColor: whiteBg ? "white" : "transparent",
           },
-          '& fieldset': {
-            borderWidth: '2px',
+          "& fieldset": {
+            borderWidth: "2px",
           },
         }}
         label={label}
@@ -52,7 +52,7 @@ function RequiredTextField({
         required={required}
         error={error}
         placeholder={placeholder}
-        helperText={error && required ? 'Đây là trường bắt buộc' : ''}
+        helperText={error && required ? "Đây là trường bắt buộc" : ""}
       />
     </div>
   )

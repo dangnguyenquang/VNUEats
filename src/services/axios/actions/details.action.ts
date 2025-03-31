@@ -1,5 +1,5 @@
-import { client } from '@/services/axios'
-import detailsEndpoint from '../endpoints/details.endpoint'
+import { client } from "@/services/axios"
+import detailsEndpoint from "../endpoints/details.endpoint"
 
 class DetailsApi {
     async getDetails(id: string | undefined | string[], list: { listIdFood: string[] }) {

@@ -1,6 +1,6 @@
-import userAction from '@/services/axios/actions/user.action'
-import { User } from '@/types/api/auth'
-import { create } from 'zustand'
+import userAction from "@/services/axios/actions/user.action"
+import { User } from "@/types/api/auth"
+import { create } from "zustand"
 
 // Định nghĩa kiểu dữ liệu cho Zustand Store
 interface AuthState {
@@ -12,7 +12,7 @@ interface AuthState {
     fetchMe: () => Promise<void>
 }
 
-const initialState: Pick<AuthState, 'isAuth' | 'user'> = {
+const initialState: Pick<AuthState, "isAuth" | "user"> = {
     isAuth: null,
     user: null,
 }

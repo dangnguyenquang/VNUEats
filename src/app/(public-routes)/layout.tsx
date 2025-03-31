@@ -1,10 +1,10 @@
-'use client'
+"use client"
 
-import Footer from '@/components/layout/Footer'
-import Header from '@/components/layout/Header'
-import Sidebar from '@/components/layout/Sidebar'
-import AutoLogin from '@/stores/autoLogin'
-import { useState } from 'react'
+import Footer from "@/components/layout/Footer"
+import Header from "@/components/layout/Header"
+import Sidebar from "@/components/layout/Sidebar"
+import AutoLogin from "@/stores/autoLogin"
+import { useState } from "react"
 // import Chatbot from '../Components/_components/Chatbot'
 
 export default function DefaultLayout({ children }: { children: React.ReactNode }) {
@@ -16,10 +16,10 @@ export default function DefaultLayout({ children }: { children: React.ReactNode 
 
   return (
     <AutoLogin>
-      <div className="flex-col items-center w-full">
+      <div className='flex-col items-center w-full'>
         <Header toggleSidebar={toggleSidebar} />
         <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-        <div className="mt-14">{children}</div>
+        <div className='mt-14'>{children}</div>
         <Footer />
         {/* <Chatbot /> */}
       </div>

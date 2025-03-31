@@ -1,6 +1,6 @@
-import { client } from '@/services/axios'
-import { Order } from '@/types/api/booking'
-import bookingEndpoint from '../endpoints/booking.endpoint'
+import { client } from "@/services/axios"
+import { Order } from "@/types/api/booking"
+import bookingEndpoint from "../endpoints/booking.endpoint"
 
 class BookingApi {
     async bookingFood(payload: Order) {

@@ -1,6 +1,6 @@
-import { client } from '@/services/axios'
-import { ApiResponse, User } from '@/types/api/auth'
-import userEndpoint from '../endpoints/user.endpoint'
+import { client } from "@/services/axios"
+import { ApiResponse, User } from "@/types/api/auth"
+import userEndpoint from "../endpoints/user.endpoint"
 
 class UserApi {
     async getMe(): Promise<ApiResponse<User>> {

@@ -1,10 +1,10 @@
-import { client } from '@/services/axios'
+import { client } from "@/services/axios"
 import {
     AccountResponse,
     AccountUpdateForm,
     Req_ChangePassword,
-} from '@/types/api/account'
-import accountsEndpoint from '../endpoints/accounts.endpoint'
+} from "@/types/api/account"
+import accountsEndpoint from "../endpoints/accounts.endpoint"
 
 class AccountApi {
     // Lấy thông tin tài khoản
@@ -12,12 +12,12 @@ class AccountApi {
         try {
             const res = await client.get(accountsEndpoint.getAccount)
             if (!res.data.account) {
-                throw new Error('Không tìm thấy dữ liệu tài khoản.')
+                throw new Error("Không tìm thấy dữ liệu tài khoản.")
             }
             return res.data.account // Trả về dữ liệu tài khoản
         } catch (error) {
-            console.error('Error fetching account:', error)
-            throw new Error('Có lỗi xảy ra khi lấy thông tin tài khoản.')
+            console.error("Error fetching account:", error)
+            throw new Error("Có lỗi xảy ra khi lấy thông tin tài khoản.")
         }
     }
 
@@ -25,12 +25,12 @@ class AccountApi {
     async updateAccount(formData: AccountUpdateForm) {
         try {
             const res = await client.patch(accountsEndpoint.updateAccount, formData, {
-                headers: { 'Content-Type': 'multipart/form-data' },
+                headers: { "Content-Type": "multipart/form-data" },
             })
             return res.data
         } catch (error) {
-            console.error('Error updating account:', error)
-            throw new Error('Có lỗi xảy ra khi cập nhật tài khoản.')
+            console.error("Error updating account:", error)
+            throw new Error("Có lỗi xảy ra khi cập nhật tài khoản.")
         }
     }
 
@@ -39,8 +39,8 @@ class AccountApi {
             const res = await client.patch(accountsEndpoint.changePassword, passwordData)
             return res.data
         } catch (error) {
-            console.error('Error changing password:', error)
-            throw new Error('Có lỗi xảy ra khi đổi mật khẩu.')
+            console.error("Error changing password:", error)
+            throw new Error("Có lỗi xảy ra khi đổi mật khẩu.")
         }
     }
 }

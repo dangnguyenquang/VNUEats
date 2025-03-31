@@ -1,7 +1,7 @@
-import PhotoCameraIcon from '@mui/icons-material/PhotoCamera'
-import { Button } from '@mui/material'
-import { useState } from 'react'
-import ImageUploading, { ImageListType } from 'react-images-uploading'
+import PhotoCameraIcon from "@mui/icons-material/PhotoCamera"
+import { Button } from "@mui/material"
+import { useState } from "react"
+import ImageUploading, { ImageListType } from "react-images-uploading"
 
 type ImageUploaderProps = {
   maxImages: number
@@ -32,7 +32,7 @@ export function ImageUploader({
       value={images}
       onChange={onChange}
       maxNumber={maxImages}
-      dataURLKey="data_url"
+      dataURLKey='data_url'
     >
       {({
         imageList,
@@ -49,43 +49,43 @@ export function ImageUploader({
         isDragging: boolean
         dragProps: any
       }) => (
-        <div className="text-center">
+        <div className='text-center'>
           <Button
-            variant="outlined"
+            variant='outlined'
             startIcon={<PhotoCameraIcon />}
             onClick={onImageUpload}
             {...dragProps}
             className={`rounded-full ${
-              isDragging ? 'border-dashed border-4 border-indigo-600' : ''
+              isDragging ? "border-dashed border-4 border-indigo-600" : ""
             }`}
             sx={{
-              color: '#000',
-              borderColor: '#ccc',
-              padding: '8px 16px',
-              borderRadius: '24px',
-              fontWeight: 'bold',
-              fontSize: '14px',
-              textTransform: 'none',
+              color: "#000",
+              borderColor: "#ccc",
+              padding: "8px 16px",
+              borderRadius: "24px",
+              fontWeight: "bold",
+              fontSize: "14px",
+              textTransform: "none",
             }}
           >
             Thêm ảnh
           </Button>
 
           {imageList.map((image, index) => (
-            <div key={index} className="my-5">
-              <img src={image['data_url']} alt="Uploaded" width="100%" />
-              <div className="flex justify-center mt-2 gap-4">
+            <div key={index} className='my-5'>
+              <img src={image["data_url"]} alt='Uploaded' width='100%' />
+              <div className='flex justify-center mt-2 gap-4'>
                 <Button
-                  variant="outlined"
+                  variant='outlined'
                   onClick={() => onImageUpdate(index)}
-                  sx={{ color: '#000', borderColor: '#ccc' }}
+                  sx={{ color: "#000", borderColor: "#ccc" }}
                 >
                   Cập nhật
                 </Button>
                 <Button
-                  variant="outlined"
+                  variant='outlined'
                   onClick={() => onImageRemove(index)}
-                  sx={{ color: '#000', borderColor: '#ccc' }}
+                  sx={{ color: "#000", borderColor: "#ccc" }}
                 >
                   Xóa
                 </Button>

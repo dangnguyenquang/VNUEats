@@ -1,20 +1,20 @@
-'use client'
+"use client"
 
-import { Skeleton } from '@mui/material'
-import { useParams, useSearchParams } from 'next/navigation'
-import { useEffect, useState } from 'react'
+import { Skeleton } from "@mui/material"
+import { useParams, useSearchParams } from "next/navigation"
+import { useEffect, useState } from "react"
 
-import LoginModal from '@/components/LoginModal'
-import { formatNumber } from '@/helpers/wordHelpper'
-import DetailsApiInstance from '@/services/axios/actions/details.action'
-import useAuth from '@/stores/useAuth'
-import { FoodItem, RestaurantData } from '@/types/api/detail-page'
-import BookingModal from './_components/BookingModal'
-import FoodCart from './_components/FoodCart'
-import FoodDetails from './_components/FoodDetails'
-import RestaurantImage from './_components/RestaurantImage'
-import RestaurantInfo from './_components/RestaurantInfo'
-import ReviewList from './_components/ReviewList'
+import LoginModal from "@/components/LoginModal"
+import { formatNumber } from "@/helpers/wordHelpper"
+import DetailsApiInstance from "@/services/axios/actions/details.action"
+import useAuth from "@/stores/useAuth"
+import { FoodItem, RestaurantData } from "@/types/api/detail-page"
+import BookingModal from "./_components/BookingModal"
+import FoodCart from "./_components/FoodCart"
+import FoodDetails from "./_components/FoodDetails"
+import RestaurantImage from "./_components/RestaurantImage"
+import RestaurantInfo from "./_components/RestaurantInfo"
+import ReviewList from "./_components/ReviewList"
 
 export type CartItem = FoodItem & { quantity: number }
 
@@ -29,7 +29,7 @@ const DetailsPage = () => {
   const searchParams = useSearchParams()
 
   useEffect(() => {
-    const foodId = searchParams.get('id') ?? ''
+    const foodId = searchParams.get("id") ?? ""
 
     const list = {
       listIdFood: [foodId],
@@ -129,24 +129,24 @@ const DetailsPage = () => {
   }
 
   return (
-    <div className="max-w-[1250px] mx-auto py-10">
+    <div className='max-w-[1250px] mx-auto py-10'>
       {data ? (
-        <div className="w-full flex gap-8">
+        <div className='w-full flex gap-8'>
           <RestaurantImage restaurant={data?.restaurant} />
-          <div className="flex-1">
+          <div className='flex-1'>
             <RestaurantInfo restaurantInfo={data?.restaurant} />
           </div>
         </div>
       ) : (
-        <div className="w-full flex justify-between gap-8">
-          <Skeleton variant="rectangular" width={455} height={500} />
-          <Skeleton variant="rectangular" className="flex-1" height={400} />
+        <div className='w-full flex justify-between gap-8'>
+          <Skeleton variant='rectangular' width={455} height={500} />
+          <Skeleton variant='rectangular' className='flex-1' height={400} />
         </div>
       )}
 
       {data && (
-        <div className="flex justify-between gap-10 my-14">
-          <div className="flex flex-col gap-3.5">
+        <div className='flex justify-between gap-10 my-14'>
+          <div className='flex flex-col gap-3.5'>
             {data?.listAllFood.map((food, index) => (
               <FoodDetails
                 food={food}
@@ -158,14 +158,14 @@ const DetailsPage = () => {
           </div>
 
           <div
-            className="w-[500px] h-fit px-[30px] py-10 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-xl flex flex-col items-center justify-center"
+            className='w-[500px] h-fit px-[30px] py-10 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-xl flex flex-col items-center justify-center'
             style={{
-              position: 'sticky',
-              top: '100px',
+              position: "sticky",
+              top: "100px",
             }}
           >
-            <h2 className="font-bold text-primary text-[30px] mb-10">GIỎ HÀNG CỦA TÔI</h2>
-            <div className="flex flex-col gap-3 max-h-[400px] overflow-y-auto px-1 py-2">
+            <h2 className='font-bold text-primary text-[30px] mb-10'>GIỎ HÀNG CỦA TÔI</h2>
+            <div className='flex flex-col gap-3 max-h-[400px] overflow-y-auto px-1 py-2'>
               {cart.length !== 0 ? (
                 cart?.map((item) => (
                   <FoodCart
@@ -177,30 +177,30 @@ const DetailsPage = () => {
                   />
                 ))
               ) : (
-                <div className="opacity-50">
+                <div className='opacity-50'>
                   <img
-                    src="/images/empty_cart.png"
-                    alt=""
-                    className="mx-auto max-w-60 mt-[-30px] h-auto"
+                    src='/images/empty_cart.png'
+                    alt=''
+                    className='mx-auto max-w-60 mt-[-30px] h-auto'
                   />
-                  <p className="text-center mt-[-30px]">Giỏ hàng của bạn đang trống</p>
+                  <p className='text-center mt-[-30px]'>Giỏ hàng của bạn đang trống</p>
                 </div>
               )}
             </div>
 
-            <div className="w-full py-4 mt-5 flex flex-col items-center">
-              <div className="flex w-full justify-between font-bold text-2xl">
+            <div className='w-full py-4 mt-5 flex flex-col items-center'>
+              <div className='flex w-full justify-between font-bold text-2xl'>
                 <p>Tổng tiền:</p>
-                <div className="flex gap-1 items-end text-primary">
+                <div className='flex gap-1 items-end text-primary'>
                   <p>{formatNumber(totalAmount)}</p>
-                  <span className="text-[12px] font-light pb-1">VND</span>
+                  <span className='text-[12px] font-light pb-1'>VND</span>
                 </div>
               </div>
 
               {cart.length > 0 &&
                 (userInfo ? (
                   <BookingModal
-                    className="rounded-xl font-bold flex justify-center items-center bg-secondary text-[#FDFDFD] cursor-pointer text-xl h-10 w-[50%] mx-auto mt-5 hover:bg-secondary/80"
+                    className='rounded-xl font-bold flex justify-center items-center bg-secondary text-[#FDFDFD] cursor-pointer text-xl h-10 w-[50%] mx-auto mt-5 hover:bg-secondary/80'
                     user={userInfo}
                     restaurantId={data.restaurant._id}
                     items={transformMenuItems(cart)}
@@ -213,7 +213,7 @@ const DetailsPage = () => {
                       console.log(user)
                       setUserInfo(user)
                     }}
-                    className="rounded-xl font-bold flex justify-center items-center bg-secondary text-[#FDFDFD] cursor-pointer text-xl h-10 w-[50%] mx-auto mt-5 hover:bg-secondary/80"
+                    className='rounded-xl font-bold flex justify-center items-center bg-secondary text-[#FDFDFD] cursor-pointer text-xl h-10 w-[50%] mx-auto mt-5 hover:bg-secondary/80'
                   >
                     Đặt món
                   </LoginModal>

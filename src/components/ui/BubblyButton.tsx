@@ -1,6 +1,6 @@
-'use client'
+"use client"
 
-import React, { useRef } from 'react'
+import React, { useRef } from "react"
 
 interface Props {
   children: React.ReactNode
@@ -16,9 +16,9 @@ const BubblyButton = ({ children, onClick, className, disabled }: Props) => {
     e.preventDefault()
 
     if (buttonRef.current) {
-      buttonRef.current.classList.remove('animate')
+      buttonRef.current.classList.remove("animate")
       void buttonRef.current.offsetWidth
-      buttonRef.current.classList.add('animate')
+      buttonRef.current.classList.add("animate")
     }
 
     if (onClick) onClick(e)
@@ -27,7 +27,7 @@ const BubblyButton = ({ children, onClick, className, disabled }: Props) => {
   return (
     <button
       ref={buttonRef}
-      className={`${disabled ? 'pointer-events-none' : ''} ${className} bubbly-button`}
+      className={`${disabled ? "pointer-events-none" : ""} ${className} bubbly-button`}
       onClick={animateButton}
       disabled={disabled}
     >

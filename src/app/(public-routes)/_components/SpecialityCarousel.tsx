@@ -1,9 +1,9 @@
-import { PATH_NAME } from '@/configs/pathName'
-import { SpecialtyFood } from '@/types/api/home'
-import Link from 'next/link'
-import Slider from 'react-slick'
-import 'slick-carousel/slick/slick-theme.css'
-import 'slick-carousel/slick/slick.css'
+import { PATH_NAME } from "@/configs/pathName"
+import { SpecialtyFood } from "@/types/api/home"
+import Link from "next/link"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick-theme.css"
+import "slick-carousel/slick/slick.css"
 
 const SpecialityCarousel = ({
   SpecialityFoods,
@@ -20,7 +20,7 @@ const SpecialityCarousel = ({
     autoplaySpeed: 3000,
     pauseOnHover: true,
     centerMode: true,
-    centerPadding: '20px',
+    centerPadding: "20px",
     responsive: [
       {
         breakpoint: 1200,
@@ -29,7 +29,7 @@ const SpecialityCarousel = ({
           slidesToScroll: 1,
           infinite: true,
           dots: true,
-          centerPadding: '30px',
+          centerPadding: "30px",
         },
       },
       {
@@ -38,7 +38,7 @@ const SpecialityCarousel = ({
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
-          centerPadding: '30px',
+          centerPadding: "30px",
         },
       },
       {
@@ -46,23 +46,23 @@ const SpecialityCarousel = ({
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerPadding: '20px',
+          centerPadding: "20px",
         },
       },
     ],
   }
 
   return (
-    <div className="mx-auto max-w-[1190px] relative">
+    <div className='mx-auto max-w-[1190px] relative'>
       <Slider {...settings}>
         {SpecialityFoods &&
           SpecialityFoods.map((food, index) => (
             <Link key={index} href={`${PATH_NAME.MENU}?search=${food.name}&type=food`}>
-              <div key={food.name} className="px-2">
+              <div key={food.name} className='px-2'>
                 <img
                   src={food.imageUrl.url}
                   alt={`Image ${food.name}`}
-                  className="w-full h-[339px] lg:h-[381px] object-cover rounded-xl"
+                  className='w-full h-[339px] lg:h-[381px] object-cover rounded-xl'
                 />
               </div>
             </Link>

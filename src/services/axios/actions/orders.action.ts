@@ -1,6 +1,6 @@
-import { client } from '@/services/axios'
-import { OrderResponse } from '@/types/api/order'
-import ordersEndpoint from '../endpoints/orders.endpoint'
+import { client } from "@/services/axios"
+import { OrderResponse } from "@/types/api/order"
+import ordersEndpoint from "../endpoints/orders.endpoint"
 
 class OrdersApi {
     async getOrders(status: string, page: number): Promise<OrderResponse> {
@@ -11,7 +11,7 @@ class OrdersApi {
             return res.data
         } catch (error) {
             console.error(error)
-            throw new Error('Có lỗi xảy ra khi lấy danh sách đơn hàng')
+            throw new Error("Có lỗi xảy ra khi lấy danh sách đơn hàng")
         }
     }
 
@@ -26,10 +26,10 @@ class OrdersApi {
                 comment,
                 listFood,
             })
-            return { msg: res.data.message || 'Đánh giá đã được gửi' }
+            return { msg: res.data.message || "Đánh giá đã được gửi" }
         } catch (error) {
-            console.error('Error in postEvaluation: ', error)
-            throw new Error('Có lỗi xảy ra khi gửi đánh giá')
+            console.error("Error in postEvaluation: ", error)
+            throw new Error("Có lỗi xảy ra khi gửi đánh giá")
         }
     }
 
@@ -40,8 +40,8 @@ class OrdersApi {
             })
             return res.data
         } catch (error) {
-            console.error('Error in cancelOrder: ', error)
-            throw new Error('Có lỗi xảy ra khi hủy đơn')
+            console.error("Error in cancelOrder: ", error)
+            throw new Error("Có lỗi xảy ra khi hủy đơn")
         }
     }
 }
