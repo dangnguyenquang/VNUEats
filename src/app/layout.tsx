@@ -1,6 +1,7 @@
 import { Analytics } from "@vercel/analytics/react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
+import Head from "next/head"
 import "../styles/globals.css"
 
 const geistSans = Geist({
@@ -149,6 +150,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='vi'>
+      <Head>
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </Head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
         <Analytics />
