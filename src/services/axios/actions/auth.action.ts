@@ -77,33 +77,35 @@ class AuthApi {
         }
     }
 
-    // async customerRegister(formData) {
-    //   try {
-    //     const res = await client.post(authEndpoint.register, formData, {
-    //       headers: {
-    //         'Content-Type': 'multipart/form-data',
-    //       },
-    //     })
-    //     return { msg: res.msg }
-    //   } catch (error) {
-    //     // return { error: error.message || 'Đã xảy ra lỗi trong quá trình đăng ký' }
-    //     throw new Error('Có lỗi xảy ra')
-    //   }
-    // }
+    async customerRegister(formData: FormData) {
+        try {
+            const res = await client.post(authEndpoint.register, formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data',
+                },
+            })
+            return { msg: res.data.msg }
+        } catch (error: any) {
+            throw new Error(
+                error.response?.data?.message || 'Đã xảy ra lỗi trong quá trình đăng ký',
+            )
+        }
+    }
 
-    // async sellerRegister(formData) {
-    //   try {
-    //     const res = await client.post(authEndpoint.register, formData, {
-    //       headers: {
-    //         'Content-Type': 'multipart/form-data',
-    //       },
-    //     })
-    //     return { msg: res.msg }
-    //   } catch (error) {
-    //     // return { error: error.message || 'Đã xảy ra lỗi trong quá trình đăng ký' }
-    //     throw new Error('Có lỗi xảy ra')
-    //   }
-    // }
+    async sellerRegister(formData: FormData) {
+        try {
+            const res = await client.post(authEndpoint.register, formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data',
+                },
+            })
+            return res.data
+        } catch (error: any) {
+            throw new Error(
+                error.response?.data?.message || 'Đã xảy ra lỗi trong quá trình đăng ký',
+            )
+        }
+    }
 
     // async Search(filterList, page) {
     //   try {

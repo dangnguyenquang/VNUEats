@@ -33,15 +33,17 @@ const AutoLogin = ({ children }: { children: React.ReactNode }) => {
     return <>{children}</>
   }
 
-  if (isAuth === null) {
-    return (
-      <main className="container flex h-dvh items-center justify-center">
-        <LoadingSpinner />
-      </main>
-    )
-  }
+  return (
+    <main className="relative min-h-screen">
+      {isAuth === null && (
+        <div className="fixed inset-0 z-10 flex items-center justify-center bg-white">
+          <LoadingSpinner />
+        </div>
+      )}
 
-  return <>{children}</>
+      <>{children}</>
+    </main>
+  )
 }
 
 export default AutoLogin

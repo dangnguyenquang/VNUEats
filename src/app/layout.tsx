@@ -62,6 +62,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://vnueats.com',
   },
+  verification: {
+    google: 'qWaMtk5cUkw5LEkyrIHU6nkEXKwWsP-2GYwUz2OCkqQ',
+  },
   robots: {
     index: true,
     follow: true,
@@ -132,7 +135,7 @@ export default function RootLayout({
   }
 
   return (
-    <html lang="en">
+    <html lang="vi">
       <head>
         <Script
           id="breadcrumb-schema"
