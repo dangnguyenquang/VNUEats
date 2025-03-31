@@ -86,19 +86,19 @@ export default function DefaultLayout({ children }: { children: React.ReactNode 
 
       <Script
         type='application/ld+json'
-        id="website-schema"
+        id='website-schema'
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         strategy='lazyOnload'
       />
       <Script
         type='application/ld+json'
-        id="breadcrumb-schema"
+        id='breadcrumb-schema'
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         strategy='lazyOnload'
       />
       <Script
         type='application/ld+json'
-        id="organization-schema"
+        id='organization-schema'
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         strategy='lazyOnload'
       />
