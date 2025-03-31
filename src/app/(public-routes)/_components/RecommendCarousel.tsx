@@ -1,10 +1,10 @@
-import RestaurantCard from '@/components/RestaurantCard'
-import { Restaurant } from '@/types/api/home'
-import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material'
-import React from 'react'
-import Slider, { Settings } from 'react-slick'
-import 'slick-carousel/slick/slick-theme.css'
-import 'slick-carousel/slick/slick.css'
+import RestaurantCard from "@/components/RestaurantCard"
+import { Restaurant } from "@/types/api/home"
+import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material"
+import React from "react"
+import Slider, { Settings } from "react-slick"
+import "slick-carousel/slick/slick-theme.css"
+import "slick-carousel/slick/slick.css"
 
 interface ArrowProps {
   className?: string
@@ -20,18 +20,18 @@ const PrevArrow: React.FC<ArrowProps> = ({ className, onClick, style }) => {
       onClick={onClick}
       style={{
         ...style,
-        left: '-45px',
+        left: "-45px",
         zIndex: 1,
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        borderRadius: '50%',
-        padding: '20px',
-        cursor: 'pointer',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
+        backgroundColor: "rgba(0, 0, 0, 0.5)",
+        borderRadius: "50%",
+        padding: "20px",
+        cursor: "pointer",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
-      <ArrowBackIos style={{ color: 'white', fontSize: '30px' }} />
+      <ArrowBackIos style={{ color: "white", fontSize: "30px" }} />
     </div>
   )
 }
@@ -43,18 +43,18 @@ const NextArrow: React.FC<ArrowProps> = ({ className, onClick, style }) => {
       onClick={onClick}
       style={{
         ...style,
-        right: '-45px',
+        right: "-45px",
         zIndex: 1,
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        borderRadius: '50%',
-        padding: '20px',
-        cursor: 'pointer',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
+        backgroundColor: "rgba(0, 0, 0, 0.5)",
+        borderRadius: "50%",
+        padding: "20px",
+        cursor: "pointer",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
-      <ArrowForwardIos style={{ color: 'white', fontSize: '30px' }} />
+      <ArrowForwardIos style={{ color: "white", fontSize: "30px" }} />
     </div>
   )
 }
@@ -79,7 +79,7 @@ const RecommendCarousel = ({ restaurants }: { restaurants: Restaurant[] }) => {
           slidesToScroll: 1,
           infinite: true,
           dots: true,
-          centerPadding: '50px',
+          centerPadding: "50px",
         },
       },
       {
@@ -89,7 +89,7 @@ const RecommendCarousel = ({ restaurants }: { restaurants: Restaurant[] }) => {
           slidesToScroll: 1,
           initialSlide: 2,
           centerMode: true,
-          centerPadding: '30px',
+          centerPadding: "30px",
         },
       },
       {
@@ -99,17 +99,17 @@ const RecommendCarousel = ({ restaurants }: { restaurants: Restaurant[] }) => {
           slidesToScroll: 1,
           initialSlide: 1,
           centerMode: true,
-          centerPadding: '20px',
+          centerPadding: "20px",
         },
       },
     ],
   }
 
   return (
-    <div className="mx-auto max-w-[1190px] relative">
+    <div className='mx-auto max-w-[1190px] relative'>
       <Slider {...settings}>
         {restaurants.map((restaurant, index) => (
-          <div className="px-2" key={index}>
+          <div className='px-2' key={index}>
             <RestaurantCard
               image={restaurant.imageUrl[0].url}
               rating={restaurant.starMedium}

@@ -1,22 +1,22 @@
-'use client'
+"use client"
 
-import CloseIcon from '@mui/icons-material/Close'
-import Dialog from '@mui/material/Dialog'
-import DialogActions from '@mui/material/DialogActions'
-import DialogContent from '@mui/material/DialogContent'
-import DialogContentText from '@mui/material/DialogContentText'
-import DialogTitle from '@mui/material/DialogTitle'
-import { useTheme } from '@mui/material/styles'
-import * as React from 'react'
-import { useState } from 'react'
-import { toast } from 'react-toastify'
+import CloseIcon from "@mui/icons-material/Close"
+import Dialog from "@mui/material/Dialog"
+import DialogActions from "@mui/material/DialogActions"
+import DialogContent from "@mui/material/DialogContent"
+import DialogContentText from "@mui/material/DialogContentText"
+import DialogTitle from "@mui/material/DialogTitle"
+import { useTheme } from "@mui/material/styles"
+import * as React from "react"
+import { useState } from "react"
+import { toast } from "react-toastify"
 
-import { PATH_NAME } from '@/configs/pathName'
-import authApi from '@/services/axios/actions/auth.action'
-import useAuth from '@/stores/useAuth'
-import { User } from '@/types/api/auth'
-import { useRouter } from 'next/navigation'
-import { Button } from './ui/Button'
+import { PATH_NAME } from "@/configs/pathName"
+import authApi from "@/services/axios/actions/auth.action"
+import useAuth from "@/stores/useAuth"
+import { User } from "@/types/api/auth"
+import { useRouter } from "next/navigation"
+import { Button } from "./ui/Button"
 
 interface LogoutProps {
   className?: string
@@ -50,10 +50,10 @@ export default function LogoutModal({
       logout()
       setUserInfo(null)
 
-      toast.success('Đăng xuất thành công!')
+      toast.success("Đăng xuất thành công!")
       router.push(PATH_NAME.HOME)
     } catch (error) {
-      toast.error('Đã có lỗi xảy ra, thử lại sau!')
+      toast.error("Đã có lỗi xảy ra, thử lại sau!")
     }
   }
 
@@ -65,39 +65,39 @@ export default function LogoutModal({
       <Dialog
         open={open}
         onClose={handleClose}
-        aria-labelledby="responsive-dialog-title"
+        aria-labelledby='responsive-dialog-title'
         sx={{
-          '& .MuiPaper-root': {
-            borderRadius: '12px',
-            paddingBottom: '10px',
-            width: '500px',
+          "& .MuiPaper-root": {
+            borderRadius: "12px",
+            paddingBottom: "10px",
+            width: "500px",
           },
         }}
       >
         <DialogTitle
-          id="responsive-dialog-title"
-          className="flex items-center justify-between px-6 pt-4"
+          id='responsive-dialog-title'
+          className='flex items-center justify-between px-6 pt-4'
         >
-          <span className="text-2xl">Đăng xuất</span>
-          <CloseIcon onClick={handleClose} className="cursor-pointer" />
+          <span className='text-2xl'>Đăng xuất</span>
+          <CloseIcon onClick={handleClose} className='cursor-pointer' />
         </DialogTitle>
-        <DialogContent className="px-10 flex flex-col">
+        <DialogContent className='px-10 flex flex-col'>
           <DialogContentText
             sx={{
-              fontSize: '1rem',
+              fontSize: "1rem",
             }}
           >
             Bạn chắc chắn muốn đăng xuất
           </DialogContentText>
         </DialogContent>
-        <DialogActions className="mr-2 gap-2">
+        <DialogActions className='mr-2 gap-2'>
           <Button
-            variant="outline"
+            variant='outline'
             onClick={() => {
               handleClose()
             }}
             disabled={disabled}
-            className="px-8 border-primary text-primary"
+            className='px-8 border-primary text-primary'
           >
             Hủy
           </Button>
@@ -106,7 +106,7 @@ export default function LogoutModal({
               handleClose()
               handleLogout()
             }}
-            className="font-bold hover:underline"
+            className='font-bold hover:underline'
             autoFocus
           >
             Đăng xuất

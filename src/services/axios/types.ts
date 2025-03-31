@@ -4,7 +4,7 @@ export type Message = {
     description?: string
 }
 
-export type MessageType = '401'
+export type MessageType = "401"
 
 export type Res_Error = {
     status: string

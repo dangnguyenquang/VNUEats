@@ -1,8 +1,8 @@
-import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material'
-import Slider from 'react-slick'
-import 'slick-carousel/slick/slick-theme.css'
-import 'slick-carousel/slick/slick.css'
-import RestaurantCard from '~/components/ui/RestaurantCard'
+import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick-theme.css"
+import "slick-carousel/slick/slick.css"
+import RestaurantCard from "~/components/ui/RestaurantCard"
 
 // Custom Previous Arrow
 const PrevArrow = (props) => {
@@ -13,18 +13,18 @@ const PrevArrow = (props) => {
             onClick={onClick}
             style={{
                 ...style,
-                left: '-45px', // Giảm khoảng cách từ nút prev đến item carousel
+                left: "-45px", // Giảm khoảng cách từ nút prev đến item carousel
                 zIndex: 1,
-                backgroundColor: 'rgba(0, 0, 0, 0.5)', // Nền mờ màu đen
-                borderRadius: '50%', // Viền tròn
-                padding: '20px', // Khoảng cách bên trong để nút tròn lớn hơn
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
+                backgroundColor: "rgba(0, 0, 0, 0.5)", // Nền mờ màu đen
+                borderRadius: "50%", // Viền tròn
+                padding: "20px", // Khoảng cách bên trong để nút tròn lớn hơn
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
             }}
         >
-            <ArrowBackIos style={{ color: 'white', fontSize: '30px' }} />
+            <ArrowBackIos style={{ color: "white", fontSize: "30px" }} />
         </div>
     )
 }
@@ -38,18 +38,18 @@ const NextArrow = (props) => {
             onClick={onClick}
             style={{
                 ...style,
-                right: '-45px', // Giảm khoảng cách từ nút next đến item carousel
+                right: "-45px", // Giảm khoảng cách từ nút next đến item carousel
                 zIndex: 1,
-                backgroundColor: 'rgba(0, 0, 0, 0.5)', // Nền mờ màu đen
-                borderRadius: '50%', // Viền tròn
-                padding: '20px', // Khoảng cách bên trong để nút tròn lớn hơn
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
+                backgroundColor: "rgba(0, 0, 0, 0.5)", // Nền mờ màu đen
+                borderRadius: "50%", // Viền tròn
+                padding: "20px", // Khoảng cách bên trong để nút tròn lớn hơn
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
             }}
         >
-            <ArrowForwardIos style={{ color: 'white', fontSize: '30px' }} />
+            <ArrowForwardIos style={{ color: "white", fontSize: "30px" }} />
         </div>
     )
 }
@@ -74,7 +74,7 @@ const RecommendCarousel = ({ restaurants }) => {
                     slidesToScroll: 1,
                     infinite: true,
                     dots: true,
-                    centerPadding: '50px',
+                    centerPadding: "50px",
                 },
             },
             {
@@ -84,7 +84,7 @@ const RecommendCarousel = ({ restaurants }) => {
                     slidesToScroll: 1,
                     initialSlide: 2,
                     centerMode: true,
-                    centerPadding: '30px',
+                    centerPadding: "30px",
                 },
             },
             {
@@ -94,17 +94,17 @@ const RecommendCarousel = ({ restaurants }) => {
                     slidesToScroll: 1,
                     initialSlide: 1,
                     centerMode: true,
-                    centerPadding: '20px',
+                    centerPadding: "20px",
                 },
             },
         ],
     }
 
     return (
-        <div className="mx-auto max-w-[1190px] relative">
+        <div className='mx-auto max-w-[1190px] relative'>
             <Slider {...settings}>
                 {restaurants.map((restaurant, index) => (
-                    <div className="px-2" key={index}>
+                    <div className='px-2' key={index}>
                         <RestaurantCard
                             image={restaurant.imageUrl[0].url}
                             rating={restaurant.starMedium}

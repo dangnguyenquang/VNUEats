@@ -1,5 +1,5 @@
-import TextField from '@mui/material/TextField'
-import React, { useState } from 'react'
+import TextField from "@mui/material/TextField"
+import React, { useState } from "react"
 
 interface NumericTextFieldProps {
   label: string
@@ -11,7 +11,7 @@ interface NumericTextFieldProps {
 
 const NumericTextField: React.FC<NumericTextFieldProps> = ({
   label,
-  className = '',
+  className = "",
   whiteBg = false,
   value,
   handleChange,
@@ -28,14 +28,14 @@ const NumericTextField: React.FC<NumericTextFieldProps> = ({
     <div className={`mx-auto w-full sm:max-w-[300px] md:max-w-[500px] my-5 ${className}`}>
       <TextField
         sx={{
-          margin: 'auto',
-          width: '100%',
-          '& .MuiOutlinedInput-root': {
-            borderRadius: '20px',
-            backgroundColor: whiteBg ? 'white' : 'transparent',
+          margin: "auto",
+          width: "100%",
+          "& .MuiOutlinedInput-root": {
+            borderRadius: "20px",
+            backgroundColor: whiteBg ? "white" : "transparent",
           },
-          '& fieldset': {
-            borderWidth: '2px',
+          "& fieldset": {
+            borderWidth: "2px",
           },
         }}
         label={label}
@@ -50,8 +50,8 @@ const NumericTextField: React.FC<NumericTextFieldProps> = ({
         onBlur={handleBlur}
         required
         error={error}
-        helperText={error ? 'Trường này là bắt buộc' : ''}
-        inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
+        helperText={error ? "Trường này là bắt buộc" : ""}
+        inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
       />
     </div>
   )

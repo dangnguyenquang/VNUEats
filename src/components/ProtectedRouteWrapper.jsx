@@ -1,4 +1,4 @@
-import { Navigate } from 'react-router-dom'
+import { Navigate } from "react-router-dom"
 
 const ProtectedRouteWrapper = ({
     role,
@@ -7,7 +7,7 @@ const ProtectedRouteWrapper = ({
     layout: LayoutComponent,
 }) => {
     if (!allowedRoles.includes(role)) {
-        return <Navigate to="/" replace />
+        return <Navigate to='/' replace />
     }
 
     return LayoutComponent ? <LayoutComponent>{children}</LayoutComponent> : children

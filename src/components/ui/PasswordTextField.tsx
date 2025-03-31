@@ -1,9 +1,9 @@
-import Visibility from '@mui/icons-material/Visibility'
-import VisibilityOff from '@mui/icons-material/VisibilityOff'
-import IconButton from '@mui/material/IconButton'
-import InputAdornment from '@mui/material/InputAdornment'
-import TextField from '@mui/material/TextField'
-import React, { useEffect, useState } from 'react'
+import Visibility from "@mui/icons-material/Visibility"
+import VisibilityOff from "@mui/icons-material/VisibilityOff"
+import IconButton from "@mui/material/IconButton"
+import InputAdornment from "@mui/material/InputAdornment"
+import TextField from "@mui/material/TextField"
+import React, { useEffect, useState } from "react"
 
 interface PasswordTextFieldProps {
   label?: string
@@ -24,8 +24,8 @@ function PasswordTextField({
   value,
   handleChange,
 }: PasswordTextFieldProps) {
-  const [password, setPassword] = useState(value || '')
-  const [confirmPassword, setConfirmPassword] = useState('')
+  const [password, setPassword] = useState(value || "")
+  const [confirmPassword, setConfirmPassword] = useState("")
   const [showPassword, setShowPassword] = useState(false)
   const [showConfirmPassword, setShowConfirmPassword] = useState(false)
   const [errorPassword, setErrorPassword] = useState(false)
@@ -34,14 +34,14 @@ function PasswordTextField({
   const [touchedConfirmPassword, setTouchedConfirmPassword] = useState(false)
 
   useEffect(() => {
-    if (password.length < 6 && password !== '') {
+    if (password.length < 6 && password !== "") {
       setErrorPassword(true)
     } else {
       setErrorPassword(false)
     }
 
     if (touchedConfirmPassword) {
-      if (confirmPassword === '') {
+      if (confirmPassword === "") {
         setErrorConfirmPassword(true)
       } else {
         setErrorConfirmPassword(false)
@@ -90,27 +90,27 @@ function PasswordTextField({
     <div className={`mx-auto w-full sm:max-w-[300px] md:max-w-[500px] my-5 ${className}`}>
       <TextField
         sx={{
-          margin: 'auto',
-          width: '100%',
-          '& .MuiOutlinedInput-root': {
-            borderRadius: '20px',
-            backgroundColor: whiteBg ? 'white' : 'transparent',
+          margin: "auto",
+          width: "100%",
+          "& .MuiOutlinedInput-root": {
+            borderRadius: "20px",
+            backgroundColor: whiteBg ? "white" : "transparent",
           },
-          '& fieldset': {
-            borderWidth: '2px',
+          "& fieldset": {
+            borderWidth: "2px",
           },
         }}
         label={label}
         value={password}
         onChange={handlePasswordChange}
         onBlur={handlePasswordBlur}
-        type={showPassword ? 'text' : 'password'}
+        type={showPassword ? "text" : "password"}
         error={errorPassword}
-        helperText={errorPassword ? 'Mật khẩu phải có ít nhất 6 kí tự' : ''}
+        helperText={errorPassword ? "Mật khẩu phải có ít nhất 6 kí tự" : ""}
         InputProps={{
           endAdornment: (
-            <InputAdornment position="end">
-              <IconButton onClick={toggleShowPassword} edge="end">
+            <InputAdornment position='end'>
+              <IconButton onClick={toggleShowPassword} edge='end'>
                 {showPassword ? <VisibilityOff /> : <Visibility />}
               </IconButton>
             </InputAdornment>
@@ -121,34 +121,34 @@ function PasswordTextField({
       {confirm && (
         <TextField
           sx={{
-            margin: 'auto',
-            width: '100%',
-            marginTop: '20px',
-            '& .MuiOutlinedInput-root': {
-              borderRadius: '20px',
-              backgroundColor: whiteBg ? 'white' : 'transparent',
+            margin: "auto",
+            width: "100%",
+            marginTop: "20px",
+            "& .MuiOutlinedInput-root": {
+              borderRadius: "20px",
+              backgroundColor: whiteBg ? "white" : "transparent",
             },
-            '& fieldset': {
-              borderWidth: '2px',
+            "& fieldset": {
+              borderWidth: "2px",
             },
           }}
-          label="Nhập lại mật khẩu"
+          label='Nhập lại mật khẩu'
           value={confirmPassword}
           onChange={handleConfirmPasswordChange}
           onBlur={handleConfirmPasswordBlur}
-          type={showConfirmPassword ? 'text' : 'password'}
+          type={showConfirmPassword ? "text" : "password"}
           error={touchedConfirmPassword && (errorConfirmPassword || matchError)}
           helperText={
             touchedConfirmPassword && errorConfirmPassword
-              ? 'Đây là trường bắt buộc'
+              ? "Đây là trường bắt buộc"
               : matchError
-                ? 'Mật khẩu không trùng khớp'
-                : ''
+                ? "Mật khẩu không trùng khớp"
+                : ""
           }
           InputProps={{
             endAdornment: (
-              <InputAdornment position="end">
-                <IconButton onClick={toggleShowConfirmPassword} edge="end">
+              <InputAdornment position='end'>
+                <IconButton onClick={toggleShowConfirmPassword} edge='end'>
                   {showConfirmPassword ? <VisibilityOff /> : <Visibility />}
                 </IconButton>
               </InputAdornment>

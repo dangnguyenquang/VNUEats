@@ -1,32 +1,32 @@
-import Head from 'next/head'
+import Head from "next/head"
 
 const LauThaiChay = () => {
   const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
     headline:
-      'Top 8 Quán Lẩu Thái Chay Ngon Ở Làng Đại Học – Địa Điểm Lý Tưởng Cho Sinh Viên',
+      "Top 8 Quán Lẩu Thái Chay Ngon Ở Làng Đại Học – Địa Điểm Lý Tưởng Cho Sinh Viên",
     description:
-      'Khám phá top 8 quán lẩu Thái chay ngon nhất ở làng Đại Học, địa điểm lý tưởng cho sinh viên yêu ẩm thực chay.',
-    image: 'https://i.pinimg.com/736x/f8/53/0a/f8530a489e5889cc213c09eeefb055aa.jpg',
-    url: 'https://vnueats.com/blog/lau-Thai-chay-lang-dai-hoc',
-    datePublished: '2024-03-23T00:00:00+07:00',
-    dateModified: '2024-03-23T00:00:00+07:00',
+      "Khám phá top 8 quán lẩu Thái chay ngon nhất ở làng Đại Học, địa điểm lý tưởng cho sinh viên yêu ẩm thực chay.",
+    image: "https://i.pinimg.com/736x/f8/53/0a/f8530a489e5889cc213c09eeefb055aa.jpg",
+    url: "https://vnueats.com/blog/lau-Thai-chay-lang-dai-hoc",
+    datePublished: "2024-03-23T00:00:00+07:00",
+    dateModified: "2024-03-23T00:00:00+07:00",
     author: {
-      '@type': 'Organization',
-      name: 'vnuEats',
+      "@type": "Organization",
+      name: "VNUEats",
     },
     publisher: {
-      '@type': 'Organization',
-      name: 'vnuEats',
+      "@type": "Organization",
+      name: "VNUEats",
       logo: {
-        '@type': 'ImageObject',
-        url: 'https://vnueats.com/logo.png',
+        "@type": "ImageObject",
+        url: "https://vnueats.com/logo.png",
       },
     },
     mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': 'https://vnueats.com/blog/lau-Thai-chay-lang-dai-hoc',
+      "@type": "WebPage",
+      "@id": "https://vnueats.com/blog/lau-Thai-chay-lang-dai-hoc",
     },
   }
 
@@ -34,58 +34,58 @@ const LauThaiChay = () => {
     <>
       <Head>
         <link
-          rel="canonical"
-          href="https://vnueats.com/blog/lau-Thai-chay-lang-dai-hoc"
+          rel='canonical'
+          href='https://vnueats.com/blog/lau-Thai-chay-lang-dai-hoc'
         />
         <title>
           Top 8 Quán Lẩu Thái Chay Ngon Ở Làng Đại Học – Địa Điểm Lý Tưởng Cho Sinh Viên
         </title>
         <meta
-          name="description"
-          content="Khám phá top 8 quán lẩu Thái chay ngon nhất ở làng Đại Học, địa điểm lý tưởng cho sinh viên yêu ẩm thực chay. Xem ngay để chọn quán phù hợp!"
+          name='description'
+          content='Khám phá top 8 quán lẩu Thái chay ngon nhất ở làng Đại Học, địa điểm lý tưởng cho sinh viên yêu ẩm thực chay. Xem ngay để chọn quán phù hợp!'
         />
         <meta
-          name="keywords"
-          content="lẩu Thái chay, làng đại học, món chay, quán chay ngon, top 8 quán chay"
+          name='keywords'
+          content='lẩu Thái chay, làng đại học, món chay, quán chay ngon, top 8 quán chay'
         />
 
         {/* Open Graph (Facebook, Zalo, LinkedIn) */}
         <meta
-          property="og:title"
-          content="Top 8 Quán Lẩu Thái Chay Ngon Ở Làng Đại Học – Địa Điểm Lý Tưởng Cho Sinh Viên"
+          property='og:title'
+          content='Top 8 Quán Lẩu Thái Chay Ngon Ở Làng Đại Học – Địa Điểm Lý Tưởng Cho Sinh Viên'
         />
         <meta
-          property="og:description"
-          content="Khám phá top 8 quán lẩu Thái chay ngon nhất ở làng Đại Học, địa điểm lý tưởng cho sinh viên yêu ẩm thực chay. Xem ngay để chọn quán phù hợp!"
+          property='og:description'
+          content='Khám phá top 8 quán lẩu Thái chay ngon nhất ở làng Đại Học, địa điểm lý tưởng cho sinh viên yêu ẩm thực chay. Xem ngay để chọn quán phù hợp!'
         />
         <meta
-          property="og:image"
-          content="https://i.pinimg.com/736x/f8/53/0a/f8530a489e5889cc213c09eeefb055aa.jpg"
+          property='og:image'
+          content='https://i.pinimg.com/736x/f8/53/0a/f8530a489e5889cc213c09eeefb055aa.jpg'
         />
         <meta
-          property="og:url"
-          content="https://vnueats.com/blog/lau-Thai-chay-lang-dai-hoc"
+          property='og:url'
+          content='https://vnueats.com/blog/lau-Thai-chay-lang-dai-hoc'
         />
-        <meta property="og:type" content="article" />
-        <meta property="og:locale" content="vi_VN" />
+        <meta property='og:type' content='article' />
+        <meta property='og:locale' content='vi_VN' />
 
         {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name='twitter:card' content='summary_large_image' />
         <meta
-          name="twitter:title"
-          content="Top 8 Quán Lẩu Thái Chay Ngon Ở Làng Đại Học – Địa Điểm Lý Tưởng Cho Sinh Viên"
+          name='twitter:title'
+          content='Top 8 Quán Lẩu Thái Chay Ngon Ở Làng Đại Học – Địa Điểm Lý Tưởng Cho Sinh Viên'
         />
         <meta
-          name="twitter:description"
-          content="Khám phá top 8 quán lẩu Thái chay ngon nhất ở làng Đại Học, địa điểm lý tưởng cho sinh viên yêu ẩm thực chay. Xem ngay để chọn quán phù hợp!"
+          name='twitter:description'
+          content='Khám phá top 8 quán lẩu Thái chay ngon nhất ở làng Đại Học, địa điểm lý tưởng cho sinh viên yêu ẩm thực chay. Xem ngay để chọn quán phù hợp!'
         />
         <meta
-          name="twitter:image"
-          content="https://i.pinimg.com/736x/f8/53/0a/f8530a489e5889cc213c09eeefb055aa.jpg"
+          name='twitter:image'
+          content='https://i.pinimg.com/736x/f8/53/0a/f8530a489e5889cc213c09eeefb055aa.jpg'
         />
 
         <script
-          type="application/ld+json"
+          type='application/ld+json'
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </Head>
@@ -94,7 +94,7 @@ const LauThaiChay = () => {
         <h1>Thưởng Thức Lẩu Thái Chay Ngon Ở Làng Đại Học – Top 8 Quán Nổi Bật</h1>
         <p>
           Bạn đang tìm kiếm quán <strong>lẩu Thái chay ngon ở làng đại học</strong> với
-          hương vị đậm đà, giá cả hợp lý? Hãy cùng khám phá{' '}
+          hương vị đậm đà, giá cả hợp lý? Hãy cùng khám phá{" "}
           <strong>top 8 quán lẩu Thái chay</strong> được yêu thích nhất, nơi bạn có thể
           thưởng thức nước dùng chua cay đặc trưng, kết hợp với các loại nấm, rau củ tươi
           ngon. Từ không gian thanh tịnh đến những quán ăn ấm cúng phù hợp với sinh viên,
@@ -104,12 +104,12 @@ const LauThaiChay = () => {
 
         <h2>1. Hoằng Đạt – Hương Vị Đậm Đà, Nước Dùng Đặc Biệt</h2>
         <img
-          src="https://i.pinimg.com/736x/0d/1f/d2/0d1fd2a3d27aaded4b803d3c4e452abc.jpg"
-          className="mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6"
-          alt="Lẩu chay Hoằng Đạt"
+          src='https://i.pinimg.com/736x/0d/1f/d2/0d1fd2a3d27aaded4b803d3c4e452abc.jpg'
+          className='mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6'
+          alt='Lẩu chay Hoằng Đạt'
         />
         <p>
-          Nhắc đến lẩu Thái chay ở làng đại học, không thể bỏ qua{' '}
+          Nhắc đến lẩu Thái chay ở làng đại học, không thể bỏ qua{" "}
           <strong>Hoằng Đạt</strong> – một trong những quán chay nổi tiếng với nước lẩu
           thanh ngọt, chua cay đặc trưng. Khác với sự ồn ào, tấp nập bên ngoài, bước chân
           vào quán bạn sẽ có cảm giác vô cùng thư giãn, an yên bởi không gian trong lành,
@@ -126,12 +126,12 @@ const LauThaiChay = () => {
 
         <h2>2. Hữu Duyên – Lẩu Thái Chay Ngon Với Giá Sinh Viên</h2>
         <img
-          src="https://i.pinimg.com/736x/80/a1/b6/80a1b6c15d596e9bc2c73926a829424f.jpg"
-          className="mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6"
-          alt="Lẩu chay Hữu Duyên"
+          src='https://i.pinimg.com/736x/80/a1/b6/80a1b6c15d596e9bc2c73926a829424f.jpg'
+          className='mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6'
+          alt='Lẩu chay Hữu Duyên'
         />
         <p>
-          <strong>Hữu Duyên</strong> là địa điểm lý tưởng cho những ai muốn thưởng thức{' '}
+          <strong>Hữu Duyên</strong> là địa điểm lý tưởng cho những ai muốn thưởng thức{" "}
           <em>lẩu Thái chay ở làng đại học</em> với mức giá hợp lý. Không gian quán tuy
           không quá lớn nhưng ấm cúng, thích hợp cho các nhóm bạn tụ tập.
         </p>
@@ -145,12 +145,12 @@ const LauThaiChay = () => {
 
         <h2>3. Mị Châu – Không Gian Thoáng Đãng, Thực Đơn Đa Dạng</h2>
         <img
-          src="https://i.pinimg.com/736x/83/1e/0b/831e0b04975af8e6890390e6a2cc7903.jpg"
-          className="mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6"
-          alt="Lẩu chay Mị Châu"
+          src='https://i.pinimg.com/736x/83/1e/0b/831e0b04975af8e6890390e6a2cc7903.jpg'
+          className='mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6'
+          alt='Lẩu chay Mị Châu'
         />
         <p>
-          Nếu bạn muốn tìm một quán lẩu Thái chay có thực đơn đa dạng, hãy ghé{' '}
+          Nếu bạn muốn tìm một quán lẩu Thái chay có thực đơn đa dạng, hãy ghé{" "}
           <strong>Mị Châu</strong>. Đến đây, thực khách sẽ được thưởng thức những món ăn
           với nấm là nguyên liệu chính. Nước dùng của món lẩu được hầm từ rau củ nên có vị
           ngọt thanh, rất tốt cho sức khỏe.
@@ -166,9 +166,9 @@ const LauThaiChay = () => {
 
         <h2>4. Thiên Tâm – Lẩu Thái Chay Dành Cho Người Yêu Sự Thanh Đạm</h2>
         <img
-          src="https://i.pinimg.com/474x/58/a4/e3/58a4e30632e6ba71cb1e88ae88ff3756.jpg"
-          className="mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6"
-          alt="Lẩu chay Thiện Tâm"
+          src='https://i.pinimg.com/474x/58/a4/e3/58a4e30632e6ba71cb1e88ae88ff3756.jpg'
+          className='mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6'
+          alt='Lẩu chay Thiện Tâm'
         />
         <p>
           <strong>Thiên Tâm</strong> hướng đến phong cách ẩm thực chay thanh đạm, phù hợp
@@ -190,9 +190,9 @@ const LauThaiChay = () => {
 
         <h2>5. An Nhiên – Lẩu Thái Chay Đầy Đủ Hương Vị, Không Gian Ấm Cúng</h2>
         <img
-          src="https://i.pinimg.com/736x/c4/2b/15/c42b152ae116613eee96fb1bdbe94eda.jpg"
-          className="mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6"
-          alt="Lẩu chay An Nhiên"
+          src='https://i.pinimg.com/736x/c4/2b/15/c42b152ae116613eee96fb1bdbe94eda.jpg'
+          className='mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6'
+          alt='Lẩu chay An Nhiên'
         />
         <p>
           Quán An Nhiên là một lựa chọn tuyệt vời cho những ai yêu thích hương vị lẩu Thái
@@ -209,9 +209,9 @@ const LauThaiChay = () => {
 
         <h2>6. Bình Anh – Lẩu Thái Chay Ngon, Chất Lượng Đảm Bảo</h2>
         <img
-          src="https://i.pinimg.com/736x/2f/35/76/2f357666f4594e4ca87410c8b0d8abd8.jpg"
-          className="mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6"
-          alt="Lẩu chay Bình An"
+          src='https://i.pinimg.com/736x/2f/35/76/2f357666f4594e4ca87410c8b0d8abd8.jpg'
+          className='mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6'
+          alt='Lẩu chay Bình An'
         />
         <p>
           Bình Anh là quán chay có chất lượng thực phẩm đảm bảo, luôn sử dụng nguyên liệu
@@ -227,9 +227,9 @@ const LauThaiChay = () => {
 
         <h2>7. Diệu Hạnh – Lẩu Thái Chay Phong Cách Gia Đình</h2>
         <img
-          src="https://i.pinimg.com/736x/f7/f2/0d/f7f20d0580143bef5b8961f956cb0788.jpg"
-          className="mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6"
-          alt="Lẩu chay Diệu Hạnh"
+          src='https://i.pinimg.com/736x/f7/f2/0d/f7f20d0580143bef5b8961f956cb0788.jpg'
+          className='mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6'
+          alt='Lẩu chay Diệu Hạnh'
         />
         <p>
           Diệu Hạnh là quán lẩu chay có không gian thoải mái, phù hợp cho những buổi tụ
@@ -245,9 +245,9 @@ const LauThaiChay = () => {
 
         <h2>8. Thiện Tâm – Lẩu Thái Chay Thanh Đạm, Hương Vị Truyền Thống</h2>
         <img
-          src="https://i.pinimg.com/736x/90/79/0e/90790e33870054a49e4c61a768bd6716.jpg"
-          className="mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6"
-          alt="Lẩu chay Thiện Tâm"
+          src='https://i.pinimg.com/736x/90/79/0e/90790e33870054a49e4c61a768bd6716.jpg'
+          className='mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6'
+          alt='Lẩu chay Thiện Tâm'
         />
         <p>
           Thiện Tâm là quán chay lâu đời được nhiều thực khách yêu thích. Lẩu Thái chay
@@ -263,7 +263,7 @@ const LauThaiChay = () => {
 
         <h2>Lẩu Thái Chay Ở Làng Đại Học – Món Ngon Hợp Thời</h2>
         <p>
-          Không chỉ đơn thuần là một món ăn, <strong>lẩu Thái chay ở làng đại học</strong>{' '}
+          Không chỉ đơn thuần là một món ăn, <strong>lẩu Thái chay ở làng đại học</strong>{" "}
           còn là xu hướng ẩm thực được nhiều bạn trẻ yêu thích. Với sự đa dạng trong hương
           vị, nguyên liệu tươi ngon và mức giá hợp lý, lẩu Thái chay đã trở thành một lựa
           chọn hoàn hảo cho những bữa ăn ngon, bổ dưỡng. Nếu bạn là một tín đồ của món
@@ -274,12 +274,12 @@ const LauThaiChay = () => {
         <h3>Hãy Chia Sẻ Cảm Nhận Của Bạn!</h3>
         <p>
           Bạn đã từng thử lẩu Thái chay ở làng đại học chưa? Hãy chia sẻ cảm nhận của bạn
-          trên{' '}
-          <strong className="hover:underline">
-            <a href="https://www.facebook.com/profile.php?id=61573378120831&locale=vi_VN">
+          trên{" "}
+          <strong className='hover:underline'>
+            <a href='https://www.facebook.com/profile.php?id=61573378120831&locale=vi_VN'>
               Fanpage
             </a>
-          </strong>{' '}
+          </strong>{" "}
           của chúng mình nhé
         </p>
       </div>

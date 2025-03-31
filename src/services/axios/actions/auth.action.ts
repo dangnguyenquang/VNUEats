@@ -1,6 +1,6 @@
-import { client } from '@/services/axios'
-import { ApiResponse, User } from '@/types/api/auth'
-import authEndpoint from '../endpoints/auth.endpoint'
+import { client } from "@/services/axios"
+import { ApiResponse, User } from "@/types/api/auth"
+import authEndpoint from "../endpoints/auth.endpoint"
 
 class AuthApi {
     async signIn(email: string, password: string): Promise<ApiResponse<User>> {
@@ -11,7 +11,7 @@ class AuthApi {
             })
             return res.data
         } catch (error) {
-            throw new Error('Có lỗi xảy ra')
+            throw new Error("Có lỗi xảy ra")
         }
     }
 
@@ -20,7 +20,7 @@ class AuthApi {
             const res = await client.post(authEndpoint.getotp, { email })
             return res.data
         } catch (error) {
-            throw new Error('Có lỗi xảy ra')
+            throw new Error("Có lỗi xảy ra")
         }
     }
 
@@ -29,7 +29,7 @@ class AuthApi {
             const res = await client.post(authEndpoint.verifyotp, { email, otp })
             return res.data
         } catch (error) {
-            throw new Error('Có lỗi xảy ra')
+            throw new Error("Có lỗi xảy ra")
         }
     }
 
@@ -41,7 +41,7 @@ class AuthApi {
             })
             return res.data
         } catch (error) {
-            throw new Error('Có lỗi xảy ra')
+            throw new Error("Có lỗi xảy ra")
         }
     }
 
@@ -50,7 +50,7 @@ class AuthApi {
             const res = await client.get(authEndpoint.signout)
             return res.data
         } catch (error) {
-            throw new Error('Có lỗi xảy ra')
+            throw new Error("Có lỗi xảy ra")
         }
     }
 
@@ -73,37 +73,39 @@ class AuthApi {
             return res
         } catch (error) {
             console.log(error)
-            throw new Error('Có lỗi xảy ra')
+            throw new Error("Có lỗi xảy ra")
         }
     }
 
-    // async customerRegister(formData) {
-    //   try {
-    //     const res = await client.post(authEndpoint.register, formData, {
-    //       headers: {
-    //         'Content-Type': 'multipart/form-data',
-    //       },
-    //     })
-    //     return { msg: res.msg }
-    //   } catch (error) {
-    //     // return { error: error.message || 'Đã xảy ra lỗi trong quá trình đăng ký' }
-    //     throw new Error('Có lỗi xảy ra')
-    //   }
-    // }
+    async customerRegister(formData: FormData) {
+        try {
+            const res = await client.post(authEndpoint.register, formData, {
+                headers: {
+                    "Content-Type": "multipart/form-data",
+                },
+            })
+            return { msg: res.data.msg }
+        } catch (error: any) {
+            throw new Error(
+                error.response?.data?.message || "Đã xảy ra lỗi trong quá trình đăng ký",
+            )
+        }
+    }
 
-    // async sellerRegister(formData) {
-    //   try {
-    //     const res = await client.post(authEndpoint.register, formData, {
-    //       headers: {
-    //         'Content-Type': 'multipart/form-data',
-    //       },
-    //     })
-    //     return { msg: res.msg }
-    //   } catch (error) {
-    //     // return { error: error.message || 'Đã xảy ra lỗi trong quá trình đăng ký' }
-    //     throw new Error('Có lỗi xảy ra')
-    //   }
-    // }
+    async sellerRegister(formData: FormData) {
+        try {
+            const res = await client.post(authEndpoint.register, formData, {
+                headers: {
+                    "Content-Type": "multipart/form-data",
+                },
+            })
+            return res.data
+        } catch (error: any) {
+            throw new Error(
+                error.response?.data?.message || "Đã xảy ra lỗi trong quá trình đăng ký",
+            )
+        }
+    }
 
     // async Search(filterList, page) {
     //   try {

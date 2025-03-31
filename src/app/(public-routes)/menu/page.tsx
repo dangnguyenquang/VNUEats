@@ -15,6 +15,7 @@ import SearchBar from '../../../components/SearchBar'
 import CategroryFilter from './_components/CategroryFilter'
 import DistrictFilter from './_components/DistrictFilter'
 import RestaurantList from './_components/RestaurantList'
+        
 const MenuPage = () => {
   return (
     <Suspense fallback={<p>Loading...</p>}>
@@ -48,11 +49,11 @@ const MenuContent = () => {
     typeSort: string
   }>({
     boroughRestaurant: [],
-    nameRestaurant: '',
-    nameFood: '',
+    nameRestaurant: "",
+    nameFood: "",
     categories: [],
-    starMedium: '0',
-    typeSort: 'Best seller',
+    starMedium: "0",
+    typeSort: "Best seller",
   })
 
   const handleSearch = async () => {
@@ -86,9 +87,9 @@ const MenuContent = () => {
   }
 
   // Search Bar value
-  const [searchValue, setSearchValue] = useState<string>('')
+  const [searchValue, setSearchValue] = useState<string>("")
   // Kiểu search
-  const [currencyValue, setcurrencyValue] = useState('restaurant')
+  const [currencyValue, setcurrencyValue] = useState("restaurant")
 
   const handleChangeCurrencies = (
     event: React.ChangeEvent<{ name?: string; value: unknown }>,
@@ -97,12 +98,12 @@ const MenuContent = () => {
     setcurrencyValue(newCurrencyValue)
     setFilterList((prevFilterList) => {
       const newFilterList = { ...prevFilterList }
-      if (newCurrencyValue === 'restaurant') {
+      if (newCurrencyValue === "restaurant") {
         newFilterList.nameRestaurant = searchValue
-        newFilterList.nameFood = ''
+        newFilterList.nameFood = ""
       } else {
         newFilterList.nameFood = searchValue
-        newFilterList.nameRestaurant = ''
+        newFilterList.nameRestaurant = ""
       }
       return newFilterList
     })
@@ -120,12 +121,12 @@ const MenuContent = () => {
     }
     const queryParams = new URLSearchParams()
     if (searchValue) {
-      queryParams.append('search', searchValue)
-      queryParams.append('type', currencyValue)
+      queryParams.append("search", searchValue)
+      queryParams.append("type", currencyValue)
     }
-    const selectedCategoriesString = selectedCategories.join(',')
+    const selectedCategoriesString = selectedCategories.join(",")
     if (selectedCategoriesString) {
-      queryParams.append('categories', selectedCategoriesString)
+      queryParams.append("categories", selectedCategoriesString)
     }
     const newUrl = `/menu?${queryParams.toString()}`
     const currentUrl = `${window.location.pathname}${window.location.search}`
@@ -139,18 +140,18 @@ const MenuContent = () => {
   const searchParams = useSearchParams()
   useEffect(() => {
     if (!searchParams) return
-    const search = searchParams.get('search') || ''
-    const typeSearch = searchParams.get('type') || 'restaurant'
-    const categoriesParam = searchParams.get('categories') || ''
+    const search = searchParams.get("search") || ""
+    const typeSearch = searchParams.get("type") || "restaurant"
+    const categoriesParam = searchParams.get("categories") || ""
     const decodedCategories = decodeURIComponent(categoriesParam) //giải mã
-    const categoriesArray = decodedCategories ? decodedCategories.split(',') : [] //tạo thành bảng để lưu cho đúng định dạng
+    const categoriesArray = decodedCategories ? decodedCategories.split(",") : [] //tạo thành bảng để lưu cho đúng định dạng
     setSearchValue(search)
     setcurrencyValue(typeSearch)
     setSelectedCategories(categoriesArray)
     setFilterList((prevFilterList) => ({
       ...prevFilterList,
       categories: categoriesArray,
-      [typeSearch === 'restaurant' ? 'nameRestaurant' : 'nameFood']: search,
+      [typeSearch === "restaurant" ? "nameRestaurant" : "nameFood"]: search,
     }))
   }, [searchParams])
 
@@ -199,7 +200,7 @@ const MenuContent = () => {
   }
 
   // hook xử lý select filter quán bán chạy nhất/ quán mới nhất
-  const [selectedRestaurantFilter, setSelectedRestaurantFilter] = useState('Best seller')
+  const [selectedRestaurantFilter, setSelectedRestaurantFilter] = useState("Best seller")
   const handleChangeSelect = (event: SelectChangeEvent<string>) => {
     setPage(1)
     setSelectedRestaurantFilter(event.target.value)
@@ -231,29 +232,29 @@ const MenuContent = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     })
   }
 
   return (
-    <div className="w-full justify-items-center px-5 lg:px-10 xl:px-16 pb-10 pt-10 sm:pt-20">
+    <div className='w-full justify-items-center px-5 lg:px-10 xl:px-16 pb-10 pt-10 sm:pt-20'>
       {/* Thanh Search */}
-      <div className="w-full">
+      <div className='w-full'>
         {/* ================================================= */}
-        <div className=" w-full flex items-center min-w-[355px] justify-between mb-10 gap-5">
+        <div className=' w-full flex items-center min-w-[355px] justify-between mb-10 gap-5'>
           <div
-            className="flex items-center cursor-pointer px-[12px] py-[8px] bg-primary hover:bg-secondary rounded-full"
+            className='flex items-center cursor-pointer px-[12px] py-[8px] bg-primary hover:bg-secondary rounded-full'
             onClick={() => setIsFilterOpen(!isFilterOpen)}
           >
-            <Filter size={30} color="white" />
+            <Filter size={30} color='white' />
             {isFilterOpen ? (
-              <ChevronUp size={25} color="white" />
+              <ChevronUp size={25} color='white' />
             ) : (
-              <ChevronDown size={24} color="white" />
+              <ChevronDown size={24} color='white' />
             )}
           </div>
           {/* Search Bar */}
-          <div className="w-full md:w-[50%] ">
+          <div className='w-full md:w-[50%] '>
             <SearchBar
               searchValue={searchValue}
               handleChangeSearch={handleChangeSearch}
@@ -263,35 +264,35 @@ const MenuContent = () => {
             />
           </div>
           {/* Filter Dropdown */}
-          <FormControl sx={{ m: 1 }} className="">
+          <FormControl sx={{ m: 1 }} className=''>
             <Select
               value={selectedRestaurantFilter}
               onChange={handleChangeSelect}
               displayEmpty
-              inputProps={{ 'aria-label': 'Without label' }}
+              inputProps={{ "aria-label": "Without label" }}
             >
-              <MenuItem value="Best seller">Quán bán chạy nhất</MenuItem>
-              <MenuItem value="Newest restaurant">Quán mới nhất</MenuItem>
+              <MenuItem value='Best seller'>Quán bán chạy nhất</MenuItem>
+              <MenuItem value='Newest restaurant'>Quán mới nhất</MenuItem>
             </Select>
           </FormControl>
         </div>
 
         {/* ================================================= */}
-        <div className="flex gap-[30px] min-w-[355px]x">
+        <div className='flex gap-[30px] min-w-[355px]x'>
           {isFilterOpen && (
-            <div className="2xl:min-w-[300px] min-w-[210px] lg:min-w-[230px]">
-              <div className="bg-primary rounded-t-[20px] h-[95px] justify-center items-center flex gap-1">
-                <div className="text-accent font-bold text-[20px] sm:text-[25px] uppercase text-center">
+            <div className='2xl:min-w-[300px] min-w-[210px] lg:min-w-[230px]'>
+              <div className='bg-primary rounded-t-[20px] h-[95px] justify-center items-center flex gap-1'>
+                <div className='text-accent font-bold text-[20px] sm:text-[25px] uppercase text-center'>
                   Bộ lọc tìm kiếm
                 </div>
               </div>
-              <div className="bg-[#f0f1f2] p-5 pr-4 rounded-b-[20px]">
-                <div className="">
+              <div className='bg-[#f0f1f2] p-5 pr-4 rounded-b-[20px]'>
+                <div className=''>
                   <Box>
-                    <div className="flex justify-between items-center">
-                      <Typography component="legend">
+                    <div className='flex justify-between items-center'>
+                      <Typography component='legend'>
                         <div
-                          className={`text-[18px] font-bold ${!isFilterRating ? 'text-gray-400' : 'text-primaryText'}`}
+                          className={`text-[18px] font-bold ${!isFilterRating ? "text-gray-400" : "text-primaryText"}`}
                         >
                           Quán có số sao từ
                         </div>
@@ -301,21 +302,21 @@ const MenuContent = () => {
                         checked={isFilterRating}
                         onChange={handleCheckboxChange}
                         sx={{
-                          '&.Mui-checked': {
-                            color: '#7D0600',
+                          "&.Mui-checked": {
+                            color: "#7D0600",
                           },
                         }}
                       />
                     </div>
-                    <div className="flex items-end">
+                    <div className='flex items-end'>
                       <Rating
-                        name="simple-controlled"
+                        name='simple-controlled'
                         value={countStar}
                         onChange={handleRating}
                         disabled={!isFilterRating}
                       />
                       <div
-                        className={`ml-2 ${!isFilterRating ? 'text-gray-400' : 'text-primaryText'}`}
+                        className={`ml-2 ${!isFilterRating ? "text-gray-400" : "text-primaryText"}`}
                       >
                         trở lên
                       </div>
@@ -323,14 +324,14 @@ const MenuContent = () => {
                   </Box>
                 </div>
 
-                <div className="bg-primaryText w-full h-0.5 mt-[16px] mb-[16px]"></div>
+                <div className='bg-primaryText w-full h-0.5 mt-[16px] mb-[16px]'></div>
 
                 <DistrictFilter
                   selectedDistricts={selectedDistricts}
                   handleSelectDistricts={handleSelectDistricts}
                 />
 
-                <div className="bg-primaryText w-full h-0.5 mt-[16px] mb-[16px]"></div>
+                <div className='bg-primaryText w-full h-0.5 mt-[16px] mb-[16px]'></div>
 
                 <CategroryFilter
                   selectedCategories={selectedCategories}
@@ -341,38 +342,38 @@ const MenuContent = () => {
           )}
 
           {/* Kết quả tìm kiếm */}
-          <div className="w-full">
+          <div className='w-full'>
             {Restaurants ? (
               <RestaurantList Restaurants={Restaurants} isFilterOpen={isFilterOpen} />
             ) : (
-              <div className="flex justify-center">
-                <p className="text-[15px] sm:text-[20px] italic font-thin">
+              <div className='flex justify-center'>
+                <p className='text-[15px] sm:text-[20px] italic font-thin'>
                   Không tìm thấy nhà hàng nào phù hợp với tiêu chí của bạn.
                 </p>
               </div>
             )}
-            <div className="flex justify-center mt-10">
+            <div className='flex justify-center mt-10'>
               {numberPages.numberPages > 1 ? (
                 <Pagination
                   count={numberPages.numberPages}
                   page={page}
                   onChange={handlePageChange}
                   sx={{
-                    '& .MuiPaginationItem-root': {
-                      color: '#7D0600',
+                    "& .MuiPaginationItem-root": {
+                      color: "#7D0600",
                     },
-                    '& .MuiPaginationItem-page.Mui-selected': {
-                      backgroundColor: '#7D0600',
-                      color: 'white',
-                      '&:hover': {
-                        backgroundColor: '#a40b0b',
+                    "& .MuiPaginationItem-page.Mui-selected": {
+                      backgroundColor: "#7D0600",
+                      color: "white",
+                      "&:hover": {
+                        backgroundColor: "#a40b0b",
                       },
                     },
-                    '& .MuiPaginationItem-ellipsis': {
-                      color: '#7D0600',
+                    "& .MuiPaginationItem-ellipsis": {
+                      color: "#7D0600",
                     },
-                    '& .MuiPaginationItem-icon': {
-                      color: '#7D0600',
+                    "& .MuiPaginationItem-icon": {
+                      color: "#7D0600",
                     },
                   }}
                 />
