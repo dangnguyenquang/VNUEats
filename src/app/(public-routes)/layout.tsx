@@ -4,7 +4,7 @@ import Footer from "@/components/layout/Footer"
 import Header from "@/components/layout/Header"
 import Sidebar from "@/components/layout/Sidebar"
 import AutoLogin from "@/stores/autoLogin"
-import Head from "next/head"
+import Script from "next/script"
 import { useState } from "react"
 // import Chatbot from '../Components/_components/Chatbot'
 
@@ -74,20 +74,6 @@ export default function DefaultLayout({ children }: { children: React.ReactNode 
 
   return (
     <>
-      <Head>
-        <script
-          type='application/ld+json'
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-        />
-        <script
-          type='application/ld+json'
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-        />
-        <script
-          type='application/ld+json'
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-        />
-      </Head>
       <AutoLogin>
         <div className='flex-col items-center w-full'>
           <Header toggleSidebar={toggleSidebar} />
@@ -97,6 +83,25 @@ export default function DefaultLayout({ children }: { children: React.ReactNode 
           {/* <Chatbot /> */}
         </div>
       </AutoLogin>
+
+      <Script
+        type='application/ld+json'
+        id='website-schema'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        strategy='lazyOnload'
+      />
+      <Script
+        type='application/ld+json'
+        id='breadcrumb-schema'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        strategy='lazyOnload'
+      />
+      <Script
+        type='application/ld+json'
+        id='organization-schema'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        strategy='lazyOnload'
+      />
     </>
   )
 }
