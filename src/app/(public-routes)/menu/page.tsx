@@ -16,8 +16,6 @@ import CategroryFilter from "./_components/CategroryFilter"
 import DistrictFilter from "./_components/DistrictFilter"
 import RestaurantList from "./_components/RestaurantList"
 
-//
-
 const MenuPage = () => {
   return (
     <Suspense fallback={<p>Loading...</p>}>

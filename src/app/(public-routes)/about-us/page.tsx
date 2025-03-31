@@ -15,12 +15,14 @@ import Image_Group from "../../../assets/images/aboutUs/group_img.png"
 export default function AboutUs() {
   const router = useRouter()
   useEffect(() => {
-    Aos.init({
-      duration: 1000,
-      offset: 50,
-      easing: "ease-in-out",
-      mirror: true,
-    })
+    if (typeof window !== "undefined") {
+      Aos.init({
+        duration: 1000,
+        offset: 50,
+        easing: "ease-in-out",
+        mirror: true,
+      })
+    }
   }, [])
 
   // Biến Style cho Heading
