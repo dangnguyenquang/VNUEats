@@ -1,5 +1,5 @@
-import TextField from '@mui/material/TextField'
-import { useState } from 'react'
+import TextField from "@mui/material/TextField"
+import { useState } from "react"
 
 interface NameTextFieldProps {
   label: string
@@ -11,7 +11,7 @@ interface NameTextFieldProps {
 
 const NameTextField: React.FC<NameTextFieldProps> = ({
   label,
-  className = '',
+  className = "",
   whiteBg = false,
   value,
   handleChange,
@@ -38,14 +38,14 @@ const NameTextField: React.FC<NameTextFieldProps> = ({
     <div className={`mx-auto max-w-[500px] my-5 ${className}`}>
       <TextField
         sx={{
-          margin: 'auto',
-          width: '100%',
-          '& .MuiOutlinedInput-root': {
-            borderRadius: '20px',
-            backgroundColor: whiteBg ? 'white' : 'transparent',
+          margin: "auto",
+          width: "100%",
+          "& .MuiOutlinedInput-root": {
+            borderRadius: "20px",
+            backgroundColor: whiteBg ? "white" : "transparent",
           },
-          '& fieldset': {
-            borderWidth: '2px',
+          "& fieldset": {
+            borderWidth: "2px",
           },
         }}
         label={label}
@@ -56,10 +56,10 @@ const NameTextField: React.FC<NameTextFieldProps> = ({
         error={error}
         helperText={
           error
-            ? 'Trường này là bắt buộc và phải là tên hợp lệ (mỗi từ bắt đầu bằng chữ cái hoa)'
-            : ''
+            ? "Trường này là bắt buộc và phải là tên hợp lệ (mỗi từ bắt đầu bằng chữ cái hoa)"
+            : ""
         }
-        inputProps={{ inputMode: 'text' }}
+        inputProps={{ inputMode: "text" }}
       />
     </div>
   )

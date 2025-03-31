@@ -42,7 +42,7 @@ export interface Order {
     items: OrderItem[]
     totalPrice: number
     restaurantId: string
-    status: 'pending' | 'in-progress' | 'completed' | 'canceled'
+    status: "pending" | "in-progress" | "completed" | "canceled"
 }
 
 export interface ReviewModalProps {

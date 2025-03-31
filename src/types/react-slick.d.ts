@@ -1,6 +1,6 @@
 // src/types/react-slick.d.ts
-declare module 'react-slick' {
-    import { Component, ReactNode } from 'react'
+declare module "react-slick" {
+    import { Component, ReactNode } from "react"
 
     interface Settings {
         dots?: boolean

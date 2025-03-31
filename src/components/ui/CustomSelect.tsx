@@ -4,8 +4,8 @@ import {
   MenuItem,
   Select,
   SelectChangeEvent,
-} from '@mui/material'
-import { FC, ReactNode } from 'react'
+} from "@mui/material"
+import { FC, ReactNode } from "react"
 
 interface Option {
   value: string | number
@@ -31,17 +31,17 @@ const CustomSelect: FC<CustomSelectProps> = ({ label, options, value, handleChan
 
   return (
     <FormControl fullWidth>
-      <InputLabel id={`select-label-${label.replace(/\s+/g, '-')}`}>{label}</InputLabel>
+      <InputLabel id={`select-label-${label.replace(/\s+/g, "-")}`}>{label}</InputLabel>
       <Select
-        labelId={`select-label-${label.replace(/\s+/g, '-')}`}
-        id={`select-${label.replace(/\s+/g, '-')}`}
+        labelId={`select-label-${label.replace(/\s+/g, "-")}`}
+        id={`select-${label.replace(/\s+/g, "-")}`}
         value={value}
         onChange={handleSelectChange}
         label={label}
         sx={{
-          borderRadius: '20px',
-          '& fieldset': {
-            borderWidth: '2px',
+          borderRadius: "20px",
+          "& fieldset": {
+            borderWidth: "2px",
           },
         }}
       >

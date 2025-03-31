@@ -1,5 +1,5 @@
-import TextField from '@mui/material/TextField'
-import { useState } from 'react'
+import TextField from "@mui/material/TextField"
+import { useState } from "react"
 
 interface EmailTextFieldProps {
   label: string
@@ -11,7 +11,7 @@ interface EmailTextFieldProps {
 
 const EmailTextField: React.FC<EmailTextFieldProps> = ({
   label,
-  className = '',
+  className = "",
   whiteBg = false,
   value,
   handleChange,
@@ -29,14 +29,14 @@ const EmailTextField: React.FC<EmailTextFieldProps> = ({
     <div className={`mx-auto max-w-[500px] my-5 ${className}`}>
       <TextField
         sx={{
-          margin: 'auto',
-          width: '100%',
-          '& .MuiOutlinedInput-root': {
-            borderRadius: '20px',
-            backgroundColor: whiteBg ? 'white' : 'transparent',
+          margin: "auto",
+          width: "100%",
+          "& .MuiOutlinedInput-root": {
+            borderRadius: "20px",
+            backgroundColor: whiteBg ? "white" : "transparent",
           },
-          '& fieldset': {
-            borderWidth: '2px',
+          "& fieldset": {
+            borderWidth: "2px",
           },
         }}
         label={label}
@@ -48,7 +48,7 @@ const EmailTextField: React.FC<EmailTextFieldProps> = ({
         onBlur={handleBlur}
         required
         error={error}
-        helperText={error ? 'Vui lòng nhập địa chỉ email hợp lệ' : ''}
+        helperText={error ? "Vui lòng nhập địa chỉ email hợp lệ" : ""}
       />
     </div>
   )
