@@ -1,23 +1,21 @@
-"use client"
-import authApi from "@/services/axios/actions/auth.action"
-import { Pagination, SelectChangeEvent } from "@mui/material"
-import Box from "@mui/material/Box"
-import Checkbox from "@mui/material/Checkbox"
-import FormControl from "@mui/material/FormControl"
-import MenuItem from "@mui/material/MenuItem"
-import Rating from "@mui/material/Rating"
-import Select from "@mui/material/Select"
-import Typography from "@mui/material/Typography"
-import { ChevronDown, ChevronUp, Filter } from "lucide-react"
-import { useRouter, useSearchParams } from "next/navigation"
-import { Suspense, useEffect, useRef, useState } from "react"
-import SearchBar from "../../../components/SearchBar"
-import CategroryFilter from "./_components/CategroryFilter"
-import DistrictFilter from "./_components/DistrictFilter"
-import RestaurantList from "./_components/RestaurantList"
-
-//
-
+'use client'
+import authApi from '@/services/axios/actions/auth.action'
+import { Pagination, SelectChangeEvent } from '@mui/material'
+import Box from '@mui/material/Box'
+import Checkbox from '@mui/material/Checkbox'
+import FormControl from '@mui/material/FormControl'
+import MenuItem from '@mui/material/MenuItem'
+import Rating from '@mui/material/Rating'
+import Select from '@mui/material/Select'
+import Typography from '@mui/material/Typography'
+import { ChevronDown, ChevronUp, Filter } from 'lucide-react'
+import { useRouter, useSearchParams } from 'next/navigation'
+import { Suspense, useEffect, useRef, useState } from 'react'
+import SearchBar from '../../../components/SearchBar'
+import CategroryFilter from './_components/CategroryFilter'
+import DistrictFilter from './_components/DistrictFilter'
+import RestaurantList from './_components/RestaurantList'
+        
 const MenuPage = () => {
   return (
     <Suspense fallback={<p>Loading...</p>}>
