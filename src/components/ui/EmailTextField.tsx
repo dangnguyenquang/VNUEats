@@ -1,35 +1,32 @@
 import TextField from '@mui/material/TextField'
-import React, { useState } from 'react'
+import { useState } from 'react'
 
-interface RequiredTextFieldProps {
-  label?: string
+interface EmailTextFieldProps {
+  label: string
   className?: string
-  placeholder?: string
   whiteBg?: boolean
   value: string
-  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void
-  required?: boolean
+  handleChange: (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void
 }
 
-function RequiredTextField({
+const EmailTextField: React.FC<EmailTextFieldProps> = ({
   label,
   className = '',
-  placeholder,
   whiteBg = false,
   value,
   handleChange,
-  required = true,
-}: RequiredTextFieldProps) {
-  const [error, setError] = useState(false)
+}) => {
+  const [error, setError] = useState<boolean>(false)
 
   const handleBlur = () => {
-    if (!value) {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!emailPattern.test(value)) {
       setError(true)
     }
   }
 
   return (
-    <div className={`mx-auto w-full sm:max-w-[300px] md:max-w-[500px] my-5 ${className}`}>
+    <div className={`mx-auto max-w-[500px] my-5 ${className}`}>
       <TextField
         sx={{
           margin: 'auto',
@@ -44,18 +41,17 @@ function RequiredTextField({
         }}
         label={label}
         value={value}
-        onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+        onChange={(e) => {
           handleChange(e)
           if (error) setError(false)
         }}
         onBlur={handleBlur}
-        required={required}
+        required
         error={error}
-        placeholder={placeholder}
-        helperText={error && required ? 'Đây là trường bắt buộc' : ''}
+        helperText={error ? 'Vui lòng nhập địa chỉ email hợp lệ' : ''}
       />
     </div>
   )
 }
 
-export default RequiredTextField
+export default EmailTextField

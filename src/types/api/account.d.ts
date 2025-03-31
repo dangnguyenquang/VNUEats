@@ -10,6 +10,7 @@ export interface Account {
     createdAt: string
     updatedAt: string
     __v: number
+    avatar?: { url: string }
 }
 
 export interface AccountResponse {
@@ -17,12 +18,17 @@ export interface AccountResponse {
 }
 
 export interface AccountUpdateForm {
-    avatar: File
-    adress: string
+    avatar: string | File
+    address: string
     phone: string
 }
 
 export interface Req_ChangePassword {
     oldPassword: string
     password: string
+}
+
+export interface AvatarUploaderProps {
+    currentAvatar?: string
+    onAvatarChange: (file: File) => void
 }
