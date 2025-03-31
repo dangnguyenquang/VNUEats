@@ -1,7 +1,6 @@
 import { Analytics } from "@vercel/analytics/react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
-import Head from "next/head"
 import "../styles/globals.css"
 
 const geistSans = Geist({
@@ -13,63 +12,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 })
-
-const websiteSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "vnuEats",
-  url: "https://vnueats.com",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "https://vnueats.com/search?q={search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
-}
-
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Trang chủ",
-      item: "https://vnueats.com/",
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "Món ăn",
-      item: "https://vnueats.com/menu",
-    },
-    {
-      "@type": "ListItem",
-      position: 3,
-      name: "Giới thiệu",
-      item: "https://vnueats.com/about-us",
-    },
-    {
-      "@type": "ListItem",
-      position: 4,
-      name: "Bài viết",
-      item: "https://vnueats.com/blogs",
-    },
-  ],
-}
-
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "vnuEats",
-  url: "https://vnueats.com",
-  logo: "https://vnueats.com/favicon/favicon.ico",
-  sameAs: [
-    "https://www.instagram.com/vnu.eats",
-    "https://www.youtube.com/@vnuEats",
-    "https://www.tiktok.com/@vnueats",
-    "https://www.facebook.com/profile.php?id=61574616120300&locale=vi_VN",
-  ],
-}
 
 export const metadata: Metadata = {
   title: "vnuEats – Khám phá ẩm thực làng đại học",
@@ -136,11 +78,11 @@ export const metadata: Metadata = {
       { url: "/favicon/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
   },
-  other: {
-    "breadcrumb-schema": JSON.stringify(breadcrumbSchema),
-    "website-schema": JSON.stringify(websiteSchema),
-    "organization-schema": JSON.stringify(organizationSchema),
-  },
+  // other: {
+  //   "breadcrumb-schema": JSON.stringify(breadcrumbSchema),
+  //   "website-schema": JSON.stringify(websiteSchema),
+  //   "organization-schema": JSON.stringify(organizationSchema),
+  // },
 }
 
 export default function RootLayout({
@@ -150,20 +92,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='vi'>
-      <Head>
-        <script
-          type='application/ld+json'
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-        />
-        <script
-          type='application/ld+json'
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-        />
-        <script
-          type='application/ld+json'
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-        />
-      </Head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
         <Analytics />
