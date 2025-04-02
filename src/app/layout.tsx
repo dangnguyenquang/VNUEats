@@ -31,6 +31,7 @@ export const metadata: Metadata = {
     "vnu eats",
     "vnuEats",
     "VNU eat",
+    "vnueat",
     "Khám phá ẩm thực làng đại học",
     "Khám phá ẩm thực vnu",
     "ăn vặt vnu",
