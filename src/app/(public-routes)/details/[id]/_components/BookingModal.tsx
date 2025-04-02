@@ -15,7 +15,6 @@ import { toast } from "react-toastify"
 
 import { Button } from "@/components/ui/Button"
 import RequiredTextField from "@/components/ui/RequiredTextField"
-import { PATH_NAME } from "@/configs/pathName"
 import BookingApiInstance from "@/services/axios/actions/booking.action"
 import { User } from "@/types/api/auth"
 import { OrderItem } from "@/types/api/booking"
@@ -72,7 +71,7 @@ export default function BookingModal({
       })
 
       toast.success("Đặt món thành công!")
-      router.push(PATH_NAME.ORDER_TRACKING)
+      // router.push(PATH_NAME.ORDER_TRACKING)
     } catch (error) {
       toast.success("Đã có lỗi xảy ra, thử lại sau!")
     }

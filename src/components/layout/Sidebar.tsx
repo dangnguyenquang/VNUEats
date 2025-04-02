@@ -107,8 +107,19 @@ const Sidebar = ({ isOpen, toggleSidebar }: SidebarProps) => {
             >
               Giới thiệu
             </Link>
+            <Link
+              href={PATH_NAME.BLOG}
+              className={
+                pathname === PATH_NAME.BLOG
+                  ? "text-yellow-200 font-medium half-underline text-lg"
+                  : "text-white font-medium hover:text-yellow-200"
+              }
+              onClick={toggleSidebar}
+            >
+              Bài viết
+            </Link>
 
-            {userInfo && (
+            {/* {userInfo && (
               <Link
                 href={PATH_NAME.ORDER_TRACKING}
                 className={
@@ -120,7 +131,7 @@ const Sidebar = ({ isOpen, toggleSidebar }: SidebarProps) => {
               >
                 Lịch sử đơn hàng
               </Link>
-            )}
+            )} */}
           </nav>
         </div>
 

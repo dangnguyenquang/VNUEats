@@ -40,7 +40,7 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
           : "shadow-none rounded-b-none"
       }`}
     >
-      <nav className='gap-[70px] flex items-center'>
+      <div className='gap-[70px] flex items-center'>
         <Link href={PATH_NAME.HOME}>
           <Image
             src={logo_vnuEats}
@@ -48,7 +48,7 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
             className='max-md:w-[90px] max-lg:w-[100px] lg:w-[140px]'
           />
         </Link>
-        <div className='flex gap-10 max-md:hidden items-center ml-[20px]'>
+        <nav className='flex gap-10 max-md:hidden items-center ml-[20px]'>
           <Link
             href={PATH_NAME.HOME}
             className={
@@ -79,8 +79,18 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
           >
             Giới thiệu
           </Link>
-        </div>
-      </nav>
+          <Link
+            href={PATH_NAME.BLOG}
+            className={
+              pathname === PATH_NAME.BLOG
+                ? "font-medium half-underline text-yellow-200 text-[18px]"
+                : "text-white font-medium hover:text-yellow-200 text-[18px]"
+            }
+          >
+            Bài viết
+          </Link>
+        </nav>
+      </div>
       {!userInfo ? (
         <div className='flex gap-6 max-md:hidden'>
           <Link href={PATH_NAME.CUSTOMER_REGISTER}>

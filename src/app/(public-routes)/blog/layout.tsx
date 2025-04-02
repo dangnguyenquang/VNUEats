@@ -1,10 +1,11 @@
 "use client"
 
 import { PATH_NAME } from "@/configs/pathName"
+import { cn } from "@/helpers/cn"
+import styles from "@/styles/artical.module.scss"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import React from "react"
-import "../../../styles/artical.css"
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname()
@@ -27,7 +28,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       )}
 
       {/* Nội dung trang con */}
-      {children}
+      {isBlogListPage ? (
+        <div>{children}</div>
+      ) : (
+        <div className={cn("max-sm:px-3", styles["wrapper"])}>{children}</div>
+      )}
     </div>
   )
 }

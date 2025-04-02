@@ -26,7 +26,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
 }) => {
   return (
     <a
-      href={PATH_NAME.BLOG_DETAIL(slug)}
+      href={`${PATH_NAME.BLOG}/${slug}`}
       className='block bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300'
     >
       {/* Image */}
