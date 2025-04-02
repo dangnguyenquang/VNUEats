@@ -54,7 +54,7 @@ const FoodCard = ({
             {address}
           </p>
           <p className='text-[12px] font-[300] mx-auto max-w-[180px] text-center lg:hidden'>
-            {truncateStringToWords(address, 10)}
+            {truncateStringToWords(address, 8)}
           </p>
           <div className='flex mt-auto justify-between items-center'>
             <div className='flex gap-1 items-end'>

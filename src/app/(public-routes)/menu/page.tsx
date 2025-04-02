@@ -10,7 +10,7 @@ import Select from "@mui/material/Select"
 import Typography from "@mui/material/Typography"
 import { ChevronDown, ChevronUp, Filter } from "lucide-react"
 import { useRouter, useSearchParams } from "next/navigation"
-import { Suspense, useEffect, useRef, useState } from "react"
+import { Suspense, useCallback, useEffect, useRef, useState } from "react"
 import SearchBar from "../../../components/SearchBar"
 import CategroryFilter from "./_components/CategroryFilter"
 import DistrictFilter from "./_components/DistrictFilter"
@@ -27,7 +27,7 @@ const MenuPage = () => {
 const MenuContent = () => {
   const debounceRef = useRef(null)
   const router = useRouter()
-  const [isFilterOpen, setIsFilterOpen] = useState(true)
+  const [isFilterOpen, setIsFilterOpen] = useState(false)
   const [page, setPage] = useState(1)
   const [isFilterRating, setIsFilterRating] = useState(false)
   // lấy dữ liệu kết quả Restaurant trả về
@@ -55,31 +55,31 @@ const MenuContent = () => {
     starMedium: "0",
     typeSort: "Best seller",
   })
+  const [isFilterInitialized, setIsFilterInitialized] = useState(false)
 
-  const handleSearch = async () => {
+  const handleSearch = useCallback(async () => {
     try {
       const res = await authApi.Search(filterList, page)
       setRestaurants(res.data.restaurants)
-      if (res.data.objectPagination === null || res.data.objectPagination === undefined) {
-        setNumberPages({
+      setNumberPages(
+        res.data.objectPagination || {
           currentPage: 0,
           limit: 20,
           skip: 0,
           numberPages: 0,
-        })
-      } else {
-        setNumberPages(res.data.objectPagination)
-      }
+        },
+      )
     } catch (error) {
       console.log(error)
     }
-  }
+  }, [filterList, page])
 
   // render lại web khi thay đổi giá trị của filter hoặc page
   useEffect(() => {
-    handleSubmitSearch()
-    handleSearch()
-  }, [filterList, page])
+    if (isFilterInitialized) {
+      handleSearch()
+    }
+  }, [filterList, page, isFilterInitialized])
 
   const handlePageChange = (event: React.ChangeEvent<unknown>, page: number) => {
     scrollToTop()
@@ -153,6 +153,7 @@ const MenuContent = () => {
       categories: categoriesArray,
       [typeSearch === "restaurant" ? "nameRestaurant" : "nameFood"]: search,
     }))
+    setIsFilterInitialized(true)
   }, [searchParams])
 
   // District

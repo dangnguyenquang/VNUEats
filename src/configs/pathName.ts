@@ -9,11 +9,11 @@ export const PATH_NAME = {
     MENU: "/menu",
     SELLER_REGISTER: "/register/seller",
     CUSTOMER_REGISTER: "/register",
-    ORDER_TRACKING: "/order-tracking",
+    // ORDER_TRACKING: "/order-tracking",
     DETAILS: "/details",
     DETAIL_ACCOUNT: "/detail-account",
     BLOG: "/blog",
-    BLOG_DETAIL: (slug: string) => `/blog/${slug}`,
+    // BLOG_DETAIL: (slug: string) => `/blog/${slug}`,
 
     RESTAURANT_DASHBOARD: "/v2/dashboard/restaurant",
     ADMIN_MANAGEACCOUNT: "/v2/dashboard/admin/account",
