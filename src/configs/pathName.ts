@@ -13,7 +13,7 @@ export const PATH_NAME = {
     DETAILS: "/details",
     DETAIL_ACCOUNT: "/detail-account",
     BLOG: "/blog",
-    BLOG_DETAIL: (slug: string) => `/blog/${slug}`,
+    BLOG_DETAIL: (_id: string) => `/blog/${_id}`,
 
     RESTAURANT_DASHBOARD: "/v2/dashboard/restaurant",
     ADMIN_MANAGEACCOUNT: "/v2/dashboard/admin/account",
