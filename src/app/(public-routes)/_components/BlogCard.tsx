@@ -1,11 +1,11 @@
-import { PATH_NAME } from "@/configs/pathName" // Import PATH_NAME
+import { PATH_NAME } from "@/configs/pathName"
 import { Blog } from "@/types/api/blog"
 import React from "react"
 
 const BlogCard: React.FC<Blog> = ({ _id, imageUrls, title, description, author }) => {
   return (
     <a
-      href={PATH_NAME.BLOG_DETAIL(_id)} // Sử dụng PATH_NAME.BLOG_DETAIL
+      href={PATH_NAME.BLOG_DETAIL(_id)}
       className='block bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300'
     >
       {/* Image */}
@@ -15,7 +15,7 @@ const BlogCard: React.FC<Blog> = ({ _id, imageUrls, title, description, author }
 
       {/* Content */}
       <div className='p-4'>
-        <h2 className='text-lg font-bold text-gray mb-2'>{title}</h2>
+        <h2 className='text-lg font-bold text-gray mt-0 mb-2'>{title}</h2>
         <p className='text-gray text-sm mb-4 line-clamp-2'>{description}</p>
         <p className='text-xs text-gray'>By {author}</p>
       </div>
