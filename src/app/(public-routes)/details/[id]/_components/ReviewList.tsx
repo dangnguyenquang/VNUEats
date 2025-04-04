@@ -20,12 +20,12 @@ const ReviewList = ({ reviews }: Props) => {
                 alt={`${review.userName}'s avatar`}
                 className='w-12 h-12 rounded-full'
               />
-              <div>
+              <div className='w-full'>
                 {/* User Name */}
-                <div className='flex justify-between items-center w-[500px]'>
+                <div className='flex justify-between items-center w-full sm:w-[500px]'>
                   <h3 className='text-lg font-semibold'>{review.userName}</h3>
                   <div className='flex justify-between items-center mb-2'>
-                    <p className='text-gray-700 font-semibold'>Đánh giá:</p>
+                    <p className='text-gray-700 font-semibold max-sm:hidden'>Đánh giá:</p>
                     <span className='text-yellow-500 font-bold'>
                       {review.star.toFixed(1)} ⭐
                     </span>
