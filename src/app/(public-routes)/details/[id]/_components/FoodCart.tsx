@@ -16,54 +16,92 @@ interface Props {
 
 const FoodCart = ({ foodInfo, onIncrease, onDecrease, onChangeQuality }: Props) => {
   return (
-    <div className='scrollbar-hide relative w-[420px] h-[110px] px-3 py-5 flex gap-3 justify-between shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-xl'>
-      <img
-        src={foodInfo.imageUrl[0].url}
-        alt=''
-        className='w-[70px] h-auto object-cover rounded-xl'
-      />
+    <div className='max-sm:flex max-sm:flex-col max-sm:gap-2 scrollbar-hide relative w-[280px] sm:w-[420px] h-[120px] sm:h-[110px] p-2 sm:px-3 sm:py-5 shadow-[0_3px_10px_rgb(0,0,0,0.2)] sm:rounded-xl rounded-lg'>
+      <div className='flex gap-3 justify-between'>
+        <img
+          src={foodInfo.imageUrl[0].url}
+          alt=''
+          className='w-[60px] sm:w-[70px] h-auto object-cover rounded-lg sm:rounded-xl'
+        />
 
-      <div
-        className='absolute top-2 right-2 cursor-pointer'
-        onClick={() => onChangeQuality(0)}
-      >
-        <CloseIcon />
+        <div
+          className='absolute top-2 right-2 cursor-pointer'
+          onClick={() => onChangeQuality(0)}
+        >
+          <CloseIcon />
+        </div>
+
+        <div className='flex-1 flex flex-col justify-between'>
+          <h3 className='text-[16px] sm:text-[18px] font-bold'>{foodInfo.title}</h3>
+          <div className='flex gap-1 items-end text-primary max-sm:hidden'>
+            <span className='font-bold text-[14px] sm:text-[18px]'>
+              {formatNumber(foodInfo.price - foodInfo.price * (foodInfo.discount / 100))}
+            </span>
+            <span className='text-[10px] sm:text-[12px] font-light pb-1 items-end'>
+              VND/phần
+            </span>
+          </div>
+        </div>
+
+        <div className='flex gap-2 items-center mt-auto max-sm:hidden'>
+          <BubblyButton
+            className={`bg-primary rounded-lg sm:rounded-xl px-1 pb-[1px] text-xl sm:text-2xl text-white flex items-center justify-center`}
+            onClick={onIncrease}
+          >
+            <AddIcon fontSize='small' />
+          </BubblyButton>
+          <input
+            type='text'
+            className='w-[20px] focus:outline-none text-center border-b border-b-[#a5a3a3]'
+            value={foodInfo.quantity}
+            onChange={(e) => {
+              const value = e.target.value
+              if (/^-?\d*$/.test(value)) {
+                onChangeQuality(+value)
+              }
+            }}
+          />
+          <BubblyButton
+            className='bg-primary rounded-lg sm:rounded-xl px-1 pb-[1px] text-xl sm:text-2xl text-white'
+            onClick={onDecrease}
+          >
+            <RemoveIcon fontSize='small' />
+          </BubblyButton>
+        </div>
       </div>
 
-      <div className='flex-1 flex flex-col justify-between'>
-        <h3 className='text-[18px] font-bold'>{foodInfo.title}</h3>
+      <div className='sm:hidden flex justify-between w-full gap-6'>
         <div className='flex gap-1 items-end text-primary'>
           <span className='font-bold text-[18px]'>
             {formatNumber(foodInfo.price - foodInfo.price * (foodInfo.discount / 100))}
           </span>
           <span className='text-[12px] font-light pb-1 items-end'>VND/phần</span>
         </div>
-      </div>
-
-      <div className='flex gap-2 items-center mt-auto'>
-        <BubblyButton
-          className={`bg-primary rounded-xl px-1 pb-[1px] text-2xl text-white flex items-center justify-center`}
-          onClick={onIncrease}
-        >
-          <AddIcon fontSize='small' />
-        </BubblyButton>
-        <input
-          type='text'
-          className='w-[20px] focus:outline-none text-center border-b border-b-[#a5a3a3]'
-          value={foodInfo.quantity}
-          onChange={(e) => {
-            const value = e.target.value
-            if (/^-?\d*$/.test(value)) {
-              onChangeQuality(+value)
-            }
-          }}
-        />
-        <BubblyButton
-          className='bg-primary rounded-xl px-1 pb-[1px] text-2xl text-white'
-          onClick={onDecrease}
-        >
-          <RemoveIcon fontSize='small' />
-        </BubblyButton>
+        <div className='flex gap-2 items-center mt-auto'>
+          <BubblyButton
+            className={`bg-primary rounded-lg sm:rounded-xl px-1 pb-[1px] text-xl sm:text-2xl text-white flex items-center justify-center`}
+            onClick={onIncrease}
+          >
+            <AddIcon fontSize='small' />
+          </BubblyButton>
+          <input
+            type='text'
+            className='w-[20px] focus:outline-none text-center border-b border-b-[#a5a3a3]'
+            value={foodInfo.quantity}
+            onChange={(e) => {
+              const value = e.target.value
+              if (/^-?\d*$/.test(value)) {
+                onChangeQuality(+value)
+              }
+            }}
+          />
+          <BubblyButton
+            className='bg-primary rounded-lg sm:rounded-xl px-1 pb-[1px] text-xl sm:text-2xl text-white'
+            onClick={onDecrease}
+          >
+            <RemoveIcon fontSize='small' />
+          </BubblyButton>
+        </div>
       </div>
     </div>
   )

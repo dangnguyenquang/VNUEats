@@ -28,8 +28,8 @@ const RestaurantImage = ({ restaurant }: Props) => {
   }
 
   return (
-    <div className='relative flex flex-col gap-5 w-[550px]'>
-      <div className='relative overflow-hidden w-full h-[400px] rounded-xl'>
+    <div className='relative flex flex-col sm:gap-5 sm:w-[550px] w-screen gap-2'>
+      <div className='relative overflow-hidden sm:w-full sm:h-[400px] sm:rounded-xl w-auto h-[300px]'>
         <div
           className={`absolute inset-0 flex transition-transform duration-500 ease-in-out object-cover ${
             direction === 1
@@ -56,24 +56,24 @@ const RestaurantImage = ({ restaurant }: Props) => {
 
       <div
         onClick={handlePrev}
-        className='flex absolute left-0 items-center opacity-20 hover:opacity-30  bg-gray-800 text-white p-4 h-[400px] cursor-pointer rounded-s-xl'
+        className='flex absolute left-0 items-center opacity-20 hover:opacity-30  bg-gray-800 text-white p-4 h-[400px] cursor-pointer rounded-s-xl max-sm:hidden'
       >
         <GrFormPrevious size={30} />
       </div>
       <div
         onClick={handleNext}
-        className='flex absolute right-0 items-center opacity-20 hover:opacity-30  bg-gray-800 text-white p-4 h-[400px] cursor-pointer rounded-e-xl'
+        className='flex absolute right-0 items-center opacity-20 hover:opacity-30  bg-gray-800 text-white p-4 h-[400px] cursor-pointer rounded-e-xl max-sm:hidden'
       >
         <GrFormNext size={30} />
       </div>
 
-      <div className='flex gap-2 overflow-x-auto'>
+      <div className='flex gap-2 overflow-x-auto max-sm:px-2  '>
         {restaurant.imageUrl.map((image, index) => (
           <img
             key={index}
             src={image.url}
             alt={`Thumbnail ${index + 1}`}
-            className={`w-24 h-24 object-cover rounded-lg cursor-pointer border-2 ${
+            className={`w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-lg cursor-pointer border-2 ${
               index === currentIndex ? "border-blue-500" : "border-transparent"
             }`}
             onClick={() => handleImageClick(index)}
