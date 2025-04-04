@@ -9,7 +9,7 @@ export const PATH_NAME = {
     MENU: "/menu",
     SELLER_REGISTER: "/register/seller",
     CUSTOMER_REGISTER: "/register",
-    ORDER_TRACKING: "/order-tracking",
+    // ORDER_TRACKING: "/order-tracking",
     DETAILS: "/details",
     DETAIL_ACCOUNT: "/detail-account",
     BLOG: "/blog",

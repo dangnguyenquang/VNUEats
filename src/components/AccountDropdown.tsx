@@ -7,7 +7,6 @@ import useAuth from "@/stores/useAuth"
 import { User } from "@/types/api/auth"
 import AccountCircleIcon from "@mui/icons-material/AccountCircle"
 import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings"
-import HistoryIcon from "@mui/icons-material/History"
 import Logout from "@mui/icons-material/Logout"
 import RestaurantIcon from "@mui/icons-material/Restaurant"
 import Avatar from "@mui/material/Avatar"
@@ -132,7 +131,7 @@ export default function AccountMenu({ user, setUserInfo }: AccountMenuProps) {
             Tài khoản của tôi
           </MenuItem>
         </Link>
-        <Link href={PATH_NAME.ORDER_TRACKING}>
+        {/* <Link href={PATH_NAME.ORDER_TRACKING}>
           <MenuItem
             onClick={handleClose}
             sx={{ paddingTop: "8px", paddingBottom: "8px" }}
@@ -142,7 +141,7 @@ export default function AccountMenu({ user, setUserInfo }: AccountMenuProps) {
             </ListItemIcon>
             Lịch sử mua hàng
           </MenuItem>
-        </Link>
+        </Link> */}
         {useCheckRole("seller") && (
           <Link href={PATH_NAME.RESTAURANT_DASHBOARD}>
             <MenuItem

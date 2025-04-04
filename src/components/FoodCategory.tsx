@@ -21,7 +21,7 @@ const FoodCategory = () => {
         >
           <div className='absolute inset-0 bg-gradient-to-b from-black/0 to-black/60 rounded-lg'></div>
           <div className='relative mt-auto text-center text-white'>
-            <div className='text-[16px] sm:text-[20px] md:text-[25px] lg:text-[30px] font-bold font-oswald transition-all duration-[400ms] group-hover:translate-y-[-20px]'>
+            <div className='text-[20px] md:text-[25px] lg:text-[30px] font-bold font-oswald transition-all duration-[400ms] group-hover:translate-y-[-20px]'>
               Đồ uống
             </div>
           </div>
@@ -41,7 +41,7 @@ const FoodCategory = () => {
         >
           <div className='absolute inset-0 bg-gradient-to-b from-black/0 to-black/60 rounded-lg'></div>
           <div className='relative mt-auto text-center text-white'>
-            <div className='text-[16px] sm:text-[20px] md:text-[25px] lg:text-[30px] font-bold font-oswald transition-all duration-[400ms] group-hover:translate-y-[-20px]'>
+            <div className='text-[20px] md:text-[25px] lg:text-[30px] font-bold font-oswald transition-all duration-[400ms] group-hover:translate-y-[-20px]'>
               Thức ăn nhanh
             </div>
           </div>
@@ -61,7 +61,7 @@ const FoodCategory = () => {
         >
           <div className='absolute inset-0 bg-gradient-to-b from-black/0 to-black/60 rounded-lg'></div>
           <div className='relative mt-auto text-center text-white'>
-            <div className='text-[16px] sm:text-[20px] md:text-[25px] lg:text-[30px] font-bold font-oswald transition-all duration-[400ms] group-hover:translate-y-[-20px]'>
+            <div className='text-[20px] md:text-[25px] lg:text-[30px] font-bold font-oswald transition-all duration-[400ms] group-hover:translate-y-[-20px]'>
               Món Á
             </div>
           </div>
@@ -81,7 +81,7 @@ const FoodCategory = () => {
         >
           <div className='absolute inset-0 bg-gradient-to-b from-black/0 to-black/60 rounded-lg'></div>
           <div className='relative mt-auto text-center text-white'>
-            <div className='text-[16px] sm:text-[20px] md:text-[25px] lg:text-[30px] font-bold font-oswald transition-all duration-[400ms] group-hover:translate-y-[-20px]'>
+            <div className='text-[20px] md:text-[25px] lg:text-[30px] font-bold font-oswald transition-all duration-[400ms] group-hover:translate-y-[-20px]'>
               Cơm
             </div>
           </div>
@@ -101,7 +101,7 @@ const FoodCategory = () => {
         >
           <div className='absolute inset-0 bg-gradient-to-b from-black/0 to-black/60 rounded-lg'></div>
           <div className='relative mt-auto text-center text-white'>
-            <div className='text-[16px] sm:text-[20px] md:text-[25px] lg:text-[30px] font-bold font-oswald transition-all duration-[400ms] group-hover:translate-y-[-20px]'>
+            <div className='text-[20px] md:text-[25px] lg:text-[30px] font-bold font-oswald transition-all duration-[400ms] group-hover:translate-y-[-20px]'>
               Trà sữa
             </div>
           </div>
@@ -121,7 +121,7 @@ const FoodCategory = () => {
         >
           <div className='absolute inset-0 bg-gradient-to-b from-black/0 to-black/60 rounded-lg'></div>
           <div className='relative mt-auto text-center text-white'>
-            <div className='text-[16px] sm:text-[20px] md:text-[25px] lg:text-[30px] font-bold font-oswald transition-all duration-[400ms] group-hover:translate-y-[-20px]'>
+            <div className='text-[20px] md:text-[25px] lg:text-[30px] font-bold font-oswald transition-all duration-[400ms] group-hover:translate-y-[-20px]'>
               Món chay
             </div>
           </div>
@@ -141,7 +141,7 @@ const FoodCategory = () => {
         >
           <div className='absolute inset-0 bg-gradient-to-b from-black/0 to-black/60 rounded-lg'></div>
           <div className='relative mt-auto text-center text-white'>
-            <div className='text-[16px] sm:text-[20px] md:text-[25px] lg:text-[30px] font-bold font-oswald transition-all duration-[400ms] group-hover:translate-y-[-20px]'>
+            <div className='text-[20px] md:text-[25px] lg:text-[30px] font-bold font-oswald transition-all duration-[400ms] group-hover:translate-y-[-20px]'>
               Bún phở
             </div>
           </div>
@@ -161,7 +161,7 @@ const FoodCategory = () => {
         >
           <div className='absolute inset-0 bg-gradient-to-b from-black/0 to-black/60 rounded-lg'></div>
           <div className='relative mt-auto text-center text-white'>
-            <div className='text-[16px] sm:text-[20px] md:text-[25px] lg:text-[30px] font-bold font-oswald transition-all duration-[400ms] group-hover:translate-y-[-20px]'>
+            <div className='text-[20px] md:text-[25px] lg:text-[30px] font-bold font-oswald transition-all duration-[400ms] group-hover:translate-y-[-20px]'>
               Đồ ăn vặt
             </div>
           </div>
