@@ -1,5 +1,6 @@
 "use client"
 
+import { PATH_NAME } from "@/configs/pathName"
 import blogApiInstance from "@/services/axios/actions/blog.action"
 import { Blog } from "@/types/api/blog"
 import Link from "next/link"
@@ -59,6 +60,13 @@ const BlogPage = () => {
           Blog
         </h1>
       </div>
+
+      <Link
+        href={PATH_NAME.CREATE_BLOG}
+        className='inline-block bg-primary text-white px-4 py-2 rounded transition mt-5'
+      >
+        Tạo bài viết mới
+      </Link>
 
       {/* Blog Content */}
       <div className='max-w-7xl mx-auto py-10 px-4'>

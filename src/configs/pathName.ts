@@ -14,6 +14,7 @@ export const PATH_NAME = {
     DETAIL_ACCOUNT: "/detail-account",
     BLOG: "/blog",
     BLOG_DETAIL: (_id: string) => `/blog/${_id}`,
+    CREATE_BLOG: "/blog/create",
 
     RESTAURANT_DASHBOARD: "/v2/dashboard/restaurant",
     ADMIN_MANAGEACCOUNT: "/v2/dashboard/admin/account",
