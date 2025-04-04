@@ -2,7 +2,6 @@
 
 import "froala-editor/css/froala_editor.pkgd.min.css"
 import "froala-editor/css/froala_style.min.css"
-import dynamic from "next/dynamic"
 
 import "froala-editor/js/plugins/align.min.js"
 import "froala-editor/js/plugins/char_counter.min.js"
@@ -32,6 +31,6 @@ import "froala-editor/js/plugins/url.min.js"
 import "froala-editor/js/plugins/video.min.js"
 import "froala-editor/js/plugins/word_paste.min.js"
 
-const FroalaEditor = dynamic(() => import("react-froala-wysiwyg"), { ssr: false })
+import FroalaEditor from "react-froala-wysiwyg"
 
 export default FroalaEditor
