@@ -16,7 +16,7 @@ const FoodDetails = ({ food, onClick, disabled = false }: Props) => {
         <img
           src={food.imageUrl[0].url}
           alt=''
-          className='rounded-xl object-cover w-[125px] h-auto shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]'
+          className='rounded-xl object-cover w-[125px] h-[125px] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]'
         />
         {disabled && (
           <div className='absolute inset-0 bg-white opacity-50 rounded-xl font-bold flex items-center justify-center text-primary text-2xl'>

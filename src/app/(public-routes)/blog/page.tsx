@@ -2,6 +2,7 @@
 
 import { PATH_NAME } from "@/configs/pathName"
 import blogApiInstance from "@/services/axios/actions/blog.action"
+import useAuth from "@/stores/useAuth"
 import { Blog } from "@/types/api/blog"
 import Link from "next/link"
 import { useEffect, useState } from "react"
@@ -44,6 +45,8 @@ const BlogPage = () => {
     },
   ]
 
+  const { user } = useAuth()
+
   return (
     <div className='w-full'>
       {/* Blog Title */}
@@ -61,12 +64,16 @@ const BlogPage = () => {
         </h1>
       </div>
 
-      <Link
-        href={PATH_NAME.CREATE_BLOG}
-        className='inline-block bg-primary text-white px-4 py-2 rounded transition mt-5'
-      >
-        Tạo bài viết mới
-      </Link>
+      {user && user.role === "admin" ? (
+        <Link
+          href={PATH_NAME.CREATE_BLOG}
+          className='inline-block bg-primary text-white px-4 py-2 rounded transition mt-5'
+        >
+          Tạo bài viết mới
+        </Link>
+      ) : (
+        <div></div>
+      )}
 
       {/* Blog Content */}
       <div className='max-w-7xl mx-auto py-10 px-4'>
