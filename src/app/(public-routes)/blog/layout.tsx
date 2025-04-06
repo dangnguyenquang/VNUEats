@@ -14,10 +14,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   const isBlogListPage = pathname === PATH_NAME.BLOG
 
   return (
-    <div className='max-w-[1000px] mx-auto py-[100px]'>
+    <div className='mx-auto py-10 px-4 lg:px-0 max-w-[1000px]'>
       {/* Nút quay lại chỉ hiển thị nếu không phải trang danh sách blog */}
       {!isBlogListPage && (
-        <div className='mb-6'>
+        <div className='my-6'>
           <Link
             href={PATH_NAME.BLOG}
             className='inline-block bg-primary text-white px-4 py-2 rounded transition'
