@@ -29,7 +29,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     //   }))
 
     // const allRoutes = [...staticRoutes, ...dynamicRoutes]
-    const allRoutes = [...staticRoutes]
+    const allRoutes = [
+      ...staticRoutes,
+      {
+        url: `${clientUrl}/lau-Thai-chay-lang-dai-hoc`,
+        lastModified: new Date().toISOString(),
+      },
+      {
+        url: `${clientUrl}/banh-hoi-binh-dinh`,
+        lastModified: new Date().toISOString(),
+      },
+    ]
 
     return allRoutes
   } catch (error) {

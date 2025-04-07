@@ -78,7 +78,7 @@ export default function LoginModal({
       sessionStorage.setItem("email", email)
 
       toast.success("Mã xác thực đã được gửi đến email!")
-      router.push(PATH_NAME.OTPCODE)
+      // router.push(PATH_NAME.OTPCODE)
       handleClose()
     } catch (error) {
       toast.error("Đã có lỗi xảy ra, thử lại sau!")
