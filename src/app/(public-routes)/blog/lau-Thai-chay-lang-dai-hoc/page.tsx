@@ -99,7 +99,14 @@ const LauThaiChay = () => {
           thưởng thức nước dùng chua cay đặc trưng, kết hợp với các loại nấm, rau củ tươi
           ngon. Từ không gian thanh tịnh đến những quán ăn ấm cúng phù hợp với sinh viên,
           danh sách dưới đây sẽ giúp bạn dễ dàng chọn lựa một địa điểm lý tưởng để thưởng
-          thức ẩm thực chay đầy hấp dẫn!
+          thức ẩm thực chay đầy hấp dẫn! Ngoài ra bạn có thể khám phá các làm những nồi
+          lẩu chay hấp dẫn{" "}
+          <a
+            href='https://www.youtube.com/@vnuEats'
+            className='font-bold hover:underline'
+          >
+            tại đây.
+          </a>
         </p>
 
         <h2>1. Hoằng Đạt – Hương Vị Đậm Đà, Nước Dùng Đặc Biệt</h2>
@@ -121,7 +128,14 @@ const LauThaiChay = () => {
           tươi ngon và nước lẩu đậm vị, khiến thực khách cảm nhận được hương vị hài hòa,
           không kém gì lẩu Thái truyền thống. Ngoài ra, giá cả ở Hoằng Đạt khá hợp lý, chỉ
           từ 100.000 – 200.000 đồng cho một nồi lẩu 2 – 3 người ăn. Quán cũng có chỗ để xe
-          rộng rãi và đảm bảo an toàn thực phẩm.
+          rộng rãi và đảm bảo an toàn thực phẩm. Để biết thêm về các món ăn của quán hãy
+          đến với fanpage của chúng tôi{" "}
+          <a
+            href='https://www.facebook.com/share/1635GCcQxw'
+            className='font-bold hover:underline'
+          >
+            tại đây.
+          </a>
         </p>
 
         <h2>2. Hữu Duyên – Lẩu Thái Chay Ngon Với Giá Sinh Viên</h2>
@@ -240,7 +254,12 @@ const LauThaiChay = () => {
         <p>
           Thực đơn của quán rất phong phú với nhiều món ăn kèm ngon miệng như gỏi cuốn,
           đậu hũ chiên, và mì xào chay. Giá cả hợp lý, từ 100.000 – 250.000 đồng. Quán có
-          chỗ để xe an toàn và vị trí thuận lợi, gần các khu ký túc xá.
+          chỗ để xe an toàn và vị trí thuận lợi, gần các khu ký túc xá. Bạn muốn biết thêm
+          thông tin về quán lẩu chay này? Hãy theo dõi kênh tiktok chính thức của chúng
+          tôi{" "}
+          <a href='https://www.tiktok.com/@vnueats' className='font-bold hover:underline'>
+            tại đây.
+          </a>
         </p>
 
         <h2>8. Thiện Tâm – Lẩu Thái Chay Thanh Đạm, Hương Vị Truyền Thống</h2>
@@ -276,11 +295,9 @@ const LauThaiChay = () => {
           Bạn đã từng thử lẩu Thái chay ở làng đại học chưa? Hãy chia sẻ cảm nhận của bạn
           trên{" "}
           <strong className='hover:underline'>
-            <a href='https://www.facebook.com/profile.php?id=61573378120831&locale=vi_VN'>
-              Fanpage
-            </a>
+            <a href='https://www.facebook.com/share/1635GCcQxw'>Fanpage</a>
           </strong>{" "}
-          của chúng mình nhé
+          của chúng mình nhé!
         </p>
       </div>
     </>
