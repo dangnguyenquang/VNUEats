@@ -39,7 +39,8 @@ const BlogPage = () => {
       title: "Bánh hỏi Bình Định tại Làng Đại học Thủ Đức",
       description:
         "Thưởng thức bánh hỏi Bình Định tại Làng Đại học Thủ Đức với hương vị chuẩn miền Trung, giá hợp lý!",
-      image: "https://vnueats.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbanhhoi.3a9b9405.jpg&w=3840&q=75",
+      image:
+        "https://vnueats.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbanhhoi.3a9b9405.jpg&w=3840&q=75",
       url: "/blog/banh-hoi-binh-dinh",
       author: "Nguyễn Công Bá",
     },
@@ -60,12 +61,16 @@ const BlogPage = () => {
       >
         {/* <div className='absolute inset-0 bg-gradient-to-b from-black via-transparent to-transparent opacity-40 rounded'></div> */}
         <div className='w-full h-full bg-white opacity-30'></div>
-        <div className="absolute sm:gap-4 gap-1 flex flex-col">
-          <p className="w-[8vw] mx-auto p-1 font-light bg-primary rounded-2xl text-white text-[10px] sm:text-[20px] text-center">Blog</p>
+        <div className='absolute sm:gap-4 gap-1 flex flex-col'>
+          <p className='w-[8vw] mx-auto p-1 font-light bg-primary rounded-2xl text-white text-[10px] sm:text-[20px] text-center'>
+            Blog
+          </p>
           <h1 className='max-w-[50vw]  font-oswald text-[20px] md:text-[40px] lg:text-[70px] text-black text-center font-medium'>
             Khám phá món ngon Làng Đại học Thủ Đức
           </h1>
-          <p className="text-center italic text-[10px] sm:text-[20px] font-thin">Món nào ngon – Bọn mình mới chỉ!</p>
+          <p className='text-center italic text-[10px] sm:text-[20px] font-thin'>
+            Món nào ngon – Bọn mình mới chỉ!
+          </p>
         </div>
       </div>
 
@@ -104,7 +109,9 @@ const BlogPage = () => {
                 <h2 className='sm:text-[20px] text-lg font-bold text-gray mt-0 mb-2 line-clamp-2'>
                   {blog.title}
                 </h2>
-                <p className='text-gray text-sm  font-light mb-4 line-clamp-2'>{blog.description}</p>
+                <p className='text-gray text-sm  font-light mb-4 line-clamp-2'>
+                  {blog.description}
+                </p>
                 <p className='text-xs text-gray italic font-bold'>By {blog.author}</p>
               </div>
             </Link>

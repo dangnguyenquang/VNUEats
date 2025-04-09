@@ -184,7 +184,7 @@ export default function Blog2() {
           </li>
           <li>
             Quán <strong>Cây bàng</strong>
-           <ul className='list-disc ml-5'>
+            <ul className='list-disc ml-5'>
               <li>
                 Địa chỉ:{" "}
                 <address className='inline'>
