@@ -1,6 +1,8 @@
 import Head from "next/head"
 import Image from "next/image"
 import img from "../../../../assets/images/blog/banhhoi.jpg"
+import img2 from "../../../../assets/images/blog/banhhoi_2.png"
+import img3 from "../../../../assets/images/blog/banhhoi_3.png"
 
 export default function Blog2() {
   const jsonLd = {
@@ -80,15 +82,15 @@ export default function Blog2() {
         </p>
         <p>
           Bánh hỏi không chỉ là một món ăn truyền thống mà còn là lựa chọn tuyệt vời cho
-          sinh viên bởi sự thơm ngon, đủ chất và giá cả hợp lý. Nếu bạn vẫn chưa thử qua
-          <strong>bánh hỏi Bình Định ở Làng Đại học Thủ Đức</strong>, thì đây chính là lúc
-          để bạn khám phá!
+          sinh viên bởi sự thơm ngon, đủ chất và giá cả hợp lý. Nếu bạn vẫn chưa thử qua{" "}
+          <strong> bánh hỏi Bình Định ở Làng Đại học Thủ Đức</strong>, thì đây chính là
+          lúc để bạn khám phá!
         </p>
 
         <Image
           src={img}
           alt='Bánh hỏi Bình Định'
-          className='mt-10 w-[50vw] mx-auto rounded-3xl'
+          className='mt-10 w-[70vw] h-[25vh] sm:w-[40vw] sm:h-[50vh] object-cover mx-auto rounded-3xl'
         />
 
         <h2>1. Bánh hỏi Bình Định – Đặc sản tinh tế miền Trung</h2>
@@ -106,6 +108,11 @@ export default function Blog2() {
         </p>
 
         <h2>2. Bánh hỏi công phu như một bài quyền</h2>
+        <Image
+          src={img2}
+          alt='Bánh hỏi Bình Định'
+          className='mt-10 w-[70vw] h-[25vh] sm:w-[40vw] sm:h-[50vh]  object-cover mx-auto rounded-3xl'
+        />
         <p>
           Để làm ra một mẻ bánh hỏi ngon, người thợ phải trải qua nhiều công đoạn tỉ mỉ.
           Gạo ngon được vo kỹ, ngâm nước qua đêm, sau đó xay nhuyễn, hấp chín rồi nhồi
@@ -123,6 +130,11 @@ export default function Blog2() {
         </p>
 
         <h2>3. Vì sao sinh viên Làng Đại học Thủ Đức nên thử bánh hỏi Bình Định?</h2>
+        <Image
+          src={img3}
+          alt='Bánh hỏi Bình Định'
+          className='mt-10 w-[70vw] h-[25vh] sm:w-[40vw] sm:h-[50vh] object-cover mx-auto rounded-3xl'
+        />
         <ul className='list-disc ml-5 space-y-2'>
           <li>
             Món ăn đầy đủ dinh dưỡng
@@ -157,12 +169,12 @@ export default function Blog2() {
         <h2>4. Địa điểm bán bánh hỏi Bình Định ngon ở Làng Đại học Thủ Đức</h2>
         <ol className='list-decimal ml-10'>
           <li>
-            Quán A
+            Quán <strong>Bánh hỏi cô Ba</strong>
             <ul className='list-disc ml-5'>
               <li>
                 Địa chỉ:{" "}
                 <address className='inline'>
-                  Số 123, Đường ABC, Làng Đại Học Thủ Đức
+                  Số 12, Đường Lương Định Của, Làng Đại Học Thủ Đức
                 </address>
               </li>
               <li>
@@ -171,12 +183,12 @@ export default function Blog2() {
             </ul>
           </li>
           <li>
-            Quán B
-            <ul className='list-disc ml-5'>
+            Quán <strong>Cây bàng</strong>
+           <ul className='list-disc ml-5'>
               <li>
                 Địa chỉ:{" "}
                 <address className='inline'>
-                  Số 123, Đường ABC, Làng Đại Học Thủ Đức
+                  Số 3, Đường Tô Vĩnh Diện, Làng Đại Học Thủ Đức
                 </address>
               </li>
               <li>

@@ -15,9 +15,9 @@ const BlogCard: React.FC<Blog> = ({ _id, imageUrls, title, description, author }
 
       {/* Content */}
       <div className='p-4'>
-        <h2 className='text-lg font-bold text-gray mt-0 mb-2'>{title}</h2>
-        <p className='text-gray text-sm mb-4 line-clamp-2'>{description}</p>
-        <p className='text-xs text-gray'>By {author}</p>
+        <h2 className='sm:text-[20px] text-lg font-bold text-gray mt-0 mb-2 line-clamp-2'>{title}</h2>
+        <p className='text-gray text-sm  font-light mb-4 line-clamp-2'>{description}</p>
+        <p className='text-xs text-gray italic font-bold'>By {author}</p>
       </div>
     </a>
   )
