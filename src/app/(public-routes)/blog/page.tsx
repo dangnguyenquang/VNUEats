@@ -43,6 +43,16 @@ const BlogPage = () => {
       url: "/blog/banh-hoi-binh-dinh",
       author: "Nguyễn Công Bá",
     },
+    {
+      _id: "3",
+      title: "Dông Nướng Đá – Tinh Hoa Vị Nướng Từ Vùng Cát Trắng",
+      description:
+        "Khám phá món dông nướng đá – đặc sản độc đáo từ vùng cát trắng miền Trung. Một trải nghiệm ẩm thực hoang dã, mộc mạc nhưng đầy tinh tế.",
+      image:
+        "https://cdn-i.vtcnews.vn/resize/th/upload/2023/09/19/dong-nuong-muoi-ot-1-15193571.JPG",
+      url: "/blog/dong-nuong-da",
+      author: "Lê Minh Khôi",
+    },
   ]
 
   const { user } = useAuth()
