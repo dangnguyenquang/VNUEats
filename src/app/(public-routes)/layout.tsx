@@ -1,12 +1,12 @@
 "use client"
 
+import Chatbot from "@/components/Chatbot"
 import Footer from "@/components/layout/Footer"
 import Header from "@/components/layout/Header"
 import Sidebar from "@/components/layout/Sidebar"
 import AutoLogin from "@/stores/autoLogin"
 import Script from "next/script"
 import { useState } from "react"
-// import Chatbot from '../Components/_components/Chatbot'
 
 export default function DefaultLayout({ children }: { children: React.ReactNode }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
@@ -80,7 +80,7 @@ export default function DefaultLayout({ children }: { children: React.ReactNode 
           <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
           <div className='mt-14'>{children}</div>
           <Footer />
-          {/* <Chatbot /> */}
+          <Chatbot />
         </div>
       </AutoLogin>
 
