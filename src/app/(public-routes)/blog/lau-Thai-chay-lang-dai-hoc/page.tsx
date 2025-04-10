@@ -112,7 +112,7 @@ const LauThaiChay = () => {
         <h2>1. Hoằng Đạt – Hương Vị Đậm Đà, Nước Dùng Đặc Biệt</h2>
         <img
           src='https://i.pinimg.com/736x/0d/1f/d2/0d1fd2a3d27aaded4b803d3c4e452abc.jpg'
-          className='mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6'
+          className='mx-auto w-[70vw] h-[25vh] sm:w-[40vw] sm:h-[50vh] object-cover rounded-xl shadow-lg my-4 mb-6'
           alt='Lẩu chay Hoằng Đạt'
         />
         <p>
@@ -141,7 +141,7 @@ const LauThaiChay = () => {
         <h2>2. Hữu Duyên – Lẩu Thái Chay Ngon Với Giá Sinh Viên</h2>
         <img
           src='https://i.pinimg.com/736x/80/a1/b6/80a1b6c15d596e9bc2c73926a829424f.jpg'
-          className='mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6'
+          className='mx-auto w-[70vw] h-[25vh] sm:w-[40vw] sm:h-[50vh] object-cover rounded-xl shadow-lg my-4 mb-6'
           alt='Lẩu chay Hữu Duyên'
         />
         <p>
@@ -160,7 +160,7 @@ const LauThaiChay = () => {
         <h2>3. Mị Châu – Không Gian Thoáng Đãng, Thực Đơn Đa Dạng</h2>
         <img
           src='https://i.pinimg.com/736x/83/1e/0b/831e0b04975af8e6890390e6a2cc7903.jpg'
-          className='mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6'
+          className='mx-auto w-[70vw] h-[25vh] sm:w-[40vw] sm:h-[50vh] object-cover rounded-xl shadow-lg my-4 mb-6'
           alt='Lẩu chay Mị Châu'
         />
         <p>
@@ -181,7 +181,7 @@ const LauThaiChay = () => {
         <h2>4. Thiên Tâm – Lẩu Thái Chay Dành Cho Người Yêu Sự Thanh Đạm</h2>
         <img
           src='https://i.pinimg.com/474x/58/a4/e3/58a4e30632e6ba71cb1e88ae88ff3756.jpg'
-          className='mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6'
+          className='mx-auto w-[70vw] h-[25vh] sm:w-[40vw] sm:h-[50vh] object-cover rounded-xl shadow-lg my-4 mb-6'
           alt='Lẩu chay Thiện Tâm'
         />
         <p>
@@ -205,7 +205,7 @@ const LauThaiChay = () => {
         <h2>5. An Nhiên – Lẩu Thái Chay Đầy Đủ Hương Vị, Không Gian Ấm Cúng</h2>
         <img
           src='https://i.pinimg.com/736x/c4/2b/15/c42b152ae116613eee96fb1bdbe94eda.jpg'
-          className='mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6'
+          className='mx-auto w-[70vw] h-[25vh] sm:w-[40vw] sm:h-[50vh] object-cover rounded-xl shadow-lg my-4 mb-6'
           alt='Lẩu chay An Nhiên'
         />
         <p>
@@ -224,7 +224,7 @@ const LauThaiChay = () => {
         <h2>6. Bình Anh – Lẩu Thái Chay Ngon, Chất Lượng Đảm Bảo</h2>
         <img
           src='https://i.pinimg.com/736x/2f/35/76/2f357666f4594e4ca87410c8b0d8abd8.jpg'
-          className='mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6'
+          className='mx-auto w-[70vw] h-[25vh] sm:w-[40vw] sm:h-[50vh] object-cover rounded-xl shadow-lg my-4 mb-6'
           alt='Lẩu chay Bình An'
         />
         <p>
@@ -242,7 +242,7 @@ const LauThaiChay = () => {
         <h2>7. Diệu Hạnh – Lẩu Thái Chay Phong Cách Gia Đình</h2>
         <img
           src='https://i.pinimg.com/736x/f7/f2/0d/f7f20d0580143bef5b8961f956cb0788.jpg'
-          className='mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6'
+          className='mx-auto w-[70vw] h-[25vh] sm:w-[40vw] sm:h-[50vh] object-cover rounded-xl shadow-lg my-4 mb-6'
           alt='Lẩu chay Diệu Hạnh'
         />
         <p>
@@ -265,7 +265,7 @@ const LauThaiChay = () => {
         <h2>8. Thiện Tâm – Lẩu Thái Chay Thanh Đạm, Hương Vị Truyền Thống</h2>
         <img
           src='https://i.pinimg.com/736x/90/79/0e/90790e33870054a49e4c61a768bd6716.jpg'
-          className='mx-auto w-[75%] h-[500px] object-cover rounded-xl shadow-lg my-4 mb-6'
+          className='mx-auto w-[70vw] h-[25vh] sm:w-[40vw] sm:h-[50vh] object-cover rounded-xl shadow-lg my-4 mb-6'
           alt='Lẩu chay Thiện Tâm'
         />
         <p>

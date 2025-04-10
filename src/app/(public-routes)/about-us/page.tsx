@@ -26,7 +26,7 @@ export default function AboutUs() {
   }, [])
 
   // Biến Style cho Heading
-  const styleTextHeading = "text-[28px] md:text-[36px] lg:text-[48px] xl:text-[50px]"
+  const styleTextHeading = "text-[35px] md:text-[40px] lg:text-[48px] xl:text-[60px]"
   // Biến Style cho các description
   const styleTextDesc = "text-[12px] md:text-[16px] lg:text-[18px] xl:text-[25px]"
   // Mảng các thẻ item của Giá trị mà vnuEats mang lại
@@ -69,7 +69,7 @@ export default function AboutUs() {
       <div className='w-full' style={{ minWidth: "410px" }}>
         {/*====================================== Giới thiệu về vnuEats ======================================*/}
         <section
-          className='flex justify-center w-full items-center mt-[150px]'
+          className='flex justify-center w-full items-center sm:mt-[150px] mt-[80px]'
           data-aos='fade-up'
         >
           <div className='flex items-center w-[96%] p-[30px] md:p-[50px] bg-secondary rounded-[20px]'>

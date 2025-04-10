@@ -14,7 +14,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   const isBlogListPage = pathname === PATH_NAME.BLOG
 
   return (
-    <div className='mx-auto py-10 px-4 lg:px-0 max-w-[1000px]'>
+    <div className='w-[90vw] mx-auto py-10'>
       {/* Nút quay lại chỉ hiển thị nếu không phải trang danh sách blog */}
       {!isBlogListPage && (
         <div className='my-6'>
