@@ -59,7 +59,6 @@ const BlogPage = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-       
         <div className='w-full h-full bg-white opacity-30'></div>
         <div className='absolute sm:gap-4 gap-1 flex flex-col'>
           <p className=' mx-auto p-1.5 font-light bg-primary inline rounded-2xl text-white text-[15px] sm:text-[25px] text-center'>
@@ -93,7 +92,7 @@ const BlogPage = () => {
             <Link
               key={blog._id}
               href={blog.url}
-              className='block bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer flex flex-col transition-transform duration-300 hover:scale-105'
+              className='block bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg duration-300 cursor-pointer transition-transform hover:scale-105'
             >
               {/* Image */}
               <div className='relative'>
