@@ -21,7 +21,7 @@ const FoodCart = ({ foodInfo, onIncrease, onDecrease, onChangeQuality }: Props) 
         <img
           src={foodInfo.imageUrl[0].url}
           alt=''
-          className='w-[60px] sm:w-[70px] h-auto object-cover rounded-lg sm:rounded-xl'
+          className='w-[60px] sm:w-[70px] h-[60px] sm:h-[70px] object-cover rounded-lg sm:rounded-xl'
         />
 
         <div
