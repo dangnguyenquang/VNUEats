@@ -59,13 +59,13 @@ const BlogPage = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        {/* <div className='absolute inset-0 bg-gradient-to-b from-black via-transparent to-transparent opacity-40 rounded'></div> */}
+       
         <div className='w-full h-full bg-white opacity-30'></div>
         <div className='absolute sm:gap-4 gap-1 flex flex-col'>
           <p className=' mx-auto p-1.5 font-light bg-primary inline rounded-2xl text-white text-[15px] sm:text-[25px] text-center'>
             Blog
           </p>
-          <h1 className='max-w-[85vw]  font-oswald text-[30px] md:text-[40px] lg:text-[70px] text-black text-center font-medium'>
+          <h1 className='max-w-[90vw]  font-oswald text-[30px] md:text-[40px] lg:text-[70px] text-black text-center font-medium'>
             Khám phá món ngon Làng Đại học Thủ Đức
           </h1>
           <p className='text-center italic text-[15px] sm:text-[25px] font-thin'>
