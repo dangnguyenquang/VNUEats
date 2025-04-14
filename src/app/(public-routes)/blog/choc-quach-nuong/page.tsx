@@ -38,25 +38,26 @@ const ChocQuachNuong = () => {
           href='https://vnueats.com/blog/choc-quach-nuong-binh-dinh'
         />
         <title>
-          Chóc Quạch Nướng – Món ăn đặc sản Bình Định lần đầu xuất hiện tại làng Đại học
+          Chóc Quạch Nướng Mắc Khén Hạt Dổi Ở Làng Đại Học – Món ăn đặc sản Bình Định ở
+          Làng Đại Học
         </title>
         <meta
           name='description'
-          content='Khám phá món chóc quạch nướng – đặc sản hấp dẫn của vùng đất Bình Định, với hương vị đậm đà, quy trình chế biến công phu và địa điểm thưởng thức nổi bật.'
+          content='Khám phá món chóc quạch nướng mắc khén hạt dổi – đặc sản hấp dẫn của vùng đất Bình Định, với hương vị đậm đà, quy trình chế biến công phu và địa điểm thưởng thức nổi bật.'
         />
         <meta
           name='keywords'
-          content='chóc quạch nướng, đặc sản Bình Định, món nướng miền Trung, ẩm thực Bình Định, chóc quạch'
+          content='chóc quạch nướng mắc khén hạt dổi, đặc sản Bình Định, món nướng miền Trung, ẩm thực Bình Định, chóc quạch'
         />
 
         {/* Open Graph */}
         <meta
           property='og:title'
-          content='Chóc Quạch Nướng – Món ăn đặc sản Bình Định lần đầu xuất hiện tại làng Đại học'
+          content='Chóc Quạch Nướng Mắc Khén Hạt Dổi – Món ăn đặc sản Bình Định lần đầu xuất hiện tại làng Đại học'
         />
         <meta
           property='og:description'
-          content='Khám phá món chóc quạch nướng – đặc sản hấp dẫn của vùng đất Bình Định, với hương vị đậm đà, quy trình chế biến công phu và địa điểm thưởng thức nổi bật.'
+          content='Khám phá món chóc quạch nướng mắc khén hạt dổi – đặc sản hấp dẫn của vùng đất Bình Định, với hương vị đậm đà, quy trình chế biến công phu và địa điểm thưởng thức nổi bật.'
         />
         <meta
           property='og:image'
@@ -73,11 +74,11 @@ const ChocQuachNuong = () => {
         <meta name='twitter:card' content='summary_large_image' />
         <meta
           name='twitter:title'
-          content='Chóc Quạch Nướng – Món ăn đặc sản Bình Định lần đầu xuất hiện tại làng Đại học'
+          content='Chóc Quạch Nướng Mắc Khén Hạt Dổi – Món ăn đặc sản Bình Định lần đầu xuất hiện tại làng Đại học'
         />
         <meta
           name='twitter:description'
-          content='Khám phá món chóc quạch nướng – đặc sản hấp dẫn của vùng đất Bình Định, với hương vị đậm đà, quy trình chế biến công phu và địa điểm thưởng thức nổi bật.'
+          content='Khám phá món chóc quạch nướng mắc khén hạt dổi – đặc sản hấp dẫn của vùng đất Bình Định, với hương vị đậm đà, quy trình chế biến công phu và địa điểm thưởng thức nổi bật.'
         />
         <meta
           name='twitter:image'
@@ -93,18 +94,18 @@ const ChocQuachNuong = () => {
       <article>
         <header>
           <h1>
-            Chóc Quạch Nướng Ở Làng Đại Học – Món ăn đặc sản Bình Định lần đầu xuất hiện
-            tại làng Đại học
+            Chóc Quạch Nướng Mắc Khén Hạt Dổi Ở Làng Đại Học – Món ăn đặc sản Bình Định
+            lần đầu xuất hiện tại làng Đại học
           </h1>
           <p>
             Nếu bạn từng nghe đến cái tên &quot;chóc quạch&quot; và còn bỡ ngỡ không biết
             đó là món gì, thì đây chính là lúc bạn khám phá một trong những đặc sản dân dã
             độc đáo bậc nhất tại làng đại học Thủ Đức. Trong bài viết này, chúng ta sẽ
-            cùng nhau tìm hiểu về món <strong>chóc quạch nướng</strong> – từ nguồn gốc,
-            cách chế biến, hương vị đặc trưng cho đến lý do vì sao món ăn này lại khiến
-            sinh viên mê mẩn đến vậy. Chuẩn bị vị giác của bạn, vì hành trình ẩm thực này
-            sẽ cực kỳ hấp dẫn! Để biết thêm về các món ăn hấp dẫn tương tự, hãy theo dõi
-            kênh youtube chính thức của chúng tôi{" "}
+            cùng nhau tìm hiểu về món <strong>chóc quạch nướng mắc khén hạt dổi</strong> –
+            từ nguồn gốc, cách chế biến, hương vị đặc trưng cho đến lý do vì sao món ăn
+            này lại khiến sinh viên mê mẩn đến vậy. Chuẩn bị vị giác của bạn, vì hành
+            trình ẩm thực này sẽ cực kỳ hấp dẫn! Để biết thêm về các món ăn hấp dẫn tương
+            tự, hãy theo dõi kênh youtube chính thức của chúng tôi{" "}
             <a
               href='https://www.youtube.com/@vnuEats'
               className='font-bold hover:underline'
@@ -147,7 +148,9 @@ const ChocQuachNuong = () => {
         </section>
 
         <section>
-          <h2>2. Món chóc quạch nướng – Lần đầu xuất hiện tại làng đại học</h2>
+          <h2>
+            2. Món chóc quạch nướng mắc khén hạt dổi – Lần đầu xuất hiện tại làng đại học
+          </h2>
           <p>
             Nếu có dịp ghé thăm <strong>làng đại học Quốc gia TP.HCM</strong> vào tầm xế
             chiều, bạn sẽ không khỏi bị cuốn hút bởi mùi thơm phức lan tỏa từ những xe
@@ -186,7 +189,9 @@ const ChocQuachNuong = () => {
         </section>
 
         <section>
-          <h2>3. Ăn chóc quạch nướng như dân &quot;gộc&quot; làng đại học</h2>
+          <h2>
+            3. Ăn chóc quạch nướng mắc khén hạt dổi như dân &quot;gộc&quot; làng đại học
+          </h2>
           <p>
             Để tận hưởng đúng chuẩn <strong>vị chóc quạch nướng làng đại học</strong>, bạn
             nên gọi thêm một mẹt rau sống tươi mơn mởn, cuốn thịt chim cùng bánh tráng và
@@ -258,7 +263,10 @@ const ChocQuachNuong = () => {
         </section>
 
         <section>
-          <h2>5. Tổng kết – Vì sao bạn nên thử chóc quạch nướng một lần trong đời?</h2>
+          <h2>
+            5. Tổng kết – Vì sao bạn nên thử chóc quạch nướng mắc khén hạt dổi một lần
+            trong đời?
+          </h2>
           <ul>
             <li>✅ Thịt thơm, da giòn, đậm vị</li>
             <li>✅ Giá rẻ, ăn no, không ngán</li>
@@ -270,10 +278,10 @@ const ChocQuachNuong = () => {
         <footer>
           <h2>Tạm kết</h2>
           <p>
-            <strong>Chóc quạch nướng ở làng đại học</strong> không chỉ là một món ăn – mà
-            còn là cả <strong>một phần ký ức tuổi trẻ</strong> của bao thế hệ sinh viên
-            Sài Gòn. Nếu bạn là người yêu thích ẩm thực đường phố, đam mê khám phá các món
-            ăn dân dã độc lạ, thì{" "}
+            <strong>Chóc quạch nướng mắc khén hạt dổi ở làng đại học</strong> không chỉ là
+            một món ăn – mà còn là cả <strong>một phần ký ức tuổi trẻ</strong> của bao thế
+            hệ sinh viên Sài Gòn. Nếu bạn là người yêu thích ẩm thực đường phố, đam mê
+            khám phá các món ăn dân dã độc lạ, thì{" "}
             <strong>nhất định phải thử món này ít nhất một lần trong đời!</strong>
           </p>
         </footer>

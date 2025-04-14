@@ -121,30 +121,58 @@ const DongNuongDa = () => {
           alt='Dông nướng đá - món ăn độc đáo'
         />
         <p>
-          Điều đặc biệt nhất ở dông nướng đá không phải ở kỹ thuật nấu ăn phức tạp, mà ở
-          sự nguyên bản. Món ăn không qua bàn tay chế biến công phu, không tẩm ướp cầu kỳ.
-          Tất cả là nhờ thiên nhiên: đá, cát, nắng và gió biển. Vị dông ngọt thanh, quyện
-          trong mùi thơm khói đá, điểm chút mằn mặn từ hương biển, khiến người ta vừa ăn
-          vừa xuýt xoa.
+          Điều làm nên sự khác biệt của dông nướng đá không đến từ những kỹ thuật nấu
+          nướng cầu kỳ hay gia vị đậm đà, mà nằm ở chính sự nguyên bản và mộc mạc của món
+          ăn. Không cần dầu mỡ, không cần tẩm ướp phức tạp, thịt dông được làm sạch rồi
+          đặt trực tiếp lên những phiến đá đã được nung nóng bằng than hồng. Chính nhiệt
+          độ từ đá tỏa ra đều và dịu, không làm cháy sém bề mặt mà giúp thịt chín từ từ,
+          giữ nguyên được độ ẩm, độ mềm và vị ngọt tự nhiên.
         </p>
         <p>
-          Người sành ăn thường ăn kèm với muối ớt xanh pha chút nước cốt chanh, thêm vài
-          lát xoài sống để cân bằng vị béo – tất cả tạo nên một tổng thể khó quên.
+          Khi nướng, dông không bị lấn át bởi các loại gia vị mạnh. Thay vào đó, hương
+          thơm bốc lên từ sự kết hợp của thịt tươi, đá nóng và một chút khói than tạo nên
+          mùi vị rất riêng – vừa hoang dã, vừa thuần khiết. Cắn một miếng dông, bạn sẽ cảm
+          nhận được lớp da giòn rụm, phần thịt bên trong mềm mại, ngọt thanh, không hề dai
+          hay khô. Hương vị ấy còn phảng phất chút mằn mặn từ gió biển, một cảm giác rất
+          &quot;đặc sản&quot; mà không nơi nào có thể bắt chước được.
+        </p>
+        <p>
+          Người địa phương và thực khách sành ăn thường thưởng thức dông nướng đá cùng với
+          muối ớt xanh, pha chút nước cốt chanh để tạo nên vị chua cay mặn ngọt hài hòa.
+          Một vài lát xoài sống cắt mỏng ăn kèm không chỉ giúp giảm vị béo mà còn làm nổi
+          bật hương vị của thịt dông. Tất cả hòa quyện lại tạo nên một tổng thể cân bằng,
+          vừa đậm đà vừa thanh mát, khiến người ăn không khỏi xuýt xoa và lưu luyến mãi
+          sau bữa ăn.
         </p>
 
         <h2>4. Tại Sao Bạn Nên Thử?</h2>
-        <ul className='list-disc ml-5'>
+        <ul className='list-disc ml-5 space-y-2'>
           <li>
-            <strong>Trải nghiệm độc đáo:</strong> Dông nướng đá không chỉ là một món ăn mà
-            còn là một câu chuyện, một trải nghiệm ẩm thực gắn liền với thiên nhiên.
+            <strong>Trải nghiệm ẩm thực độc đáo, gắn liền với thiên nhiên:</strong>
+            Món dông nướng đá không chỉ đơn thuần là một món ăn, mà còn là một hành trình
+            khám phá văn hóa ẩm thực mang đậm nét hoang dã và dân dã. Việc nướng dông trên
+            những viên đá nóng là một phương pháp cổ truyền, mô phỏng lại cách người xưa
+            chế biến thức ăn giữa núi rừng, không cần xoong nồi hay bếp ga điện hiện đại.
+            Chỉ với đá, lửa, và thịt tươi, bạn sẽ được đắm mình trong cảm giác trở về với
+            thiên nhiên, thưởng thức món ăn như một người du mục thực thụ.
           </li>
           <li>
-            <strong>Hương vị nguyên bản:</strong> Không qua chế biến cầu kỳ, món ăn giữ
-            trọn hương vị tự nhiên của thịt dông và mùi thơm của đá nóng.
+            <strong>Hương vị nguyên bản và tự nhiên:</strong>
+            Không sử dụng quá nhiều gia vị hay công đoạn chế biến cầu kỳ, dông nướng đá
+            giữ lại gần như nguyên vẹn hương vị đặc trưng của thịt dông – một loại thịt
+            mềm, ngọt và không hề tanh. Khi nướng trên đá, mùi thơm của thịt quyện với
+            hương đá nóng tạo nên một bản hòa âm mộc mạc nhưng đầy lôi cuốn, khiến bất cứ
+            ai cũng khó lòng cưỡng lại. Đây là một món ăn hiếm hoi vừa giữ được tính
+            nguyên bản, vừa mang lại cảm giác mới lạ cho vị giác.
           </li>
           <li>
-            <strong>Giàu dinh dưỡng:</strong> Thịt dông chứa nhiều protein, ít chất béo,
-            phù hợp cho những ai yêu thích món ăn lành mạnh.
+            <strong>Giàu dinh dưỡng, tốt cho sức khỏe:</strong>
+            Thịt dông là một nguồn thực phẩm tự nhiên, giàu đạm và khoáng chất nhưng lại
+            rất ít chất béo, phù hợp cho cả người ăn kiêng hay những ai đang theo đuổi lối
+            sống lành mạnh. Ngoài ra, theo dân gian, thịt dông còn có một số công dụng hỗ
+            trợ tăng cường sinh lực, làm mát cơ thể và hỗ trợ tiêu hóa tốt. Kết hợp cùng
+            cách chế biến ít dầu mỡ, dông nướng đá là lựa chọn tuyệt vời cho những bữa ăn
+            vừa ngon miệng, vừa bổ dưỡng.
           </li>
         </ul>
 
