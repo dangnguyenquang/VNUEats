@@ -54,6 +54,16 @@ const BlogPage = () => {
       url: "/blog/dong-nuong-da",
       author: "Lê Minh Khôi",
     },
+    {
+      _id: "4",
+      title:
+        "Chóc Quạch Nướng – Món ăn đặc sản Bình Định lần đầu xuất hiện tại làng Đại học",
+      description:
+        "Khám phá món chóc quạch nướng – đặc sản hấp dẫn của vùng đất Bình Định, với hương vị đậm đà, quy trình chế biến công phu và địa điểm thưởng thức nổi bật.",
+      image: "https://i.pinimg.com/736x/b4/d0/14/b4d0147b1daf1cbee12887794b9426fa.jpg",
+      url: "/blog/choc-quach-nuong",
+      author: "Phạm Văn Duy",
+    },
   ]
 
   const { user } = useAuth()
