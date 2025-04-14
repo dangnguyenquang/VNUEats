@@ -6,10 +6,12 @@ import { MetadataRoute } from "next"
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const clientUrl = process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost:5173"
 
-  const staticRoutes = Object.values(PATH_NAME).map((path) => ({
-    url: `${clientUrl}${path}`,
-    lastModified: new Date().toISOString(),
-  }))
+  const staticRoutes = Object.values(PATH_NAME)
+    .filter((val) => typeof val === "string")
+    .map((path) => ({
+      url: `${clientUrl}${path}`,
+      lastModified: new Date().toISOString(),
+    }))
 
   try {
     // const response = await postApi.getAllPosts(1, 99999)
@@ -37,6 +39,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       },
       {
         url: `${clientUrl}/banh-hoi-binh-dinh`,
+        lastModified: new Date().toISOString(),
+      },
+      {
+        url: `${clientUrl}/dong-nuong-da`,
+        lastModified: new Date().toISOString(),
+      },
+      {
+        url: `${clientUrl}/choc-quach-nuong`,
         lastModified: new Date().toISOString(),
       },
     ]

@@ -1,6 +1,7 @@
 "use client"
 
 import { PATH_NAME } from "@/configs/pathName"
+import { staticBlogs } from "@/configs/staticBlogs"
 import blogApiInstance from "@/services/axios/actions/blog.action"
 import useAuth from "@/stores/useAuth"
 import { Blog } from "@/types/api/blog"
@@ -23,48 +24,6 @@ const BlogPage = () => {
 
     fetchBlogs()
   }, [])
-
-  const staticBlogs = [
-    {
-      _id: "1",
-      title: "Top 8 Quán Lẩu Thái Chay Ngon Ở Làng Đại Học",
-      description:
-        "Khám phá top 8 quán lẩu Thái chay ngon nhất ở làng Đại Học, địa điểm lý tưởng cho sinh viên yêu ẩm thực chay.",
-      image: "https://i.pinimg.com/736x/f8/53/0a/f8530a489e5889cc213c09eeefb055aa.jpg",
-      url: "/blog/lau-Thai-chay-lang-dai-hoc",
-      author: "Nguyễn Quang Đăng",
-    },
-    {
-      _id: "2",
-      title: "Bánh hỏi Bình Định tại Làng Đại học Thủ Đức",
-      description:
-        "Thưởng thức bánh hỏi Bình Định tại Làng Đại học Thủ Đức với hương vị chuẩn miền Trung, giá hợp lý!",
-      image:
-        "https://vnueats.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbanhhoi.3a9b9405.jpg&w=3840&q=75",
-      url: "/blog/banh-hoi-binh-dinh",
-      author: "Nguyễn Công Bá",
-    },
-    {
-      _id: "3",
-      title: "Dông Nướng Đá – Tinh Hoa Vị Nướng Từ Vùng Cát Trắng",
-      description:
-        "Khám phá món dông nướng đá – đặc sản độc đáo từ vùng cát trắng miền Trung. Một trải nghiệm ẩm thực hoang dã, mộc mạc nhưng đầy tinh tế.",
-      image:
-        "https://cdn-i.vtcnews.vn/resize/th/upload/2023/09/19/dong-nuong-muoi-ot-1-15193571.JPG",
-      url: "/blog/dong-nuong-da",
-      author: "Lê Minh Khôi",
-    },
-    {
-      _id: "4",
-      title:
-        "Chóc Quạch Nướng – Món ăn đặc sản Bình Định lần đầu xuất hiện tại làng Đại học",
-      description:
-        "Khám phá món chóc quạch nướng – đặc sản hấp dẫn của vùng đất Bình Định, với hương vị đậm đà, quy trình chế biến công phu và địa điểm thưởng thức nổi bật.",
-      image: "https://i.pinimg.com/736x/b4/d0/14/b4d0147b1daf1cbee12887794b9426fa.jpg",
-      url: "/blog/choc-quach-nuong",
-      author: "Phạm Văn Duy",
-    },
-  ]
 
   const { user } = useAuth()
 

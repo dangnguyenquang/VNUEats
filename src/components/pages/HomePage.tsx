@@ -122,6 +122,13 @@ const HomePage = ({ data }: { data: FoodData | undefined }) => {
           </div>
           <FoodCategory />
         </div>
+
+        {/* <div className='text-center text-sm font-light mt-20 text-slate-500'>
+          <em>
+            --- Đây chỉ là đồ án môn học tại trường đại học Công Nghệ Thông Tin, chức năng đặt
+            hàng không có thật! ---
+          </em>
+        </div> */}
       </section>
 
       <section
