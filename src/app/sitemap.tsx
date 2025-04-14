@@ -34,19 +34,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const allRoutes = [
       ...staticRoutes,
       {
-        url: `${clientUrl}/lau-Thai-chay-lang-dai-hoc`,
+        url: `${clientUrl}/blog/lau-Thai-chay-lang-dai-hoc`,
         lastModified: new Date().toISOString(),
       },
       {
-        url: `${clientUrl}/banh-hoi-binh-dinh`,
+        url: `${clientUrl}/blog/banh-hoi-binh-dinh`,
         lastModified: new Date().toISOString(),
       },
       {
-        url: `${clientUrl}/dong-nuong-da`,
+        url: `${clientUrl}/blog/dong-nuong-da`,
         lastModified: new Date().toISOString(),
       },
       {
-        url: `${clientUrl}/choc-quach-nuong`,
+        url: `${clientUrl}/blog/choc-quach-nuong`,
         lastModified: new Date().toISOString(),
       },
     ]
