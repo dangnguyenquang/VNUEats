@@ -1,12 +1,12 @@
 "use client"
 
 import { PATH_NAME } from "@/configs/pathName"
+import { staticBlogs } from "@/configs/staticBlogs"
 import { cn } from "@/helpers/cn"
 import styles from "@/styles/artical.module.scss"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import React from "react"
-import { staticBlogs } from "./page"
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname()
