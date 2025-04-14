@@ -129,7 +129,7 @@ const Footer = () => {
 
           <div className='flex items-center gap-3 mt-5'>
             <a
-              href='https://www.facebook.com/profile.php?id=61574616120300'
+              href='https://www.facebook.com/vnueats'
               target='_blank'
               rel='noopener noreferrer'
             >

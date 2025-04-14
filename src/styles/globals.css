@@ -291,3 +291,31 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Edge */
 }
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #ccc;
+    padding: 1rem 3rem;
+    margin: 1rem 0;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+blockquote::before {
+    content: "“";
+    font-size: 3rem;
+    color: #bbb;
+    position: absolute;
+    top: -5px;
+    left: 10px;
+}
+
+blockquote::after {
+    content: "”";
+    font-size: 3rem;
+    color: #bbb;
+    position: absolute;
+    bottom: -5px;
+    right: 10px;
+}
