@@ -6,7 +6,7 @@ const BlogCard: React.FC<Blog> = ({ _id, imageUrls, title, description, author }
   return (
     <a
       href={PATH_NAME.BLOG_DETAIL(_id)}
-      className='block bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300'
+      className='block bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg duration-300 cursor-pointer transition-transform hover:scale-105'
     >
       {/* Image */}
       <div className='relative'>
