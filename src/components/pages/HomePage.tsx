@@ -8,6 +8,7 @@ import FoodCard from "@/components/FoodCard"
 import SearchBar from "@/components/SearchBar"
 import { PATH_NAME } from "@/configs/pathName"
 import { FoodData } from "@/types/api/home"
+import Link from "next/link"
 import { useRouter } from "next/navigation"
 import FoodCategory from "../FoodCategory"
 
@@ -123,12 +124,20 @@ const HomePage = ({ data }: { data: FoodData | undefined }) => {
           <FoodCategory />
         </div>
 
-        {/* <div className='text-center text-sm font-light mt-20 text-slate-500'>
-          <em>
-            --- Đây chỉ là đồ án môn học tại trường đại học Công Nghệ Thông Tin, chức năng đặt
-            hàng không có thật! ---
-          </em>
-        </div> */}
+        <div className='flex flex-col gap-10 text-center mt-24'>
+          <h2 className='text-[25px] md:text-[40px] lg:text-[60px] font-semibold font-oswald text-primaryText lg:leading-[30px]'>
+            Đối tác chiến lược
+          </h2>
+          <h3 className='text-[14px] md:text-[20px] font-oswald text-primaryText mb-5 lg:mb-8'>
+            Danh sách đối tác có mối quan hệ chặt chẽ với thương hiệu của chúng tôi
+          </h3>
+
+          <div className='w-full flex gap-4 justify-center'>
+            <Link href='https://cakewaitown.com'>
+              <img src={"/images/home/cakewai.png"} alt='' />
+            </Link>
+          </div>
+        </div>
       </section>
 
       <section
