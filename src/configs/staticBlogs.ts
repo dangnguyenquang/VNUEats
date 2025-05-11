@@ -35,4 +35,13 @@ export const staticBlogs = [
         url: "/blog/choc-quach-nuong",
         author: "Phạm Văn Duy",
     },
+    {
+        _id: "5",
+        title: "Bánh Canh Cá Basa – Món ngon mới lạ đang gây sốt trong cộng đồng sinh viên làng đại học",
+        description:
+            "Khám phá món bánh canh cá Basa – sự kết hợp độc đáo giữa cá basa thơm ngọt và sợi bánh canh dai mềm, tạo nên món ăn mới lạ và gây thương nhớ trong cộng đồng sinh viên.",
+        image: "https://cdn.tgdd.vn/2021/04/CookRecipe/Avatar/banh-canh-bot-gao-ca-loc-thumbnail.jpg",
+        url: "/blog/banh-canh-ca-basa",
+        author: "Lê Minh Khôi",
+    },
 ]
