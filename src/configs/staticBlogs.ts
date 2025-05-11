@@ -44,4 +44,13 @@ export const staticBlogs = [
         url: "/blog/banh-canh-ca-basa",
         author: "Lê Minh Khôi",
     },
+    {
+        _id: "6",
+        title: "Cơm Gà Núi Nhạn – Món Ngon Khó Cưỡng Tại Làng Đại Học",
+        description:
+            "Khám phá món cơm gà Núi Nhạn trứ danh ngay tại làng đại học Thủ Đức – hương vị miền Trung đậm đà, giá sinh viên, dễ tìm qua vnuEats. Đừng bỏ lỡ món ngon không thể thiếu của sinh viên VNU!",
+        image: "https://i.pinimg.com/736x/cd/dc/f8/cddcf8e759236126831fed1a04446656.jpg",
+        url: "/blog/com-ga-nui-Nhan",
+        author: "Nguyễn Quang Đăng",
+    },
 ]
