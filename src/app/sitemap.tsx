@@ -49,6 +49,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         url: `${clientUrl}/blog/choc-quach-nuong`,
         lastModified: new Date().toISOString(),
       },
+      {
+        url: `${clientUrl}/blog/cbanh-canh-ca-basa`,
+        lastModified: new Date().toISOString(),
+      },
+      {
+        url: `${clientUrl}/blog/com-ga-nui-Nhan`,
+        lastModified: new Date().toISOString(),
+      },
     ]
 
     return allRoutes
