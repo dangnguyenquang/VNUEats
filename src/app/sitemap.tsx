@@ -50,7 +50,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified: new Date().toISOString(),
       },
       {
-        url: `${clientUrl}/blog/cbanh-canh-ca-basa`,
+        url: `${clientUrl}/blog/banh-canh-ca-basa`,
         lastModified: new Date().toISOString(),
       },
       {
