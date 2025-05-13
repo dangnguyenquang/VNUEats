@@ -53,4 +53,13 @@ export const staticBlogs = [
         url: "/blog/com-ga-nui-Nhan",
         author: "Nguyễn Quang Đăng",
     },
+    {
+        _id: "7",
+        title: "Canh Rau Chua Cá Liệt – Hương Vị Quê Nhà Giữa Lòng Làng Đại Học",
+        description:
+            "Canh rau chua nấu với cá liệt – món ăn dân dã, thanh mát và đậm đà hương vị miền Trung, nay đã có tại làng đại học. Một món ngon không thể bỏ qua trên hành trình ẩm thực sinh viên VNU!",
+        image: "https://i.pinimg.com/736x/7f/d1/10/7fd1103e83034e6096cee3e1d52877f6.jpg",
+        url: "/blog/canh-rau-chua-ca-liet",
+        author: "Nguyễn Công Bá",
+    },
 ]

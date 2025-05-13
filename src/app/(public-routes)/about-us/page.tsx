@@ -24,12 +24,8 @@ export default function AboutUs() {
       })
     }
   }, [])
-
-  // Biến Style cho Heading
   const styleTextHeading = "text-[35px] md:text-[40px] lg:text-[48px] xl:text-[60px]"
-  // Biến Style cho các description
   const styleTextDesc = "text-[12px] md:text-[16px] lg:text-[18px] xl:text-[25px]"
-  // Mảng các thẻ item của Giá trị mà vnuEats mang lại
   const Items = [
     {
       icon: faShieldAlt,
@@ -47,23 +43,76 @@ export default function AboutUs() {
       desc: "vnuEats cung cấp các chương trình khuyến mãi thường xuyên cho khách hàng thân thiết và mới.",
     },
   ]
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    headline: "Giới thiệu về vnuEats",
+    description:
+      "vnuEats là nền tảng kết nối bạn với những món ăn ngon, quán ăn chất lượng và trải nghiệm ẩm thực độc đáo tại làng đại học.",
+    image: "https://i.pinimg.com/736x/7f/d1/10/7fd1103e83034e6096cee3e1d52877f6.jpg",
+    url: "https://vnueats.com/about-us",
+    datePublished: "2024-05-10T00:00:00+07:00",
+    dateModified: "2024-05-10T00:00:00+07:00",
+    author: {
+      "@type": "Organization",
+      name: "VNUEats",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "VNUEats",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://vnueats.com/logo.png",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://vnueats.com/about-us",
+    },
+  }
   return (
     <>
       <Head>
         <title>vnuEats - Về chúng tôi</title>
+        <link rel='canonical' href='https://vnueats.com/about-us' />
         <meta
           name='description'
-          content='Giới thiệu về các thành viên sáng lập, sứ mệnh và giá trị của vnuEats mang lại.'
+          content='vnuEats là nền tảng kết nối bạn với những món ăn ngon, quán ăn chất lượng và trải nghiệm ẩm thực độc đáo tại làng đại học.'
         />
-        <meta name='keywords' content='vnuEats, giá trị vnuEats, sứ mệnh vnuEats' />
-        <meta name='author' content='vnuEats Team' />
+        <meta
+          name='keywords'
+          content='vnuEats, vnueats, vnueat, món ngon làng đại học, cam kết của vnueats, giá trị của vnueats'
+        />
         <meta property='og:title' content='vnuEats - Về chúng tôi' />
         <meta
           property='og:description'
-          content='Giới thiệu về các thành viên sáng lập, sứ mệnh và giá trị của vnuEats mang lại.'
+          content='vnuEats là nền tảng kết nối bạn với những món ăn ngon, quán ăn chất lượng và trải nghiệm ẩm thực độc đáo tại làng đại học.'
         />
-        <meta property='og:type' content='website' />
-        <meta property='og:url' content='https://vnuEats.com/about-us' />
+        <meta
+          property='og:image'
+          // content=''
+        />
+        <meta property='og:url' content='https://vnueats.com/about-us' />
+        <meta property='og:type' content='article' />
+        <meta property='og:locale' content='vi_VN' />
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta
+          name='twitter:title'
+          content='Giới thiệu về vnuEats - khám phá món ngon làng đại học!'
+        />
+        <meta
+          name='twitter:description'
+          content='vnuEats là nền tảng kết nối bạn với những món ăn ngon, quán ăn chất lượng và trải nghiệm ẩm thực độc đáo tại làng đại học.'
+        />
+        <meta
+          name='twitter:image'
+          // content=''
+        />
+
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </Head>
 
       <div className='w-full' style={{ minWidth: "410px" }}>
@@ -101,10 +150,10 @@ export default function AboutUs() {
                     <strong className={`font-bold  text-secondary ${styleTextDesc}`}>
                       vnuEats
                     </strong>{" "}
-                    là cộng đồng tin cậy cho mọi người có thể tìm kiếm, đánh giá và đặt
-                    món ăn ngon từ các địa điểm ăn uống trong khu vực Làng Đại học Thủ
-                    Đức. Từ đó kết nối những thực khách đến với các món đặc sản ở làng đại
-                    học một cách nhanh chóng và tiện lợi.
+                    là nơi đáng tin cậy cho mọi người có thể tìm kiếm, khám phá món ăn qua
+                    các bài review và đặt món ăn ngon từ các địa điểm ăn uống trong khu
+                    vực Làng Đại học Thủ Đức. Từ đó kết nối những thực khách đến với các
+                    món đặc sản ở làng đại học một cách nhanh chóng và tiện lợi.
                   </p>
                 </div>
               </div>
