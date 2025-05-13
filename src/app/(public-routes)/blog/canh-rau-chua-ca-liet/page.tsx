@@ -111,7 +111,7 @@ const CanhLaChuaCaLiet = () => {
           cây này có vị chua thanh, hay được dùng như một loại rau
         </p>
 
-        <h2>2. Cá liệt – "Người bạn đồng hành" hoàn hảo với lá sống chua</h2>
+        <h2>2. Cá liệt – Người bạn đồng hành hoàn hảo với lá sống chua</h2>
         <img
           src='https://i.pinimg.com/736x/84/07/54/840754dfd100cf16ac340961926d912b.jpg'
           alt='Cá liệt'
@@ -124,7 +124,7 @@ const CanhLaChuaCaLiet = () => {
           hoặc kho lạt giữ được vị ngọt nguyên bản, rất thích hợp để ăn kèm với rau sống –
           đặc biệt là lá chua sống.
         </p>
-        <h2>3. Lá sống chua ăn với cá liệt – Hương vị "chạm" đến ký ức tuổi thơ</h2>
+        <h2>3. Lá sống chua ăn với cá liệt – Hương vị chạm đến ký ức tuổi thơ</h2>
         <p>
           Không cần chế biến cầu kỳ, món lá chua sống ăn với cá liệt luộc hoặc kho nhạt
           mang đến cảm giác thanh mát, nhẹ bụng nhưng cực kỳ đưa cơm. Cách ăn đơn giản: gỡ
@@ -134,7 +134,7 @@ const CanhLaChuaCaLiet = () => {
         <p>
           Món ăn này thường được các bạn sinh viên tại Làng Đại học Thủ Đức truyền tai
           nhau, đặc biệt những bạn có gốc gác từ miền Tây. Hương vị ấy không chỉ làm dịu
-          đi nỗi nhớ nhà, mà còn trở thành món ăn "signature" mỗi dịp thèm cơm quê.
+          đi nỗi nhớ nhà, mà còn trở thành món ăn signature mỗi dịp thèm cơm quê.
         </p>
 
         <h2>4. Hương vị quen mà lạ giữa lòng thành phố</h2>
