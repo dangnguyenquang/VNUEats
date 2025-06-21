@@ -1,4 +1,4 @@
-# 🍽️ vnuEats — Smart Food Ordering Platform for VNU-HCM
+# 🍽️ vnuEats — Smart Food Ordering Platform for VNU-HCM (IE204)
 
 vnuEats is a web-based food ordering platform tailored specifically for the vibrant community of Vietnam National University - Ho Chi Minh City (VNU HCM). The platform connects students, faculty members, and local food vendors, streamlining the process of discovering and ordering meals within the campus area.
 
