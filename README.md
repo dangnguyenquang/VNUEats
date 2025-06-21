@@ -1,4 +1,4 @@
-# 🍽️ vnuEats — Smart Food Ordering Platform for VNU-HCM (IE204)
+# vnuEats — Smart Food Ordering Platform for VNU-HCM (IE204)
 
 vnuEats is a web-based food ordering platform tailored specifically for the vibrant community of Vietnam National University - Ho Chi Minh City (VNU HCM). The platform connects students, faculty members, and local food vendors, streamlining the process of discovering and ordering meals within the campus area.
 
@@ -26,18 +26,18 @@ Furthermore, building a visually attractive and feature-rich platform is not eno
 
 ## 🚀 Key Features
 
-### 🛍️ User Features
+### User Features
 - Browse restaurants and available dishes
 - Add meals to cart and place orders with real-time status tracking
 - Save favorites for quick future orders
 - Filter by distance, ratings, and open hours
 
-### 🧑‍🍳 Vendor Dashboard
+### Vendor Dashboard
 - Manage menu, pricing, and availability
 - Track order history and revenue
 - Receive real-time order notifications
 
-### 🛠️ Admin System
+### Admin System
 - Manage users and roles
 - Oversee orders and vendor operations
 - Control website content (e.g., banners, FAQs)
@@ -48,14 +48,14 @@ Furthermore, building a visually attractive and feature-rich platform is not eno
 
 To ensure discoverability and reduce reliance on paid advertising, a comprehensive SEO plan was implemented.
 
-### ✅ On-Page SEO Techniques
+### On-Page SEO Techniques
 - Semantic HTML5 structure with accessibility in mind (ARIA roles, alt text, heading hierarchy)
 - Custom meta titles, descriptions, and Open Graph tags for each page
 - Keyword-focused content optimized for "VNU food delivery", "Đặt đồ ăn làng đại học", etc.
 - Sitemap.xml and robots.txt configuration for better indexing
 - Lazy loading and image optimization for improved performance and **Core Web Vitals**
 
-### ✅ Off-Page SEO Techniques
+### Off-Page SEO Techniques
 - Submissions to local directories, campus forums, and university community platforms
 - Social media engagement and link-sharing via student groups
 - Backlink acquisition from relevant blogs and student organizations
