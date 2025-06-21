@@ -3,7 +3,7 @@
 vnuEats is a web-based food ordering platform tailored specifically for the vibrant community of Vietnam National University - Ho Chi Minh City (VNU HCM). The platform connects students, faculty members, and local food vendors, streamlining the process of discovering and ordering meals within the campus area.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/079d9518-02bf-4e87-81ff-c82e5d924ea2" alt="Demo Screenshot" />
+  <img src="https://github.com/user-attachments/assets/079d9518-02bf-4e87-81ff-c82e5d924ea2" alt="Demo Screenshot" width="600" />
 </p>
 
 ---
@@ -19,7 +19,7 @@ With tens of thousands of students, lecturers, and staff on campus daily, the de
 Furthermore, building a visually attractive and feature-rich platform is not enough without proper visibility. That’s where **professional SEO strategies** come into play. Through this project, we integrated and validated both **on-page** and **off-page SEO techniques** to maximize organic reach and ensure the platform ranks high for relevant search queries on Google.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6fc661fc-746b-491b-9233-eb9660083461" alt="Demo Screenshot" />
+  <img src="https://github.com/user-attachments/assets/6fc661fc-746b-491b-9233-eb9660083461" alt="Demo Screenshot" width="600" />
 </p>
 
 ---
@@ -60,6 +60,10 @@ To ensure discoverability and reduce reliance on paid advertising, a comprehensi
 - Social media engagement and link-sharing via student groups
 - Backlink acquisition from relevant blogs and student organizations
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/318616a5-80dc-4662-b48f-f60bf23508f9" alt="Demo Screenshot" width="600" />
+</p>
+
 The SEO strategy was **continuously monitored** using tools like Google Search Console and Lighthouse reports to iteratively improve ranking and performance.
 
 ---
@@ -77,9 +81,9 @@ The SEO strategy was **continuously monitored** using tools like Google Search C
 
 ## 📈 Results
 
-- ⚡ Page load time improved by over 50% with SEO optimizations
-- 📊 Keyword impressions grew steadily on Google within weeks of deployment
-- 🧪 SEO strategies tested and validated in a real-world use case with measurable impact
+- Page load time improved by over 50% with SEO optimizations
+- Keyword impressions grew steadily on Google within weeks of deployment
+- SEO strategies tested and validated in a real-world use case with measurable impact
 
 ---
 
@@ -89,9 +93,13 @@ This project was developed as part of a senior capstone initiative at the Univer
 
 ---
 
-## 📬 Contact
+## 📬 Contact & Social media
 
 For collaboration, feedback, or demo access, feel free to reach out:
 
-- ✉️ dangnguyenquangit@gmail.com
+- 🌐 [Facebook](https://facebook.com/vnueats)
+- 📷 [Instagram](https://instagram.com/vnueats)
+- 🎵 [TikTok](https://tiktok.com/@vnueats)
+- 📧 Email: [View email address](mailto:dangnguyenquangit@gmail.com)
+- ▶️ [YouTube](https://www.youtube.com/@vnuEats)
 
